@@ -1,0 +1,2548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Her Long Game — The money lessons women were never taught.</title>
+<meta name="description" content="Financial education for women who are already doing the work — but don't have time to moonlight as a financial expert. No jargon. No judgement. Join the waitlist." />
+<meta name="keywords" content="financial literacy women, women and money, financial education, purchasing power, Her Long Game" />
+<meta name="author" content="Her Long Game" />
+<link rel="canonical" href="https://herlonggame.com.au" />
+
+<!-- Open Graph / Social sharing -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://herlonggame.com.au" />
+<meta property="og:title" content="Her Long Game — The money lessons women were never taught." />
+<meta property="og:description" content="Financial education for women who are already doing the work — but don't have time to moonlight as a financial expert. No jargon. No judgement." />
+<meta property="og:image" content="https://herlonggame.com.au/assets/images/og-image.png" />
+<meta property="og:locale" content="en_AU" />
+<meta property="og:site_name" content="Her Long Game" />
+
+<!-- Twitter / X card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Her Long Game — The money lessons women were never taught." />
+<meta name="twitter:description" content="Financial education for women who are already doing the work. No jargon. No judgement. Join the waitlist." />
+<meta name="twitter:image" content="https://herlonggame.com.au/assets/images/og-image.png" />
+
+<!-- Favicon (add your files to /assets/images/) -->
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Jost:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,400;1,700&display=swap" rel="stylesheet" />
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --sage-deep: #5C7A62;
+  --sage: #7A9279;
+  --sage-mid: #8A9E8D;
+  --sage-light: #B5C9B8;
+  --gold: #B8923A;
+  --soft-gold: #D4A853;
+  --orange: #E8751A;
+  --orange-dark: #C45E0E;
+  --cream: #F7F5F0;
+  --cream-warm: #F0EDE5;
+  --stone: #E2DDD6;
+  --rose: #C4756A;
+  --night: #161E17;
+  --night-mid: #1f2d20;
+  --moss: #2A3D2C;
+  --text-muted: rgba(22,30,23,0.55);
+  --text-light: rgba(247,245,240,0.65);
+}
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  background: var(--cream);
+  color: var(--night);
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+/* NOISE TEXTURE */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+/* ────────────────────────────────────────────
+   NAV
+──────────────────────────────────────────── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 2.5rem;
+  transition: background 0.4s, box-shadow 0.4s;
+}
+nav.scrolled {
+  background: rgba(247,245,240,0.94);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 1px 0 rgba(92,122,98,0.1);
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  text-decoration: none;
+}
+.nav-mark {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+}
+.nav-wordmark {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--cream);
+  letter-spacing: 0.01em;
+  transition: color 0.3s;
+}
+nav.scrolled .nav-wordmark { color: var(--night); }
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.nav-link {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(247,245,240,0.65);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+nav.scrolled .nav-link { color: var(--text-muted); }
+.nav-link:hover { color: var(--orange); }
+nav.scrolled .nav-link:hover { color: var(--orange); }
+.nav-cta {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cream);
+  background: var(--orange);
+  padding: 0.5rem 1.25rem;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+.nav-cta:hover { background: var(--sage-deep); transform: translateY(-1px); }
+
+/* ────────────────────────────────────────────
+   HERO
+──────────────────────────────────────────── */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 9rem 2.5rem 6rem;
+  background: linear-gradient(150deg, var(--night) 0%, #18271a 55%, #1c2e1e 100%);
+  overflow: hidden;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--sage), var(--orange), transparent);
+  opacity: 0.35;
+}
+/* Decorative circle */
+.hero-ring {
+  position: absolute;
+  right: -8%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52vw;
+  max-width: 680px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 40%, rgba(92,122,98,0.18) 0%, rgba(92,122,98,0.04) 50%, transparent 70%);
+  border: 1px solid rgba(92,122,98,0.12);
+  pointer-events: none;
+}
+.hero-ring-inner {
+  position: absolute;
+  inset: 14%;
+  border-radius: 50%;
+  border: 1px solid rgba(184,146,58,0.08);
+}
+.hero-svgmark {
+  position: absolute;
+  right: 4%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36vw;
+  max-width: 440px;
+  opacity: 0.06;
+  pointer-events: none;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+}
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.2s forwards;
+}
+.hero-eyebrow::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 1px;
+  background: var(--orange);
+}
+.hero-h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: clamp(2.4rem, 5vw, 4.8rem);
+  line-height: 1.05;
+  color: var(--cream);
+  margin-bottom: 0.3em;
+  opacity: 0;
+  animation: fadeUp 0.9s 0.4s forwards;
+}
+.hero-h1 em {
+  font-style: italic;
+  color: var(--sage);
+}
+.hero-sub {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  font-weight: 400;
+  color: var(--sage-light);
+  margin-bottom: 1.75rem;
+  line-height: 1.5;
+  opacity: 0;
+  animation: fadeUp 0.9s 0.5s forwards;
+}
+.hero-body {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: rgba(247,245,240,0.65);
+  max-width: 480px;
+  margin-bottom: 1.1rem;
+  opacity: 0;
+  animation: fadeUp 0.9s 0.65s forwards;
+}
+.hero-body:last-of-type { margin-bottom: 2.75rem; }
+.hero-body strong { color: var(--cream); font-weight: 500; }
+
+/* INLINE EMAIL FORM */
+.hero-form-wrap {
+  opacity: 0;
+  animation: fadeUp 0.9s 0.8s forwards;
+}
+.hero-form {
+  display: flex;
+  gap: 0;
+  max-width: 440px;
+  border: 1.5px solid rgba(92,122,98,0.45);
+  border-radius: 3px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(8px);
+}
+.hero-form input {
+  flex: 1;
+  padding: 0.95rem 1.15rem;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.9rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--cream);
+  min-width: 0;
+}
+.hero-form input::placeholder { color: rgba(247,245,240,0.3); }
+.hero-form button {
+  padding: 0.95rem 1.5rem;
+  background: var(--orange);
+  color: white;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+.hero-form button:hover { background: var(--sage-deep); }
+.hero-form-note {
+  margin-top: 0.75rem;
+  font-size: 0.72rem;
+  color: rgba(247,245,240,0.28);
+}
+.hero-success {
+  display: none;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.95rem 1.15rem;
+  background: rgba(92,122,98,0.15);
+  border: 1.5px solid rgba(92,122,98,0.4);
+  border-radius: 3px;
+  max-width: 440px;
+}
+.hero-success.show { display: flex; }
+.hero-success-icon {
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  background: var(--sage-deep);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.hero-success-icon svg { width: 13px; height: 13px; stroke: white; fill: none; stroke-width: 2.5; }
+.hero-success p { font-size: 0.88rem; color: var(--cream); line-height: 1.5; }
+.hero-success p strong { color: var(--sage-light); }
+
+/* Social proof */
+.hero-proof {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 1.1rem;
+  opacity: 0;
+  animation: fadeUp 0.9s 0.95s forwards;
+}
+.proof-dots {
+  display: flex;
+}
+.proof-dot {
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  border: 2px solid rgba(247,245,240,0.12);
+  margin-right: -7px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 8px;
+  font-weight: 600;
+  color: var(--cream);
+}
+.proof-dot:nth-child(1) { background: var(--sage-deep); }
+.proof-dot:nth-child(2) { background: var(--gold); }
+.proof-dot:nth-child(3) { background: var(--sage); }
+.proof-dot:nth-child(4) { background: var(--moss); }
+.proof-text {
+  padding-left: 12px;
+  font-size: 0.75rem;
+  color: rgba(247,245,240,0.38);
+}
+.proof-text strong { color: rgba(247,245,240,0.6); font-weight: 500; }
+
+/* ────────────────────────────────────────────
+   STATS STRIP
+──────────────────────────────────────────── */
+.strip {
+  position: relative;
+  z-index: 1;
+  background: var(--night);
+  border-top: 1px solid rgba(92,122,98,0.12);
+  border-bottom: 1px solid rgba(92,122,98,0.12);
+  padding: 2rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+  flex-wrap: wrap;
+}
+.strip-item { text-align: center; }
+.strip-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gold);
+  display: block;
+  line-height: 1;
+}
+.strip-label {
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(247,245,240,0.35);
+  margin-top: 0.25rem;
+  display: block;
+  line-height: 1.5;
+}
+.strip-div { width: 1px; height: 34px; background: rgba(247,245,240,0.07); }
+
+/* ────────────────────────────────────────────
+   SECTION COMMON
+──────────────────────────────────────────── */
+.section-eyebrow {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.section-eyebrow::before {
+  content: '';
+  display: block;
+  width: 22px;
+  height: 1px;
+  background: var(--orange);
+}
+.section-h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.1;
+  color: var(--night);
+}
+.section-h2 em { font-style: italic; color: var(--sage-deep); }
+
+/* REVEAL */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ────────────────────────────────────────────
+   THE PROBLEM
+──────────────────────────────────────────── */
+.section-problem {
+  padding: 7rem 2.5rem;
+  max-width: 1060px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.problem-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  margin-top: 3.5rem;
+}
+.problem-quote-block {
+  position: relative;
+  padding: 2.5rem;
+  background: var(--night);
+  border-radius: 3px;
+}
+.problem-quote-block::before {
+  content: '\201C';
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 8rem;
+  color: var(--sage-deep);
+  opacity: 0.2;
+  position: absolute;
+  top: -1rem;
+  left: 1.5rem;
+  line-height: 1;
+}
+.problem-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.55;
+  color: var(--cream);
+  position: relative;
+  z-index: 1;
+}
+.problem-quote em { color: var(--gold); font-style: normal; }
+.problem-attr {
+  margin-top: 1.25rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(247,245,240,0.35);
+}
+.problem-points { display: flex; flex-direction: column; gap: 1.75rem; }
+.problem-point {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.problem-point-icon {
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  border: 1.5px solid var(--sage);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  font-size: 1rem;
+}
+.problem-point-text h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+.problem-point-text p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* ────────────────────────────────────────────
+   FIELD NOTES (BLOG)
+──────────────────────────────────────────── */
+.section-blog {
+  background: var(--cream-warm);
+  padding: 7rem 2.5rem;
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid rgba(92,122,98,0.12);
+}
+.section-blog::before {
+  content: 'Field Notes';
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 12rem;
+  color: rgba(92,122,98,0.04);
+  position: absolute;
+  top: 1rem;
+  right: -1rem;
+  white-space: nowrap;
+  pointer-events: none;
+  line-height: 1;
+}
+.blog-header {
+  max-width: 1060px;
+  margin: 0 auto 3.5rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 2rem;
+}
+.blog-header-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  max-width: 480px;
+  margin-top: 0.75rem;
+}
+.blog-see-all {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--orange);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;
+  padding-bottom: 0.15rem;
+  border-bottom: 1px solid var(--orange);
+  transition: color 0.2s;
+}
+.blog-see-all:hover { color: var(--sage-deep); border-color: var(--sage-deep); }
+
+.blog-grid {
+  max-width: 1060px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1.5rem;
+}
+/* Featured large card */
+.blog-card {
+  background: var(--night);
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+  position: relative;
+}
+.blog-card:hover { transform: translateY(-3px); }
+.blog-card-visual {
+  height: 220px;
+  background: linear-gradient(135deg, var(--moss) 0%, #1a2b1c 100%);
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem;
+  overflow: hidden;
+}
+.blog-card-visual::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(22,30,23,0.85) 0%, transparent 60%);
+}
+.blog-card-visual-text {
+  position: relative;
+  z-index: 1;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: rgba(247,245,240,0.45);
+  line-height: 1.5;
+}
+.blog-card-body {
+  padding: 1.75rem;
+}
+.blog-card-tag {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 0.75rem;
+}
+.blog-card-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 1.45rem;
+  line-height: 1.2;
+  color: var(--cream);
+  margin-bottom: 0.75rem;
+}
+.blog-card-title em { font-style: italic; color: var(--sage); }
+.blog-card-excerpt {
+  font-size: 0.85rem;
+  line-height: 1.75;
+  color: rgba(247,245,240,0.5);
+}
+.blog-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(92,122,98,0.15);
+}
+.blog-card-meta { font-size: 0.72rem; color: rgba(247,245,240,0.3); }
+.blog-read-btn {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--orange);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: gap 0.2s;
+}
+.blog-card:hover .blog-read-btn { gap: 0.6rem; }
+
+/* Small cards in right column */
+.blog-col-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.blog-card-sm {
+  background: var(--night);
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+  padding: 1.5rem;
+  flex: 1;
+}
+.blog-card-sm:hover { transform: translateY(-3px); }
+.blog-card-sm .blog-card-title { font-size: 1.1rem; }
+.blog-card-sm .blog-card-excerpt { font-size: 0.82rem; -webkit-line-clamp: 3; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* Also: Jargon decoder card */
+.blog-card-tool {
+  background: var(--sage-deep);
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+  padding: 1.5rem;
+}
+.blog-card-tool:hover { transform: translateY(-3px); }
+.blog-card-tool .blog-card-tag { color: var(--soft-gold); }
+.blog-card-tool .blog-card-title { color: var(--cream); font-size: 1.1rem; }
+.blog-card-tool .blog-card-excerpt { color: rgba(247,245,240,0.6); font-size: 0.82rem; }
+.blog-card-tool .blog-read-btn { color: var(--soft-gold); }
+
+/* ────────────────────────────────────────────
+   TOOL — BUBBLE O BILL INDEX (inline)
+──────────────────────────────────────────── */
+.section-tool {
+  padding: 6rem 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+/* Desktop: tool card RIGHT, intro LEFT */
+.tool-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 3.5rem;
+  align-items: start;
+  margin-top: 3rem;
+}
+.tool-intro { padding-top: 0.25rem; }
+.tool-intro-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 1.55rem;
+  line-height: 1.2;
+  margin-bottom: 0.85rem;
+  color: var(--night);
+}
+.tool-intro-title em { font-style: italic; color: var(--sage-deep); }
+.tool-intro-body {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+.tool-what-learn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.1rem;
+  background: #EEF3EF;
+  border-radius: 5px;
+  border: 1px solid rgba(92,122,98,0.15);
+}
+.tool-learn-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  font-size: 0.85rem;
+  color: var(--sage-deep);
+  line-height: 1.5;
+}
+.tool-learn-item::before {
+  content: '→';
+  color: var(--orange);
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 0.05em;
+}
+
+/* THE ACTUAL TOOL CARD */
+.tool-card {
+  background: white;
+  border: 1.5px solid var(--stone);
+  border-radius: 8px;
+  padding: 0;
+  box-shadow: 0 6px 40px rgba(92,122,98,0.1), 0 1px 4px rgba(92,122,98,0.08);
+  overflow: hidden;
+}
+.tool-card-header {
+  background: var(--sage-deep);
+  padding: 1.4rem 1.75rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+.tool-card-header-text .tag {
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--soft-gold);
+  margin-bottom: 0.3rem;
+}
+.tool-card-header-text .title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 1.45rem;
+  color: var(--cream);
+  line-height: 1.1;
+}
+.tool-card-header-text .title em { font-style: italic; color: var(--soft-gold); }
+.tool-card-header-text .sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: rgba(247,245,240,0.55);
+  margin-top: 0.2rem;
+}
+.tool-card-body { padding: 1.5rem 1.75rem; }
+.tool-eli5 {
+  background: #EEF3EF;
+  border-radius: 5px;
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.82rem;
+  line-height: 1.72;
+  color: var(--sage-deep);
+}
+.tool-eli5 strong { font-weight: 600; color: var(--moss); }
+.tool-section-label {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--sage-mid);
+  margin-bottom: 0.75rem;
+}
+.tool-input-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+.tool-field { display: flex; flex-direction: column; gap: 0.35rem; }
+.tool-field label { font-size: 0.72rem; color: var(--sage-mid); }
+.tool-field input {
+  background: var(--cream);
+  border: 1.5px solid var(--stone);
+  border-radius: 5px;
+  padding: 0.65rem 0.85rem;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.95rem;
+  color: var(--moss);
+  outline: none;
+  width: 100%;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.tool-field input:focus {
+  border-color: var(--sage);
+  box-shadow: 0 0 0 3px rgba(92,122,98,0.1);
+}
+.tool-snack-note {
+  font-size: 0.72rem;
+  color: var(--sage-mid);
+  font-style: italic;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+.tool-divider {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(184,146,58,0.25), rgba(92,122,98,0.2), transparent);
+  margin: 1.1rem 0;
+}
+.tool-btn {
+  width: 100%;
+  background: var(--orange);
+  color: var(--cream);
+  border: none;
+  border-radius: 5px;
+  padding: 0.9rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  letter-spacing: 0.02em;
+  margin-top: 0.6rem;
+}
+.tool-btn:hover { background: var(--sage-deep); transform: translateY(-1px); }
+
+/* RESULTS */
+.tool-results {
+  display: none;
+  margin-top: 1.25rem;
+  animation: fadeUp 0.4s ease;
+}
+.result-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+  margin-bottom: 0.85rem;
+}
+.result-card {
+  background: var(--cream-warm);
+  border: 1.5px solid var(--stone);
+  border-radius: 6px;
+  padding: 0.85rem 0.9rem;
+}
+.result-card .r-label {
+  font-size: 0.6rem;
+  color: var(--sage-mid);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.25rem;
+}
+.result-card .r-val {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+  line-height: 1;
+  color: var(--moss);
+}
+.result-card .r-val.win { color: var(--sage-deep); }
+.result-card .r-val.lose { color: var(--rose); }
+.result-card .r-sub { font-size: 0.67rem; color: var(--sage-mid); margin-top: 0.2rem; }
+.result-verdict {
+  background: #EEF3EF;
+  border: 1.5px solid rgba(92,122,98,0.2);
+  border-radius: 6px;
+  padding: 1rem 1.15rem;
+  margin-bottom: 0.75rem;
+}
+.result-verdict .r-label {
+  font-size: 0.6rem;
+  color: var(--sage-deep);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.45rem;
+  font-weight: 600;
+}
+.result-verdict p { font-size: 0.85rem; line-height: 1.78; color: var(--moss); }
+.result-field-note {
+  background: #F8EFED;
+  border-left: 3px solid var(--rose);
+  border-radius: 0 5px 5px 0;
+  padding: 0.85rem 1rem;
+  font-size: 0.8rem;
+  line-height: 1.75;
+  color: #7A3E36;
+  margin-bottom: 0.75rem;
+}
+.result-disclaimer {
+  font-size: 0.68rem;
+  color: var(--sage-mid);
+  line-height: 1.7;
+  border-top: 1px solid var(--stone);
+  padding-top: 0.7rem;
+}
+
+/* ────────────────────────────────────────────
+   CURRICULUM TEASER
+──────────────────────────────────────────── */
+.section-curriculum {
+  background: var(--night);
+  padding: 7rem 2.5rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.section-curriculum .section-eyebrow { color: var(--soft-gold); }
+.section-curriculum .section-eyebrow::before { background: var(--soft-gold); }
+.section-curriculum .section-h2 { color: var(--cream); }
+.section-curriculum .section-h2 em { color: var(--sage); }
+.curriculum-inner { max-width: 1060px; margin: 0 auto; }
+.curriculum-sub {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.75;
+  max-width: 520px;
+  margin-top: 1rem;
+  margin-bottom: 3.5rem;
+}
+.curriculum-phases {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.phase-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(92,122,98,0.18);
+  border-radius: 3px;
+  padding: 2rem;
+  transition: border-color 0.3s, background 0.3s;
+}
+.phase-card:hover {
+  background: rgba(92,122,98,0.08);
+  border-color: rgba(92,122,98,0.35);
+}
+.phase-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--orange);
+  margin-bottom: 1rem;
+}
+.phase-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(247,245,240,0.3);
+  margin-bottom: 0.5rem;
+}
+.phase-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--cream);
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+.phase-sub {
+  font-size: 0.83rem;
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+.phase-shift {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(92,122,98,0.15);
+}
+.phase-from { font-size: 0.77rem; color: rgba(247,245,240,0.35); font-style: italic; }
+.phase-arrow { font-size: 0.77rem; color: var(--sage-mid); }
+.phase-to { font-size: 0.77rem; color: var(--sage-light); font-style: italic; }
+.curriculum-note {
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: 0.8rem;
+  color: rgba(247,245,240,0.3);
+  letter-spacing: 0.05em;
+}
+
+/* ────────────────────────────────────────────
+   FOUNDER
+──────────────────────────────────────────── */
+.section-founder {
+  padding: 7rem 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+.founder-inner {
+  max-width: 820px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+.founder-avatar {
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  background: var(--night);
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  padding: 10px;
+  margin-top: 0.5rem;
+}
+.founder-content { }
+.founder-pull {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  line-height: 1.55;
+  color: var(--night);
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+}
+.founder-body {
+  font-size: 0.9rem;
+  line-height: 1.9;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+.founder-sig {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.founder-sig-line { width: 32px; height: 1px; background: var(--sage); }
+.founder-sig-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--night);
+}
+.founder-sig-role {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* ────────────────────────────────────────────
+   FINAL CTA
+──────────────────────────────────────────── */
+.section-cta {
+  background: var(--night);
+  padding: 7rem 2.5rem;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  overflow: hidden;
+}
+.section-cta::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px; height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(92,122,98,0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+.cta-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 560px;
+  margin: 0 auto;
+}
+.section-cta .section-eyebrow { justify-content: center; }
+.section-cta .section-eyebrow::before { display: none; }
+.cta-h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: clamp(2.2rem, 4.5vw, 4rem);
+  line-height: 1.1;
+  color: var(--cream);
+  margin-bottom: 1.25rem;
+}
+.cta-h2 em { font-style: italic; color: var(--sage); }
+.cta-body {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  max-width: 420px;
+  margin: 0 auto 2.5rem;
+}
+.cta-form {
+  display: flex;
+  gap: 0;
+  max-width: 420px;
+  margin: 0 auto;
+  border: 1.5px solid rgba(92,122,98,0.45);
+  border-radius: 3px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(8px);
+}
+.cta-form input {
+  flex: 1;
+  padding: 1rem 1.2rem;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.9rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--cream);
+  min-width: 0;
+}
+.cta-form input::placeholder { color: rgba(247,245,240,0.3); }
+.cta-form button {
+  padding: 1rem 1.5rem;
+  background: var(--orange);
+  color: white;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+.cta-form button:hover { background: var(--sage-deep); }
+.cta-note {
+  margin-top: 0.9rem;
+  font-size: 0.72rem;
+  color: rgba(247,245,240,0.25);
+}
+.cta-success {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem 1.4rem;
+  background: rgba(92,122,98,0.15);
+  border: 1.5px solid rgba(92,122,98,0.4);
+  border-radius: 3px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+.cta-success.show { display: flex; }
+.cta-success-icon {
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  background: var(--sage-deep);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.cta-success-icon svg { width: 13px; height: 13px; stroke: white; fill: none; stroke-width: 2.5; }
+.cta-success p { font-size: 0.88rem; color: var(--cream); line-height: 1.5; }
+.cta-success p strong { color: var(--sage-light); }
+
+/* ────────────────────────────────────────────
+   POST OVERLAY
+──────────────────────────────────────────── */
+.post-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  background: var(--cream);
+  overflow-y: auto;
+  transform: translateX(100%);
+  transition: transform 0.45s cubic-bezier(0.23,1,0.32,1);
+}
+.post-overlay.open { transform: translateX(0); }
+.post-overlay-header {
+  background: var(--night);
+  padding: 6rem 2.5rem 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.post-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(247,245,240,0.45);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  transition: color 0.2s;
+}
+.post-back:hover { color: var(--cream); }
+.post-back svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2; }
+.post-tag { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--orange); margin-bottom: 0.75rem; }
+.post-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.1;
+  color: var(--cream);
+  margin-bottom: 0.75rem;
+}
+.post-title em { font-style: italic; }
+.post-meta { font-size: 0.75rem; color: rgba(247,245,240,0.3); }
+.post-body {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 4rem 2.5rem 6rem;
+}
+.post-disclaimer {
+  background: var(--cream-warm);
+  border: 1px solid var(--stone);
+  border-radius: 4px;
+  padding: 1.25rem 1.5rem;
+  font-size: 0.83rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+}
+.post-disclaimer strong { color: var(--night); }
+.post-p {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: var(--night);
+  margin-bottom: 1.75rem;
+}
+.post-obs {
+  background: var(--cream-warm);
+  border-left: 3px solid var(--orange);
+  border-radius: 0 4px 4px 0;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.75rem;
+}
+.post-obs-num {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 0.6rem;
+}
+.post-obs p { font-size: 0.95rem; line-height: 1.8; color: var(--night); }
+.post-hr { height: 1px; background: var(--stone); margin: 2.5rem 0; }
+.post-her-notes {
+  background: var(--night);
+  border-radius: 4px;
+  padding: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+.post-her-notes-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 1rem;
+}
+.post-her-notes ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+.post-her-notes li {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: rgba(247,245,240,0.75);
+  padding-left: 1.25rem;
+  position: relative;
+}
+.post-her-notes li::before { content: '→'; position: absolute; left: 0; color: var(--orange); font-size: 0.8rem; }
+.post-lens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+.lens-card {
+  border-radius: 4px;
+  padding: 1.25rem;
+}
+.lens-card.economist { background: #EEF3EF; }
+.lens-card.real { background: var(--night); }
+.lens-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+.lens-card.economist .lens-label { color: var(--sage-deep); }
+.lens-card.real .lens-label { color: var(--orange); }
+.lens-card p { font-size: 0.83rem; line-height: 1.75; }
+.lens-card.economist p { color: var(--night); }
+.lens-card.real p { color: rgba(247,245,240,0.65); }
+.post-her-move {
+  background: var(--orange);
+  border-radius: 4px;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.75rem;
+}
+.post-her-move-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 0.6rem;
+}
+.post-her-move p { font-size: 0.9rem; line-height: 1.8; color: white; }
+
+/* Jargon Decoder post */
+.jargon-grid { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1.75rem; }
+.jargon-row {
+  display: grid;
+  grid-template-columns: 1.1fr 24px 1.5fr;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.85rem 1rem;
+  background: var(--cream-warm);
+  border: 1px solid var(--stone);
+  border-radius: 4px;
+}
+.jargon-row .official { font-size: 0.88rem; font-weight: 600; color: var(--night); }
+.jargon-row .arr { color: var(--orange); font-weight: 600; text-align: center; }
+.jargon-row .real { font-size: 0.85rem; color: var(--text-muted); font-style: italic; }
+
+/* ────────────────────────────────────────────
+   TOOL EXTRAS — benchmark pills, why matters, jill teaser
+──────────────────────────────────────────── */
+.tool-alt-bench {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.4rem;
+  background: var(--cream-warm);
+  border: 1px solid var(--stone);
+  border-radius: 5px;
+}
+.tool-alt-bench-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--night);
+  margin-bottom: 0.2rem;
+}
+.tool-alt-bench-icon { font-size: 1rem; }
+.tool-alt-bench-sub {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 0.9rem;
+}
+.tool-bench-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.85rem;
+}
+.bench-pill {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: var(--sage-deep);
+  background: white;
+  border: 1.5px solid var(--stone);
+  border-radius: 20px;
+  padding: 0.35rem 0.85rem;
+  cursor: pointer;
+  transition: all 0.18s;
+  white-space: nowrap;
+}
+.bench-pill:hover { border-color: var(--sage); background: #EEF3EF; }
+.bench-pill.active {
+  background: var(--sage-deep);
+  border-color: var(--sage-deep);
+  color: var(--cream);
+}
+.tool-alt-bench-note {
+  font-size: 0.76rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* WHY THIS MATTERS — light sage tint instead of dark night */
+.tool-why-matters {
+  margin-top: 1.5rem;
+  padding: 1.35rem 1.4rem;
+  background: #EEF3EF;
+  border: 1px solid rgba(92,122,98,0.2);
+  border-left: 3px solid var(--sage-deep);
+  border-radius: 0 5px 5px 0;
+}
+.tool-why-label {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 0.75rem;
+}
+.tool-why-matters p {
+  font-size: 0.86rem;
+  line-height: 1.8;
+  color: var(--moss);
+}
+.tool-why-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--sage-deep);
+  border-left: 2px solid var(--sage);
+  padding-left: 1rem;
+  margin: 0.9rem 0;
+}
+
+/* JILL TEASER — keep orange gradient, works as accent */
+.tool-jill-teaser {
+  margin-top: 1.5rem;
+  padding: 1.4rem 1.5rem;
+  background: linear-gradient(135deg, var(--orange) 0%, var(--orange-dark) 100%);
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.tool-jill-teaser::before {
+  content: 'JILL';
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 5.5rem;
+  color: rgba(255,255,255,0.07);
+  position: absolute;
+  right: -0.25rem;
+  bottom: -0.75rem;
+  line-height: 1;
+  pointer-events: none;
+}
+.tool-jill-tag {
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 0.4rem;
+}
+.tool-jill-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: white;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+.tool-jill-title em { font-style: italic; }
+.tool-jill-body {
+  font-size: 0.82rem;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 1rem;
+}
+.tool-jill-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.73rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: white;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.35);
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.tool-jill-cta:hover { background: rgba(255,255,255,0.3); }
+
+/* ────────────────────────────────────────────
+   THREE PHASES (replaces dark curriculum)
+──────────────────────────────────────────── */
+.section-phases {
+  background: var(--cream-warm);
+  border-top: 1px solid rgba(92,122,98,0.12);
+  border-bottom: 1px solid rgba(92,122,98,0.12);
+  padding: 7rem 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+.phases-inner { max-width: 1060px; margin: 0 auto; }
+.phases-intro {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin-top: 0.75rem;
+}
+.phases-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.phase-card-new {
+  background: white;
+  border: 1.5px solid var(--stone);
+  border-radius: 4px;
+  padding: 2rem;
+  position: relative;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+.phase-card-new:hover {
+  border-color: var(--sage);
+  box-shadow: 0 4px 24px rgba(92,122,98,0.1);
+}
+.phase-card-new-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--stone);
+  margin-bottom: 0.75rem;
+}
+.phase-card-new-label {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 0.6rem;
+}
+.phase-card-new-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.25;
+  color: var(--night);
+  margin-bottom: 0.65rem;
+}
+.phase-card-new-body {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+  font-style: italic;
+}
+.phase-shift-new {
+  padding-top: 1rem;
+  border-top: 1px solid var(--stone);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.phase-shift-from {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+.phase-shift-arrow {
+  font-size: 0.9rem;
+  color: var(--orange);
+  font-weight: 600;
+  line-height: 1;
+}
+.phase-shift-to {
+  font-size: 0.85rem;
+  color: var(--sage-deep);
+  font-weight: 500;
+  font-style: italic;
+}
+.phases-footer {
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.phases-philosophy {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 1.75rem 2rem;
+  background: white;
+  border: 1.5px solid var(--stone);
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+.phases-phil-divider {
+  width: 1px;
+  height: 50px;
+  background: var(--stone);
+  flex-shrink: 0;
+}
+.phases-phil-label {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  font-style: italic;
+}
+.phases-phil-sub {
+  font-size: 0.82rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+.phases-phil-sub strong { color: var(--sage-deep); font-weight: 600; }
+
+/* ────────────────────────────────────────────
+   FOOTER
+──────────────────────────────────────────── */
+footer {
+  background: var(--night);
+  border-top: 1px solid rgba(92,122,98,0.15);
+  padding: 2.5rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+.footer-wordmark {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: rgba(247,245,240,0.75);
+}
+.footer-tagline {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(247,245,240,0.28);
+  margin-top: 0.15rem;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  flex-wrap: wrap;
+}
+.footer-links a {
+  font-size: 0.75rem;
+  color: rgba(247,245,240,0.38);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--orange); }
+.footer-ig {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  color: rgba(247,245,240,0.38);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-ig:hover { color: var(--orange); }
+
+/* ────────────────────────────────────────────
+   RESPONSIVE
+──────────────────────────────────────────── */
+
+/* Desktop: show desktop intro, hide mobile duplicates */
+.tool-mobile-bench { display: none; }
+.tool-mobile-context { display: none; }
+
+@media (max-width: 860px) {
+  nav { padding: 1.1rem 1.5rem; }
+  .nav-link { display: none; }
+  .hero { padding: 8rem 1.5rem 5rem; }
+  .hero-ring { display: none; }
+  .hero-svgmark { display: none; }
+  .problem-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .blog-grid { grid-template-columns: 1fr; }
+  .blog-col-right { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+  /* Tool: single column, tool first */
+  .tool-layout {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  /* Hide the desktop left intro column entirely on mobile */
+  .tool-intro { display: none; }
+  /* Show mobile-only benchmark pills inside card */
+  .tool-mobile-bench { display: block; }
+  /* Show mobile context blocks after the tool */
+  .tool-mobile-context {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .curriculum-phases { grid-template-columns: 1fr; }
+  .phases-grid { grid-template-columns: 1fr; }
+  .phases-philosophy { grid-template-columns: 1fr; }
+  .phases-phil-divider { width: 100%; height: 1px; }
+  .founder-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+  .founder-avatar { width: 72px; height: 72px; }
+  .post-lens { grid-template-columns: 1fr; }
+  .section-problem { padding: 4rem 1.5rem; }
+  .section-blog { padding: 4rem 1.5rem; }
+  .section-tool { padding: 4rem 1.5rem; }
+  .section-phases { padding: 4rem 1.5rem; }
+  .section-curriculum { padding: 4rem 1.5rem; }
+  .section-founder { padding: 4rem 1.5rem; }
+  .section-cta { padding: 4rem 1.5rem; }
+  footer { padding: 2rem 1.5rem; }
+  .tool-card-body { padding: 1.25rem 1.25rem; }
+}
+
+@media (max-width: 520px) {
+  .blog-col-right { grid-template-columns: 1fr; }
+  .hero-form { flex-direction: column; border: none; background: none; }
+  .hero-form input {
+    border: 1.5px solid rgba(92,122,98,0.45);
+    border-radius: 3px;
+    background: rgba(255,255,255,0.05);
+  }
+  .hero-form button { border-radius: 3px; text-align: center; }
+  .cta-form { flex-direction: column; border: none; background: none; }
+  .cta-form input {
+    border: 1.5px solid rgba(92,122,98,0.45);
+    border-radius: 3px;
+    background: rgba(255,255,255,0.05);
+  }
+  .cta-form button { border-radius: 3px; }
+  /* Tool inputs stay 2-col on mobile — they're short enough */
+  .result-cards { grid-template-columns: 1fr 1fr; }
+  .strip { gap: 1.5rem; padding: 1.5rem; }
+  .strip-div { display: none; }
+  .blog-header { grid-template-columns: 1fr; }
+  .blog-see-all { display: none; }
+  .tool-card-header { padding: 1.1rem 1.25rem; }
+  .tool-card-body { padding: 1rem 1.1rem; }
+  .tool-card-header-text .title { font-size: 1.25rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- ══ NAV ══════════════════════════════════ -->
+<nav id="nav">
+  <a href="#" class="nav-logo">
+    <svg class="nav-mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" aria-hidden="true">
+      <path fill="#7A9279" d="M213.09,100.6a58.71,58.71,0,0,1-8.66-9.5,20.49,20.49,0,0,1-3.85-14.71c1.79-14.14-2.73-26.17-12.81-36.5.59-5.78-3.14-9.29-7.58-12.14-16.62-10.63-37.81-12.14-55.61-5.06a59.14,59.14,0,0,1,5.54,3.88c12.56,10,20.42,24.27,22.73,41.24a66.39,66.39,0,0,1,.37,15c7.84-6.14,15.65-12.32,21.78-20.34a62.39,62.39,0,0,0,8.81-15.66,34.47,34.47,0,0,1-2.62,11.82c-4.21,10.48-11.36,18.71-19.8,25.93-3.29,2.83-6.67,5.55-10,8.33-2.75,10-8.18,19.09-16.3,27.27a55.58,55.58,0,0,1-7.56,30,55.75,55.75,0,0,0,5.23,14.17c9.61,18.09,24.33,30.34,43.49,37.37a17.88,17.88,0,0,0,1.9.54c.31.08.64.1,1.55.23a55.44,55.44,0,0,1-13.23-24.91c-1.57-6.44-1.89-12.9.12-19.33,2.18-6.92,5.65-9.42,12.85-8.82,3.94.33,7.83,1.17,11.75,1.76a18,18,0,0,0,7.13-.21,8.09,8.09,0,0,0,6.21-10c-.27-1.29-.77-2.54-1-3.84a4.38,4.38,0,0,1,1.55-4.65c3.94-3,3.91-4.16-.18-7.17.61-.32,1.18-.62,1.74-.94,3.19-1.83,3.52-3.73,1.12-6.52s-1.91-6,1.29-7.91c1-.59,2.07-1,3.08-1.59C215.74,106.35,216.1,103.42,213.09,100.6Z"/>
+      <path fill="#5C7A62" d="M113.45,161.09a61.86,61.86,0,0,0,13.38-19.7,51.45,51.45,0,0,0,3.64-23,61.47,61.47,0,0,0,13.81-19A54.66,54.66,0,0,0,149,76,72.47,72.47,0,0,0,147.71,64a67.32,67.32,0,0,0-3.49-11.49,60.16,60.16,0,0,0-5.73-10.59,58.91,58.91,0,0,0-7.87-9.12c-11.82-11-28.19-16.54-44.2-15.82a62.65,62.65,0,0,0-23.31,5.47c-.93.38-1.82.86-2.71,1.32s-1.8.91-2.65,1.44a38,38,0,0,0-5.09,3.37,15.51,15.51,0,0,0-4.18,4.91,11.47,11.47,0,0,0-1.19,5.83,53.86,53.86,0,0,0-7.45,10,42.63,42.63,0,0,0-4.58,12.15,43.83,43.83,0,0,0-.67,12.92A31.51,31.51,0,0,1,35,80.49a18.43,18.43,0,0,1-1.38,5.78,33.34,33.34,0,0,1-7,10c-1.45,1.55-2.92,2.83-4.51,4.5a5.84,5.84,0,0,0-1.51,3.34,4.58,4.58,0,0,0,1.38,3.5,9.29,9.29,0,0,0,2.79,1.93c.9.48,1.94.93,2.73,1.44a3.87,3.87,0,0,1,1.86,4.53,7.36,7.36,0,0,1-1.52,2.45,5.31,5.31,0,0,0-1.3,3.35,4.24,4.24,0,0,0,2,3.06,15.07,15.07,0,0,0,1.91,1.12,9.44,9.44,0,0,0-2,2,2.57,2.57,0,0,0-.35,2.29,4.91,4.91,0,0,0,1.21,1.73,33.83,33.83,0,0,1,2.62,2.33,4,4,0,0,1,.54,3,33.19,33.19,0,0,1-.89,3.45,11,11,0,0,0-.3,3.84,8.46,8.46,0,0,0,4.14,6.36,13.8,13.8,0,0,0,7.38,1.59,61,61,0,0,0,7.28-1c2.39-.41,4.76-.8,7.15-1a13.46,13.46,0,0,1,6.79.85,9.4,9.4,0,0,1,4.44,5,27.77,27.77,0,0,1,1.95,6.8,36.69,36.69,0,0,1-.75,14.18,56.91,56.91,0,0,1-4.94,13.46,52.53,52.53,0,0,1-3.74,6.13c-.69,1-1.42,1.93-2.17,2.87l-1.16,1.39a8.33,8.33,0,0,0-1.27,2.06,5.32,5.32,0,0,0,2.26.07l1.56-.44c1-.32,2-.75,3-1.12,2-.8,3.9-1.62,5.79-2.57a80.18,80.18,0,0,0,10.94-6.37,75.85,75.85,0,0,0,18.06-17.6c4.91-6.83,9.12-14.33,11.2-22.57a52.78,52.78,0,0,0,.22-25.14A53.73,53.73,0,0,0,98,104.61a73,73,0,0,0-9-8.89c-3.18-2.75-6.45-5.39-9.68-8-6.5-5.27-12.71-11-17.52-17.81a56,56,0,0,1-6-10.92A35,35,0,0,1,53.16,48.6a62.63,62.63,0,0,0,7.75,13.74A82.67,82.67,0,0,0,72.8,75c8.67,7.65,18.32,14.11,26.29,22.33s14,18.29,16.23,29.42.32,22.78-4,33.23l-1.28,3.12-1.15,2.78,2.07-2.18,2.32-2.44Z"/>
+    </svg>
+    <span class="nav-wordmark">Her Long Game</span>
+  </a>
+  <div class="nav-actions">
+    <a href="#about" class="nav-link">About</a>
+    <a href="#waitlist" class="nav-link">Connect</a>
+    <a href="#tool" class="nav-link">Her Tools</a>
+    <a href="#field-notes" class="nav-link">Her Field Notes</a>
+    <a href="#wisdom" class="nav-link">Her Wisdom</a>
+    <a href="#waitlist" class="nav-cta">Join Waitlist</a>
+  </div>
+</nav>
+
+<!-- ══ HERO ══════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-ring"><div class="hero-ring-inner"></div></div>
+  <svg class="hero-svgmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" aria-hidden="true">
+    <path fill="white" d="M213.09,100.6a58.71,58.71,0,0,1-8.66-9.5,20.49,20.49,0,0,1-3.85-14.71c1.79-14.14-2.73-26.17-12.81-36.5.59-5.78-3.14-9.29-7.58-12.14-16.62-10.63-37.81-12.14-55.61-5.06a59.14,59.14,0,0,1,5.54,3.88c12.56,10,20.42,24.27,22.73,41.24a66.39,66.39,0,0,1,.37,15c7.84-6.14,15.65-12.32,21.78-20.34a62.39,62.39,0,0,0,8.81-15.66,34.47,34.47,0,0,1-2.62,11.82c-4.21,10.48-11.36,18.71-19.8,25.93-3.29,2.83-6.67,5.55-10,8.33-2.75,10-8.18,19.09-16.3,27.27a55.58,55.58,0,0,1-7.56,30,55.75,55.75,0,0,0,5.23,14.17c9.61,18.09,24.33,30.34,43.49,37.37a17.88,17.88,0,0,0,1.9.54c.31.08.64.1,1.55.23a55.44,55.44,0,0,1-13.23-24.91c-1.57-6.44-1.89-12.9.12-19.33,2.18-6.92,5.65-9.42,12.85-8.82,3.94.33,7.83,1.17,11.75,1.76a18,18,0,0,0,7.13-.21,8.09,8.09,0,0,0,6.21-10c-.27-1.29-.77-2.54-1-3.84a4.38,4.38,0,0,1,1.55-4.65c3.94-3,3.91-4.16-.18-7.17.61-.32,1.18-.62,1.74-.94,3.19-1.83,3.52-3.73,1.12-6.52s-1.91-6,1.29-7.91c1-.59,2.07-1,3.08-1.59C215.74,106.35,216.1,103.42,213.09,100.6Z"/>
+    <path fill="white" d="M113.45,161.09a61.86,61.86,0,0,0,13.38-19.7,51.45,51.45,0,0,0,3.64-23,61.47,61.47,0,0,0,13.81-19A54.66,54.66,0,0,0,149,76,72.47,72.47,0,0,0,147.71,64a67.32,67.32,0,0,0-3.49-11.49,60.16,60.16,0,0,0-5.73-10.59,58.91,58.91,0,0,0-7.87-9.12c-11.82-11-28.19-16.54-44.2-15.82a62.65,62.65,0,0,0-23.31,5.47c-.93.38-1.82.86-2.71,1.32s-1.8.91-2.65,1.44a38,38,0,0,0-5.09,3.37,15.51,15.51,0,0,0-4.18,4.91,11.47,11.47,0,0,0-1.19,5.83,53.86,53.86,0,0,0-7.45,10,42.63,42.63,0,0,0-4.58,12.15,43.83,43.83,0,0,0-.67,12.92A31.51,31.51,0,0,1,35,80.49a18.43,18.43,0,0,1-1.38,5.78,33.34,33.34,0,0,1-7,10c-1.45,1.55-2.92,2.83-4.51,4.5a5.84,5.84,0,0,0-1.51,3.34,4.58,4.58,0,0,0,1.38,3.5,9.29,9.29,0,0,0,2.79,1.93c.9.48,1.94.93,2.73,1.44a3.87,3.87,0,0,1,1.86,4.53,7.36,7.36,0,0,1-1.52,2.45,5.31,5.31,0,0,0-1.3,3.35,4.24,4.24,0,0,0,2,3.06,15.07,15.07,0,0,0,1.91,1.12,9.44,9.44,0,0,0-2,2,2.57,2.57,0,0,0-.35,2.29,4.91,4.91,0,0,0,1.21,1.73,33.83,33.83,0,0,1,2.62,2.33,4,4,0,0,1,.54,3,33.19,33.19,0,0,1-.89,3.45,11,11,0,0,0-.3,3.84,8.46,8.46,0,0,0,4.14,6.36,13.8,13.8,0,0,0,7.38,1.59,61,61,0,0,0,7.28-1c2.39-.41,4.76-.8,7.15-1a13.46,13.46,0,0,1,6.79.85,9.4,9.4,0,0,1,4.44,5,27.77,27.77,0,0,1,1.95,6.8,36.69,36.69,0,0,1-.75,14.18,56.91,56.91,0,0,1-4.94,13.46,52.53,52.53,0,0,1-3.74,6.13c-.69,1-1.42,1.93-2.17,2.87l-1.16,1.39a8.33,8.33,0,0,0-1.27,2.06,5.32,5.32,0,0,0,2.26.07l1.56-.44c1-.32,2-.75,3-1.12,2-.8,3.9-1.62,5.79-2.57a80.18,80.18,0,0,0,10.94-6.37,75.85,75.85,0,0,0,18.06-17.6c4.91-6.83,9.12-14.33,11.2-22.57a52.78,52.78,0,0,0,.22-25.14A53.73,53.73,0,0,0,98,104.61a73,73,0,0,0-9-8.89c-3.18-2.75-6.45-5.39-9.68-8-6.5-5.27-12.71-11-17.52-17.81a56,56,0,0,1-6-10.92A35,35,0,0,1,53.16,48.6a62.63,62.63,0,0,0,7.75,13.74A82.67,82.67,0,0,0,72.8,75c8.67,7.65,18.32,14.11,26.29,22.33s14,18.29,16.23,29.42.32,22.78-4,33.23l-1.28,3.12-1.15,2.78,2.07-2.18,2.32-2.44Z"/>
+  </svg>
+
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Coming Soon · 2026</div>
+    <h1 class="hero-h1">The money lessons<br/><em>women were never</em><br/>taught.</h1>
+    <p class="hero-sub">But are expected to use every day.</p>
+    <p class="hero-body">Financial education for women who are already doing the work — but don't have time to moonlight as a financial expert to live a fulfilling life.</p>
+    <p class="hero-body">Women who already play more than one role: contributors, leaders, mothers, partners, community builders, household CEOs, and the person everyone calls when something needs to get done.</p>
+    <p class="hero-body"><strong>Her Long Game</strong> gives women bite size education to support long term wealth — foundational understanding they can learn, use, and pass on to future generations.<br/><br/>No judgement. And no expectation that you should become an expert on top of the life you're already running.</p>
+
+    <div class="hero-form-wrap">
+      <div class="hero-form" id="heroFormWrap">
+        <input type="email" id="heroEmail" placeholder="your@email.com" autocomplete="email" />
+        <button onclick="submitForm('hero')">Join Waitlist</button>
+      </div>
+      <div class="hero-success" id="heroSuccess">
+        <div class="hero-success-icon">
+          <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <p>You're in. <strong>Welcome to the founding cohort.</strong> We'll be in touch.</p>
+      </div>
+      <p class="hero-form-note">Founding member pricing · Early access · No spam. Ever.</p>
+    </div>
+
+    <div class="hero-proof">
+      <div class="proof-dots">
+        <div class="proof-dot">T</div>
+        <div class="proof-dot">A</div>
+        <div class="proof-dot">J</div>
+        <div class="proof-dot">+</div>
+      </div>
+      <p class="proof-text"><strong>Women already on the list.</strong> The ones who move first, build first.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STATS STRIP ══════════════════════════ -->
+<div class="strip">
+  <div class="strip-item">
+    <span class="strip-num">0</span>
+    <span class="strip-label">Financial literacy lessons<br/>in the average school curriculum</span>
+  </div>
+  <div class="strip-div"></div>
+  <div class="strip-item">
+    <span class="strip-num">17¢</span>
+    <span class="strip-label">The gender pay gap<br/>starts the race behind</span>
+  </div>
+  <div class="strip-div"></div>
+  <div class="strip-item">
+    <span class="strip-num">1 in 3</span>
+    <span class="strip-label">Women retire with<br/>no savings at all</span>
+  </div>
+  <div class="strip-div"></div>
+  <div class="strip-item">
+    <span class="strip-num">90%</span>
+    <span class="strip-label">Of wealth women build<br/>goes back into communities</span>
+  </div>
+</div>
+
+<!-- ══ THE PROBLEM ══════════════════════════ -->
+<section class="section-problem" id="about">
+  <div class="section-eyebrow reveal">The Problem</div>
+  <h2 class="section-h2 reveal">The financial system wasn't<br/>built with <em>you in mind.</em></h2>
+
+  <div class="problem-grid">
+    <div class="problem-quote-block reveal">
+      <p class="problem-quote">The gender pay gap started the race <em>17 cents behind.</em><br/><br/>Inflation quietly ate what savings you did have.<br/><br/>No one taught you the basics — spending less than you earn, understanding inflation, investing in assets.</p>
+      <p class="problem-attr" style="margin-top:1.5rem;font-style:normal;font-size:0.85rem;color:rgba(247,245,240,0.5);line-height:1.8;">None of that is your fault.<br/><strong style="color:rgba(247,245,240,0.75);font-weight:500;">What you do next is your responsibility.</strong></p>
+    </div>
+
+    <div class="reveal">
+      <p style="font-size:0.95rem;line-height:1.9;color:var(--text-muted);margin-bottom:1.5rem;">Clear, practical education for women — designed to help you make better decisions over a lifetime and teach the next generation to do the same.</p>
+      <p style="font-size:0.95rem;line-height:1.9;color:var(--text-muted);margin-bottom:1.5rem;">When you understand what money actually is — and combine that with ownership, time, compounding, risk, leverage, and emotional self management — you can feel empowered to make your own decisions.</p>
+      <p style="font-size:0.95rem;line-height:1.9;color:var(--text-muted);margin-bottom:1.75rem;">Her Long Game teaches the principles that build wealth over time — if you understand the principles, you can play the long game.</p>
+
+      <div style="display:flex;gap:2rem;margin-bottom:1.75rem;padding:1.25rem 1.5rem;background:var(--cream-warm);border-radius:4px;border:1px solid var(--stone);align-items:center;">
+        <div style="text-align:center;">
+          <div style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.4rem;color:var(--text-muted);">Hacks</div>
+          <div style="font-size:0.72rem;color:var(--text-muted);margin-top:0.15rem;">change.</div>
+        </div>
+        <div style="width:1px;height:36px;background:var(--stone);flex-shrink:0;"></div>
+        <div style="text-align:center;">
+          <div style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.4rem;color:var(--orange);">Principles</div>
+          <div style="font-size:0.72rem;color:var(--text-muted);margin-top:0.15rem;">don't.</div>
+        </div>
+      </div>
+
+      <p style="font-size:0.88rem;line-height:1.8;color:var(--text-muted);margin-bottom:1.25rem;">And once you understand it, apply it, and learn from it, you can pass that knowledge on.</p>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+        <div style="padding:1rem 1.1rem;background:var(--cream-warm);border:1px solid var(--stone);border-radius:4px;">
+          <div style="font-size:0.6rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--sage-mid);margin-bottom:0.35rem;">Not just</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:700;color:var(--sage-deep);">Money.</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);margin-top:0.25rem;">Capability.</div>
+        </div>
+        <div style="padding:1rem 1.1rem;background:var(--cream-warm);border:1px solid var(--stone);border-radius:4px;">
+          <div style="font-size:0.6rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--sage-mid);margin-bottom:0.35rem;">Not just</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:700;color:var(--orange);">Wealth.</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);margin-top:0.25rem;">Generational confidence.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FIELD NOTES (BLOG) ═══════════════════ -->
+<section class="section-blog" id="field-notes">
+  <div class="blog-header reveal">
+    <div>
+      <div class="section-eyebrow">Her Field Notes</div>
+      <h2 class="section-h2">Join the journey<br/><em>while we build…</em></h2>
+      <p class="blog-header-desc">If you don't laugh you'll cry. Field Notes are the small, useful updates that make money less mysterious — and a lot less lonely.<br/>No jargon. No pressure. Drops when I feel like sharing.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:0.75rem;align-items:flex-start;">
+      <a href="#" class="blog-see-all" onclick="return false;" style="border-color:var(--orange);color:var(--orange);">
+        Read the latest Field Note
+        <svg viewBox="0 0 24 24" style="width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="#waitlist" class="blog-see-all" style="border-color:var(--sage-mid);color:var(--sage-mid);" onclick="event.preventDefault();document.getElementById('waitlist').scrollIntoView({behavior:'smooth'})">
+        Subscribe for drops
+        <svg viewBox="0 0 24 24" style="width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="blog-grid">
+    <!-- Featured post -->
+    <div class="blog-card reveal" onclick="openPost('budget')">
+      <div class="blog-card-visual">
+        <p class="blog-card-visual-text">"Budget night coverage treats economic policy like a sporting event — with colour commentary from people who definitely don't do their own grocery shopping."</p>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-tag">Policy · May 2026 · Field Note #01</div>
+        <h3 class="blog-card-title">When the Government Plays House<br/>With <em>Your</em> House Money</h3>
+        <p class="blog-card-excerpt">Every May, the federal government presents their version of a household budget meeting. Except instead of arguing over whether you can afford the good cheese, they're deciding how to spend half a trillion dollars of yours. Humour helps.</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-meta">5 min read</span>
+          <span class="blog-read-btn">Read note →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right column -->
+    <div class="blog-col-right">
+      <div class="blog-card-sm blog-card reveal" onclick="openPost('jargon')">
+        <div class="blog-card-tag">Jargon Decoder · Vol. 1</div>
+        <h3 class="blog-card-title">The Financial Terms They Made Up<br/>to Sound Important</h3>
+        <p class="blog-card-excerpt">A plain-English guide to the words economists use to make straightforward concepts sound terrifying — and what they actually mean for your money.</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-meta">3 min read</span>
+          <span class="blog-read-btn">Read note →</span>
+        </div>
+      </div>
+
+      <div class="blog-card-tool blog-card reveal" onclick="document.getElementById('tool').scrollIntoView({behavior:'smooth'})">
+        <div class="blog-card-tag">🧮 Interactive Tool</div>
+        <h3 class="blog-card-title">The Bubble O' Bill<br/>Purchasing Power Index</h3>
+        <p class="blog-card-excerpt">Stop measuring your wealth in dollars. Start measuring it in ice creams. The most honest inflation calculator you've ever used.</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-meta">Try it below ↓</span>
+          <span class="blog-read-btn" style="color:var(--soft-gold)">Use the tool →</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TOOL ══════════════════════════════════ -->
+<section class="section-tool" id="tool">
+  <div class="section-eyebrow reveal">Interactive Tool</div>
+  <h2 class="section-h2 reveal">A taste of what's<br/><em>inside the app.</em></h2>
+
+  <div class="tool-layout">
+
+    <!-- LEFT: INTRO COPY (desktop only — hidden on mobile, replaced by tool-mobile-context below) -->
+    <div class="tool-intro reveal">
+      <h3 class="tool-intro-title">The Bubble O' Bill<br/><em>Purchasing Power Index</em></h3>
+      <p class="tool-intro-body">Stop measuring your wealth in dollars. Dollars lie.</p>
+      <p class="tool-intro-body">Your bank balance can go up while your purchasing power goes down. That's the part no one tells you. This tool translates your asset performance into something honest: how many Bubble O' Bills you could actually buy.</p>
+      <p class="tool-intro-body" style="margin-bottom:1.25rem;">It sounds ridiculous. That's the point. Inflation is the silent tax on your money — and the financial industry would prefer you stay focused on the number, not the truth.</p>
+
+      <div class="tool-what-learn">
+        <div class="tool-learn-item">What inflation actually does to your returns</div>
+        <div class="tool-learn-item">The difference between nominal and real gains</div>
+        <div class="tool-learn-item">Why your asset might be "up" but you're actually poorer</div>
+        <div class="tool-learn-item">How to think in purchasing power, not dollar amounts</div>
+      </div>
+
+      <div class="tool-alt-bench">
+        <div class="tool-alt-bench-heading">
+          <span class="tool-alt-bench-icon">🍦</span>
+          <span>Not an ice‑cream girl? Pick your benchmark.</span>
+        </div>
+        <p class="tool-alt-bench-sub">Same maths. Same inflation. Same emotional damage.</p>
+        <div class="tool-bench-pills" id="desktopPills">
+          <button class="bench-pill active" onclick="setBench(this,&quot;Bubble O' Bill&quot;,'3.50','5.50')">🍦 Bubble O' Bill</button>
+          <button class="bench-pill" onclick="setBench(this,'Latte','6.50','8.50')">☕ Lattes</button>
+          <button class="bench-pill" onclick="setBench(this,'Almond croissant','5.50','8.00')">🥐 Croissants</button>
+          <button class="bench-pill" onclick="setBench(this,'Brow tint','35','55')">✨ Brows</button>
+          <button class="bench-pill" onclick="setBench(this,'Punnet of berries','4.50','7.00')">🍓 Berries</button>
+        </div>
+        <p class="tool-alt-bench-note">Inflation doesn't discriminate. It eats everything — snacks, self-care, groceries, joy, and the paper towel you burn through cleaning up toddler carnage.</p>
+      </div>
+
+      <div class="tool-why-matters">
+        <div class="tool-why-label">Why this matters</div>
+        <p>Because once you understand inflation, you stop feeling behind. You stop blaming yourself. You stop thinking you're the problem.</p>
+        <blockquote class="tool-why-quote">"Jill didn't disappear because she wasn't good enough. It was the same ice-cream. Same gum. Same mould."</blockquote>
+        <p>Women weren't set up to succeed in a system built without them. The Bubble O' Bill Index is your first taste of how we fix that.</p>
+      </div>
+
+      <div class="tool-jill-teaser">
+        <div class="tool-jill-tag">Coming soon</div>
+        <p class="tool-jill-title">The Bubble O' <em>Jill</em> Index</p>
+        <p class="tool-jill-body">The superannuation version. The gap between what Jill has at retirement and what Jack has isn't a mystery — it's the system, compounded over decades. Join the waitlist to get it first.</p>
+        <a href="#waitlist" class="tool-jill-cta" onclick="event.preventDefault();document.getElementById('waitlist').scrollIntoView({behavior:'smooth'})">Join the waitlist →</a>
+      </div>
+    </div>
+
+    <!-- RIGHT: THE ACTUAL TOOL CARD -->
+    <div class="tool-card reveal">
+      <div class="tool-card-header">
+        <div class="tool-card-header-text">
+          <div class="tag">Her Long Game · Tool</div>
+          <div class="title">The Bubble O' <em>Bill</em> Index</div>
+          <div class="sub" id="toolSubLabel">Measuring wealth in the only unit that matters.</div>
+        </div>
+      </div>
+
+      <div class="tool-card-body">
+        <!-- Mobile-only benchmark pills inside the card -->
+        <div class="tool-mobile-bench">
+          <div class="tool-section-label" style="margin-bottom:0.6rem;">Not an ice-cream girl? Pick yours.</div>
+          <div class="tool-bench-pills" id="mobilePills">
+            <button class="bench-pill active" onclick="setBench(this,&quot;Bubble O' Bill&quot;,'3.50','5.50')">🍦 Bubble O' Bill</button>
+            <button class="bench-pill" onclick="setBench(this,'Latte','6.50','8.50')">☕ Lattes</button>
+            <button class="bench-pill" onclick="setBench(this,'Almond croissant','5.50','8.00')">🥐 Croissants</button>
+            <button class="bench-pill" onclick="setBench(this,'Brow tint','35','55')">✨ Brows</button>
+            <button class="bench-pill" onclick="setBench(this,'Punnet of berries','4.50','7.00')">🍓 Berries</button>
+          </div>
+          <p class="tool-snack-note" style="margin-top:0.5rem;margin-bottom:0;">Same maths. Same inflation. Same emotional damage.</p>
+          <div class="tool-divider"></div>
+        </div>
+
+        <div class="tool-eli5">
+          <strong>Why this works:</strong> <strong>Purchasing power</strong> is how much real stuff your money buys. When everything costs more, your dollar buys less — even if the number on your bank statement went up. Pick a benchmark, enter your asset, and see what actually happened.
+        </div>
+
+        <div class="tool-section-label">The snack benchmark — <span id="benchName" style="color:var(--sage-deep);font-style:italic;">Bubble O' Bill</span></div>
+        <div class="tool-input-grid">
+          <div class="tool-field">
+            <label id="labelThen">Price then ($)</label>
+            <input type="number" id="bobThen" value="3.50" min="0.01" step="0.01" />
+          </div>
+          <div class="tool-field">
+            <label id="labelNow">Price now ($)</label>
+            <input type="number" id="bobNow" value="5.50" min="0.01" step="0.01" />
+          </div>
+        </div>
+
+        <p class="tool-snack-note">Or type your own price above to use a different benchmark.</p>
+        <div class="tool-divider"></div>
+        <div class="tool-section-label">Your asset</div>
+        <div class="tool-input-grid">
+          <div class="tool-field">
+            <label>What did you pay? ($)</label>
+            <input type="number" id="assetThen" value="750000" min="1" step="1000" />
+          </div>
+          <div class="tool-field">
+            <label>What's it worth now? ($)</label>
+            <input type="number" id="assetNow" value="920000" min="1" step="1000" />
+          </div>
+        </div>
+
+        <button class="tool-btn" onclick="runIndex()">Run the index →</button>
+
+        <div class="tool-results" id="toolResults">
+          <div class="tool-divider"></div>
+          <div class="tool-section-label">The verdict</div>
+          <div class="result-cards">
+            <div class="result-card"><div class="r-label">AUD gain/loss</div><div class="r-val" id="rAud"></div><div class="r-sub" id="rAudPct"></div></div>
+            <div class="result-card"><div class="r-label" id="rLabelThen">Units then</div><div class="r-val" id="rIceThen"></div><div class="r-sub">at the old price</div></div>
+            <div class="result-card"><div class="r-label" id="rLabelNow">Units now</div><div class="r-val" id="rIceNow"></div><div class="r-sub">at today's price</div></div>
+            <div class="result-card"><div class="r-label" id="rLabelChange">Real change</div><div class="r-val" id="rIcePct"></div><div class="r-sub">in purchasing power</div></div>
+          </div>
+          <div class="result-verdict">
+            <div class="r-label">Field note</div>
+            <p id="rVerdict"></p>
+          </div>
+          <div class="result-field-note" id="rFieldNote"></div>
+          <div class="result-disclaimer">⚠️ Not financial advice. Not a macroeconomic forecast. Just a raised eyebrow and a melting ice cream — pointing out that the system measures your wins in dollars, but you live your life in groceries. — <strong>herlonggame.com.au</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOBILE-ONLY: context blocks shown below tool on small screens -->
+  <div class="tool-mobile-context">
+    <div class="tool-why-matters">
+      <div class="tool-why-label">Why this matters</div>
+      <p>Because once you understand inflation, you stop feeling behind. You stop blaming yourself. You stop thinking you're the problem.</p>
+      <blockquote class="tool-why-quote">"Jill didn't disappear because she wasn't good enough. It was the same ice-cream. Same gum. Same mould."</blockquote>
+      <p>Women weren't set up to succeed in a system built without them. The Bubble O' Bill Index is your first taste of how we fix that.</p>
+    </div>
+    <div class="tool-jill-teaser">
+      <div class="tool-jill-tag">Coming soon</div>
+      <p class="tool-jill-title">The Bubble O' <em>Jill</em> Index</p>
+      <p class="tool-jill-body">The superannuation version. The gap between what Jill has at retirement and what Jack has isn't a mystery — it's the system, compounded over decades.</p>
+      <a href="#waitlist" class="tool-jill-cta" onclick="event.preventDefault();document.getElementById('waitlist').scrollIntoView({behavior:'smooth'})">Join the waitlist →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ THREE PHASES ═══════════════════════════ -->
+<section class="section-phases" id="wisdom">
+  <div class="phases-inner">
+    <div class="reveal" style="max-width:680px;margin-bottom:3.5rem;">
+      <div class="section-eyebrow">Three Phases · One Complete Picture</div>
+      <h2 class="section-h2">It's not your fault you<br/>weren't taught this.<br/><em>But it is your opportunity.</em></h2>
+      <p class="phases-intro" style="margin-top:1rem;">Her Long Game walks you through the system that was never built for women, so you can stop working around it and start working it.</p>
+      <p class="phases-intro" style="margin-top:0.75rem;">We cover the past, the present, and your future. With stories, not textbooks. With real word translation, not words dressed in a suit. Practical tools, not lectures. And a community of women building wealth together.</p>
+    </div>
+
+    <!-- Philosophy strip -->
+    <div class="phases-philosophy reveal">
+      <div class="phases-phil-item">
+        <div class="phases-phil-label">There's brilliant education out there for budgeting, saving, and smart money habits — and we encourage all of it.</div>
+      </div>
+      <div class="phases-phil-divider"></div>
+      <div class="phases-phil-item">
+        <div class="phases-phil-label" style="color:var(--sage-deep);">Her Long Game is built to complement that.</div>
+        <div class="phases-phil-sub">Because knowing the tactics is powerful right now.<br/>Knowing the foundations behind them is what gives you <strong>agency.</strong></div>
+      </div>
+    </div>
+
+    <div class="phases-grid" style="margin-top:3rem;">
+      <div class="phase-card-new reveal">
+        <div class="phase-card-new-num">01</div>
+        <div class="phase-card-new-label">The Past</div>
+        <h3 class="phase-card-new-title">The Story of Money,<br/>Women &amp; Systems</h3>
+        <p class="phase-card-new-body">Replace shame with understanding.</p>
+        <div class="phase-shift-new">
+          <span class="phase-shift-from">"I'm behind financially."</span>
+          <div class="phase-shift-arrow">→</div>
+          <span class="phase-shift-to">"Nobody ever explained the system properly."</span>
+        </div>
+      </div>
+
+      <div class="phase-card-new reveal">
+        <div class="phase-card-new-num">02</div>
+        <div class="phase-card-new-label">The Present</div>
+        <h3 class="phase-card-new-title">Understanding Yourself &amp;<br/>Your Current Reality</h3>
+        <p class="phase-card-new-body">Replace avoidance with clarity.</p>
+        <div class="phase-shift-new">
+          <span class="phase-shift-from">"It's too hard."</span>
+          <div class="phase-shift-arrow">→</div>
+          <span class="phase-shift-to">"I understand where I stand."</span>
+        </div>
+      </div>
+
+      <div class="phase-card-new reveal">
+        <div class="phase-card-new-num">03</div>
+        <div class="phase-card-new-label">The Future</div>
+        <h3 class="phase-card-new-title">Ownership, Wealth &amp;<br/>Her Long Game</h3>
+        <p class="phase-card-new-body">Replace survival thinking with long-term intention.</p>
+        <div class="phase-shift-new">
+          <span class="phase-shift-from">"I'm trying to keep up."</span>
+          <div class="phase-shift-arrow">→</div>
+          <span class="phase-shift-to">"I'm building something meaningful."</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="phases-footer reveal">Full curriculum released to founding members first.</p>
+  </div>
+</section>
+
+<!-- ══ FOUNDER ════════════════════════════════ -->
+<section class="section-founder" id="wisdom">
+  <div class="founder-inner reveal">
+    <div class="founder-avatar">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220">
+        <path fill="#7A9279" d="M213.09,100.6a58.71,58.71,0,0,1-8.66-9.5,20.49,20.49,0,0,1-3.85-14.71c1.79-14.14-2.73-26.17-12.81-36.5.59-5.78-3.14-9.29-7.58-12.14-16.62-10.63-37.81-12.14-55.61-5.06a59.14,59.14,0,0,1,5.54,3.88c12.56,10,20.42,24.27,22.73,41.24a66.39,66.39,0,0,1,.37,15c7.84-6.14,15.65-12.32,21.78-20.34a62.39,62.39,0,0,0,8.81-15.66,34.47,34.47,0,0,1-2.62,11.82c-4.21,10.48-11.36,18.71-19.8,25.93-3.29,2.83-6.67,5.55-10,8.33-2.75,10-8.18,19.09-16.3,27.27a55.58,55.58,0,0,1-7.56,30,55.75,55.75,0,0,0,5.23,14.17c9.61,18.09,24.33,30.34,43.49,37.37a17.88,17.88,0,0,0,1.9.54c.31.08.64.1,1.55.23a55.44,55.44,0,0,1-13.23-24.91c-1.57-6.44-1.89-12.9.12-19.33,2.18-6.92,5.65-9.42,12.85-8.82,3.94.33,7.83,1.17,11.75,1.76a18,18,0,0,0,7.13-.21,8.09,8.09,0,0,0,6.21-10c-.27-1.29-.77-2.54-1-3.84a4.38,4.38,0,0,1,1.55-4.65c3.94-3,3.91-4.16-.18-7.17.61-.32,1.18-.62,1.74-.94,3.19-1.83,3.52-3.73,1.12-6.52s-1.91-6,1.29-7.91c1-.59,2.07-1,3.08-1.59C215.74,106.35,216.1,103.42,213.09,100.6Z"/>
+        <path fill="#5C7A62" d="M113.45,161.09a61.86,61.86,0,0,0,13.38-19.7,51.45,51.45,0,0,0,3.64-23,61.47,61.47,0,0,0,13.81-19A54.66,54.66,0,0,0,149,76,72.47,72.47,0,0,0,147.71,64a67.32,67.32,0,0,0-3.49-11.49,60.16,60.16,0,0,0-5.73-10.59,58.91,58.91,0,0,0-7.87-9.12c-11.82-11-28.19-16.54-44.2-15.82a62.65,62.65,0,0,0-23.31,5.47c-.93.38-1.82.86-2.71,1.32s-1.8.91-2.65,1.44a38,38,0,0,0-5.09,3.37,15.51,15.51,0,0,0-4.18,4.91,11.47,11.47,0,0,0-1.19,5.83,53.86,53.86,0,0,0-7.45,10,42.63,42.63,0,0,0-4.58,12.15,43.83,43.83,0,0,0-.67,12.92A31.51,31.51,0,0,1,35,80.49a18.43,18.43,0,0,1-1.38,5.78,33.34,33.34,0,0,1-7,10c-1.45,1.55-2.92,2.83-4.51,4.5a5.84,5.84,0,0,0-1.51,3.34,4.58,4.58,0,0,0,1.38,3.5,9.29,9.29,0,0,0,2.79,1.93c.9.48,1.94.93,2.73,1.44a3.87,3.87,0,0,1,1.86,4.53,7.36,7.36,0,0,1-1.52,2.45,5.31,5.31,0,0,0-1.3,3.35,4.24,4.24,0,0,0,2,3.06,15.07,15.07,0,0,0,1.91,1.12,9.44,9.44,0,0,0-2,2,2.57,2.57,0,0,0-.35,2.29,4.91,4.91,0,0,0,1.21,1.73,33.83,33.83,0,0,1,2.62,2.33,4,4,0,0,1,.54,3,33.19,33.19,0,0,1-.89,3.45,11,11,0,0,0-.3,3.84,8.46,8.46,0,0,0,4.14,6.36,13.8,13.8,0,0,0,7.38,1.59,61,61,0,0,0,7.28-1c2.39-.41,4.76-.8,7.15-1a13.46,13.46,0,0,1,6.79.85,9.4,9.4,0,0,1,4.44,5,27.77,27.77,0,0,1,1.95,6.8,36.69,36.69,0,0,1-.75,14.18,56.91,56.91,0,0,1-4.94,13.46,52.53,52.53,0,0,1-3.74,6.13c-.69,1-1.42,1.93-2.17,2.87l-1.16,1.39a8.33,8.33,0,0,0-1.27,2.06,5.32,5.32,0,0,0,2.26.07l1.56-.44c1-.32,2-.75,3-1.12,2-.8,3.9-1.62,5.79-2.57a80.18,80.18,0,0,0,10.94-6.37,75.85,75.85,0,0,0,18.06-17.6c4.91-6.83,9.12-14.33,11.2-22.57a52.78,52.78,0,0,0,.22-25.14A53.73,53.73,0,0,0,98,104.61a73,73,0,0,0-9-8.89c-3.18-2.75-6.45-5.39-9.68-8-6.5-5.27-12.71-11-17.52-17.81a56,56,0,0,1-6-10.92A35,35,0,0,1,53.16,48.6a62.63,62.63,0,0,0,7.75,13.74A82.67,82.67,0,0,0,72.8,75c8.67,7.65,18.32,14.11,26.29,22.33s14,18.29,16.23,29.42.32,22.78-4,33.23l-1.28,3.12-1.15,2.78,2.07-2.18,2.32-2.44Z"/>
+      </svg>
+    </div>
+    <div class="founder-content">
+      <div class="section-eyebrow" style="margin-bottom:0.75rem;">Why this exists</div>
+      <p class="founder-pull">"Her Long Game began with a simple truth: the most capable women I know were never taught how money works. Not because they weren't smart enough. Because no one thought to teach them."</p>
+      <div class="founder-body">
+        <p>I built this because I needed it.<br/>Because my daughter will need it.<br/>Because the system wasn't designed with us in mind.</p>
+      </div>
+      <div class="founder-sig">
+        <div class="founder-sig-line"></div>
+        <div>
+          <div class="founder-sig-name">Tamara</div>
+          <div class="founder-sig-role">Founder, Her Long Game</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FINAL CTA ══════════════════════════════ -->
+<section class="section-cta" id="waitlist">
+  <div class="cta-inner">
+    <div class="section-eyebrow reveal">Early Access</div>
+    <h2 class="cta-h2 reveal">Join the women here<br/><em>for the long game.</em></h2>
+    <p class="cta-body reveal">Be first to access the full curriculum and tools.<br/>Founding member pricing. Field notes while we build.<br/>The women who move first, build first.</p>
+
+    <div class="reveal">
+      <div class="cta-form" id="ctaFormWrap">
+        <input type="email" id="ctaEmail" placeholder="your@email.com" autocomplete="email" />
+        <button onclick="submitForm('cta')">Join the Waitlist</button>
+      </div>
+      <div class="cta-success" id="ctaSuccess">
+        <div class="cta-success-icon">
+          <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <p>You're in. <strong>Welcome to the founding cohort.</strong></p>
+      </div>
+      <p class="cta-note">Unsubscribe anytime. Founding member pricing locked for early joiners.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ═════════════════════════════════ -->
+<footer>
+  <div class="footer-brand">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" style="height:28px;width:28px;flex-shrink:0;" aria-hidden="true">
+      <path fill="#7A9279" d="M213.09,100.6a58.71,58.71,0,0,1-8.66-9.5,20.49,20.49,0,0,1-3.85-14.71c1.79-14.14-2.73-26.17-12.81-36.5.59-5.78-3.14-9.29-7.58-12.14-16.62-10.63-37.81-12.14-55.61-5.06a59.14,59.14,0,0,1,5.54,3.88c12.56,10,20.42,24.27,22.73,41.24a66.39,66.39,0,0,1,.37,15c7.84-6.14,15.65-12.32,21.78-20.34a62.39,62.39,0,0,0,8.81-15.66,34.47,34.47,0,0,1-2.62,11.82c-4.21,10.48-11.36,18.71-19.8,25.93-3.29,2.83-6.67,5.55-10,8.33-2.75,10-8.18,19.09-16.3,27.27a55.58,55.58,0,0,1-7.56,30,55.75,55.75,0,0,0,5.23,14.17c9.61,18.09,24.33,30.34,43.49,37.37a17.88,17.88,0,0,0,1.9.54c.31.08.64.1,1.55.23a55.44,55.44,0,0,1-13.23-24.91c-1.57-6.44-1.89-12.9.12-19.33,2.18-6.92,5.65-9.42,12.85-8.82,3.94.33,7.83,1.17,11.75,1.76a18,18,0,0,0,7.13-.21,8.09,8.09,0,0,0,6.21-10c-.27-1.29-.77-2.54-1-3.84a4.38,4.38,0,0,1,1.55-4.65c3.94-3,3.91-4.16-.18-7.17.61-.32,1.18-.62,1.74-.94,3.19-1.83,3.52-3.73,1.12-6.52s-1.91-6,1.29-7.91c1-.59,2.07-1,3.08-1.59C215.74,106.35,216.1,103.42,213.09,100.6Z"/>
+      <path fill="#5C7A62" d="M113.45,161.09a61.86,61.86,0,0,0,13.38-19.7,51.45,51.45,0,0,0,3.64-23,61.47,61.47,0,0,0,13.81-19A54.66,54.66,0,0,0,149,76,72.47,72.47,0,0,0,147.71,64a67.32,67.32,0,0,0-3.49-11.49,60.16,60.16,0,0,0-5.73-10.59,58.91,58.91,0,0,0-7.87-9.12c-11.82-11-28.19-16.54-44.2-15.82a62.65,62.65,0,0,0-23.31,5.47c-.93.38-1.82.86-2.71,1.32s-1.8.91-2.65,1.44a38,38,0,0,0-5.09,3.37,15.51,15.51,0,0,0-4.18,4.91,11.47,11.47,0,0,0-1.19,5.83,53.86,53.86,0,0,0-7.45,10,42.63,42.63,0,0,0-4.58,12.15,43.83,43.83,0,0,0-.67,12.92A31.51,31.51,0,0,1,35,80.49a18.43,18.43,0,0,1-1.38,5.78,33.34,33.34,0,0,1-7,10c-1.45,1.55-2.92,2.83-4.51,4.5a5.84,5.84,0,0,0-1.51,3.34,4.58,4.58,0,0,0,1.38,3.5,9.29,9.29,0,0,0,2.79,1.93c.9.48,1.94.93,2.73,1.44a3.87,3.87,0,0,1,1.86,4.53,7.36,7.36,0,0,1-1.52,2.45,5.31,5.31,0,0,0-1.3,3.35,4.24,4.24,0,0,0,2,3.06,15.07,15.07,0,0,0,1.91,1.12,9.44,9.44,0,0,0-2,2,2.57,2.57,0,0,0-.35,2.29,4.91,4.91,0,0,0,1.21,1.73,33.83,33.83,0,0,1,2.62,2.33,4,4,0,0,1,.54,3,33.19,33.19,0,0,1-.89,3.45,11,11,0,0,0-.3,3.84,8.46,8.46,0,0,0,4.14,6.36,13.8,13.8,0,0,0,7.38,1.59,61,61,0,0,0,7.28-1c2.39-.41,4.76-.8,7.15-1a13.46,13.46,0,0,1,6.79.85,9.4,9.4,0,0,1,4.44,5,27.77,27.77,0,0,1,1.95,6.8,36.69,36.69,0,0,1-.75,14.18,56.91,56.91,0,0,1-4.94,13.46,52.53,52.53,0,0,1-3.74,6.13c-.69,1-1.42,1.93-2.17,2.87l-1.16,1.39a8.33,8.33,0,0,0-1.27,2.06,5.32,5.32,0,0,0,2.26.07l1.56-.44c1-.32,2-.75,3-1.12,2-.8,3.9-1.62,5.79-2.57a80.18,80.18,0,0,0,10.94-6.37,75.85,75.85,0,0,0,18.06-17.6c4.91-6.83,9.12-14.33,11.2-22.57a52.78,52.78,0,0,0,.22-25.14A53.73,53.73,0,0,0,98,104.61a73,73,0,0,0-9-8.89c-3.18-2.75-6.45-5.39-9.68-8-6.5-5.27-12.71-11-17.52-17.81a56,56,0,0,1-6-10.92A35,35,0,0,1,53.16,48.6a62.63,62.63,0,0,0,7.75,13.74A82.67,82.67,0,0,0,72.8,75c8.67,7.65,18.32,14.11,26.29,22.33s14,18.29,16.23,29.42.32,22.78-4,33.23l-1.28,3.12-1.15,2.78,2.07-2.18,2.32-2.44Z"/>
+    </svg>
+    <div>
+      <div class="footer-wordmark">Her Long Game</div>
+      <div class="footer-tagline">Sound money is the tool. Agency is the result.</div>
+    </div>
+  </div>
+  <div class="footer-links">
+    <a href="#about">About</a>
+    <a href="#waitlist">Connect</a>
+    <a href="#tool">Her Tools</a>
+    <a href="#field-notes">Her Field Notes</a>
+    <a href="#wisdom">Her Wisdom</a>
+    <a href="mailto:hello@herlonggame.com.au">hello@herlonggame.com.au</a>
+  </div>
+  <a href="https://instagram.com/_herlonggame" class="footer-ig" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.5;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+    @_herlonggame
+  </a>
+</footer>
+
+<!-- ══ POST OVERLAYS ══════════════════════════ -->
+
+<!-- Budget Post -->
+<div class="post-overlay" id="post-budget">
+  <div class="post-overlay-header">
+    <button class="post-back" onclick="closePost()">
+      <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Back to Field Notes
+    </button>
+    <div class="post-tag">Policy · May 2026 · Her Field Notes #01</div>
+    <h1 class="post-title">When the Government Plays House<br/>With <em>Your</em> House Money</h1>
+    <div class="post-meta">5 min read · herlonggame.com.au</div>
+  </div>
+  <div class="post-body">
+    <div class="post-disclaimer">
+      <strong>⚠️ Field Note Disclaimer (The Fun Kind)</strong><br/>
+      Not a political opinion. Not financial advice. Just an observer who's figured out that sometimes learning how the system works — and giving you a humorous interpretation of it — is the only way to stay sane. Because honestly — who has time to be brilliant in their own field and moonlight as an economist just to keep up? May as well laugh along the way.
+    </div>
+
+    <p class="post-p">Every May, the federal government presents us with their version of a household budget meeting — except instead of arguing over whether we can afford the good cheese this week, they're deciding how to spend roughly half a trillion dollars of money that technically belongs to all of us, while somehow making it feel like we're still not invited to the actual conversation.</p>
+
+    <div class="post-obs">
+      <div class="post-obs-num">Field Observation #1</div>
+      <p>The federal budget is essentially the government's annual attempt to explain why your taxes went up but your services somehow got more expensive. It's like having a housemate who takes your grocery money, buys organic everything for themselves, then explains that the communal toilet paper budget had to be "optimised for efficiency" — which is why you're now rationing squares.</p>
+    </div>
+
+    <div class="post-obs">
+      <div class="post-obs-num">Field Observation #2</div>
+      <p>Budget night coverage treats economic policy like a sporting event, complete with winners, losers, and colour commentary from people who definitely don't do their own grocery shopping. Meanwhile, you're sitting there trying to figure out if "bracket creep relief" means you can finally afford the name-brand pasta sauce, or if it's just another way of saying "congratulations, your pay rise got eaten by a tax system."</p>
+    </div>
+
+    <div class="post-obs">
+      <div class="post-obs-num">Field Observation #3</div>
+      <p>The most fascinating part isn't what gets announced — it's what gets buried in the fine print. Big fanfare about childcare subsidies, quiet shuffling about when they actually start. Loud promises about housing affordability, whispered details about eligibility criteria that somehow exclude half the people who actually need affordable housing. It's like being promised a chocolate cake and receiving a recipe.</p>
+    </div>
+
+    <div class="post-obs">
+      <div class="post-obs-num">Field Observation #4</div>
+      <p>Every budget comes with economic forecasts that read like horoscopes written by people who've never had to choose between heating and eating. "Growth is expected to moderate while inflation remains within target" translates roughly to "things might get more expensive but we're optimistic you'll figure it out." The confidence is admirable. The disconnect is breathtaking.</p>
+    </div>
+
+    <div class="post-obs">
+      <div class="post-obs-num">Field Observation #5</div>
+      <p>The budget's treatment of women's economic security is like watching someone try to fix a leaky roof by repainting the ceiling. Superannuation changes that might help in thirty years, parental leave adjustments that assume you can afford to take leave in the first place. Systematic change at the speed of bureaucracy — which is to say, glacial.</p>
+    </div>
+
+    <div class="post-hr"></div>
+
+    <div class="post-her-notes">
+      <div class="post-her-notes-label">Her Notes</div>
+      <ul>
+        <li>The federal budget is a massive resource allocation exercise disguised as political theatre</li>
+        <li>Most budget measures have implementation delays that stretch well beyond the announcement fanfare</li>
+        <li>Economic forecasts are educated guesses, not guarantees — plan accordingly</li>
+        <li>Real impact on household budgets often takes months or years to materialise</li>
+        <li>The gap between policy intention and lived experience remains frustratingly wide</li>
+      </ul>
+    </div>
+
+    <div class="post-lens">
+      <div class="lens-card economist">
+        <div class="lens-label">The Economist's View</div>
+        <p>The federal budget is a sophisticated macroeconomic tool designed to balance fiscal responsibility with economic stimulus, carefully calibrated to support growth while maintaining sustainable debt levels.</p>
+      </div>
+      <div class="lens-card real">
+        <div class="lens-label">The Woman Living Inside It</div>
+        <p>The federal budget is an annual reminder that the people making decisions about your money live in a completely different economic reality, where $3 coffees are a policy talking point, not a budget line item.</p>
+      </div>
+    </div>
+
+    <div class="post-her-move">
+      <div class="post-her-move-label">Her Move</div>
+      <p>Read the budget papers themselves, not just the headlines. The Treasury website publishes the actual documents — they're surprisingly readable once you skip the political preamble. Focus on implementation dates and eligibility criteria for anything that might affect your household. Knowledge is power, and in this case, it's also the difference between planning for change and being surprised by it.</p>
+    </div>
+
+    <div style="margin-top:3rem;padding:2rem;background:var(--cream-warm);border-radius:4px;border:1px solid var(--stone);text-align:center;">
+      <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.1rem;margin-bottom:1rem;color:var(--night);">More field notes where this came from.</p>
+      <a href="#waitlist" onclick="closePost();setTimeout(()=>document.getElementById('waitlist').scrollIntoView({behavior:'smooth'}),100);return false;" style="display:inline-block;background:var(--orange);color:white;font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:0.75rem 1.75rem;border-radius:2px;text-decoration:none;">Join the waitlist →</a>
+    </div>
+  </div>
+</div>
+
+<!-- Jargon Decoder Post -->
+<div class="post-overlay" id="post-jargon">
+  <div class="post-overlay-header">
+    <button class="post-back" onclick="closePost()">
+      <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Back to Field Notes
+    </button>
+    <div class="post-tag">Jargon Decoder · Vol. 1 · Her Field Notes #02</div>
+    <h1 class="post-title">The Financial Terms They Made Up<br/>to Sound <em>Important</em></h1>
+    <div class="post-meta">3 min read · herlonggame.com.au</div>
+  </div>
+  <div class="post-body">
+    <div class="post-disclaimer">
+      <strong>Welcome to the Jargon Decoder.</strong><br/>
+      Finance has its own language — and it was designed to keep you out of the conversation. This is a plain-English translation service. Not financial advice. Just a glossary with a raised eyebrow.
+    </div>
+
+    <p class="post-p">Here's the thing about financial jargon: most of it is describing straightforward ideas in unnecessarily complicated ways. Some of it is protective camouflage for concepts the industry doesn't want you to feel confident about. Let's fix that.</p>
+
+    <h3 style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.2rem;margin:2rem 0 1rem;color:var(--night);">The Official Terms vs. What They Actually Mean</h3>
+
+    <div class="jargon-grid">
+      <div class="jargon-row"><span class="official">Quantitative Easing</span><span class="arr">→</span><span class="real">The government printing money and hoping no one notices.</span></div>
+      <div class="jargon-row"><span class="official">Negative Real Returns</span><span class="arr">→</span><span class="real">Your savings account is quietly going backwards after inflation.</span></div>
+      <div class="jargon-row"><span class="official">Fiat Currency</span><span class="arr">→</span><span class="real">Money that's worth something because the government says so. (Not backed by gold. Not backed by anything. Just vibes.)</span></div>
+      <div class="jargon-row"><span class="official">Asset Appreciation</span><span class="arr">→</span><span class="real">Your thing went up in price. Might mean you're richer. Might just be inflation. See: the index below.</span></div>
+      <div class="jargon-row"><span class="official">Portfolio Diversification</span><span class="arr">→</span><span class="real">Don't put all your eggs in one basket. (They made it sound fancy. It's the basket metaphor.)</span></div>
+      <div class="jargon-row"><span class="official">Real Wages</span><span class="arr">→</span><span class="real">Your pay vs. prices — the only metric that actually matters.</span></div>
+      <div class="jargon-row"><span class="official">Fiscal Policy</span><span class="arr">→</span><span class="real">Government spending, but make it bureaucratic.</span></div>
+      <div class="jargon-row"><span class="official">Monetary Policy</span><span class="arr">→</span><span class="real">The RBA making life more expensive so you spend less.</span></div>
+      <div class="jargon-row"><span class="official">Soft Landing</span><span class="arr">→</span><span class="real">Economists hoping the plane doesn't crash.</span></div>
+      <div class="jargon-row"><span class="official">Hard Landing</span><span class="arr">→</span><span class="real">Economists politely warning the plane might crash.</span></div>
+      <div class="jargon-row"><span class="official">Sound Money</span><span class="arr">→</span><span class="real">Currency that can't be endlessly inflated by governments. Scarce. Honest. Bitcoin and gold are examples. (We'll go deep on this in the app.)</span></div>
+      <div class="jargon-row"><span class="official">Purchasing Power</span><span class="arr">→</span><span class="real">What your money can actually buy. The thing inflation silently destroys. Measure it in Bubble O' Bills.</span></div>
+    </div>
+
+    <div class="post-her-move" style="margin-top:1.75rem;">
+      <div class="post-her-move-label">Her Move</div>
+      <p>Next time someone uses financial jargon in a meeting, a presentation, or a headline — ask yourself: what is the plain-English version of this? Usually the reason it's wrapped in complexity is because the plain-English version is either embarrassingly simple or deliberately inconvenient to say out loud.</p>
+    </div>
+
+    <div style="margin-top:3rem;padding:2rem;background:var(--cream-warm);border-radius:4px;border:1px solid var(--stone);text-align:center;">
+      <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.1rem;margin-bottom:1rem;color:var(--night);">The app goes much deeper. Join the waitlist for early access.</p>
+      <a href="#waitlist" onclick="closePost();setTimeout(()=>document.getElementById('waitlist').scrollIntoView({behavior:'smooth'}),100);return false;" style="display:inline-block;background:var(--orange);color:white;font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:0.75rem 1.75rem;border-radius:2px;text-decoration:none;">Join the waitlist →</a>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── NAV SCROLL
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+}, { passive: true });
+
+// ── SCROLL REVEAL
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('visible'), i * 80);
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+// ── EMAIL FORMS
+function submitForm(which) {
+  const emailId = which === 'hero' ? 'heroEmail' : 'ctaEmail';
+  const email = document.getElementById(emailId).value.trim();
+  if (!email || !email.includes('@')) {
+    document.getElementById(emailId).focus();
+    document.getElementById(emailId).style.borderColor = 'var(--rose)';
+    setTimeout(() => document.getElementById(emailId).style.borderColor = '', 1500);
+    return;
+  }
+  if (which === 'hero') {
+    document.getElementById('heroFormWrap').style.display = 'none';
+    document.getElementById('heroSuccess').classList.add('show');
+  } else {
+    document.getElementById('ctaFormWrap').style.display = 'none';
+    document.getElementById('ctaSuccess').classList.add('show');
+  }
+  // Here you'd fire to your actual email capture service (Mailchimp, ConvertKit, etc.)
+}
+
+document.getElementById('heroEmail').addEventListener('keydown', e => { if (e.key === 'Enter') submitForm('hero'); });
+document.getElementById('ctaEmail').addEventListener('keydown', e => { if (e.key === 'Enter') submitForm('cta'); });
+
+// ── POSTS
+function openPost(id) {
+  const el = document.getElementById('post-' + id);
+  if (!el) return;
+  el.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  el.scrollTop = 0;
+}
+function closePost() {
+  document.querySelectorAll('.post-overlay.open').forEach(el => el.classList.remove('open'));
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closePost(); });
+
+// ── BUBBLE O' BILL INDEX
+function fmt(n) { return Math.round(n).toLocaleString('en-AU'); }
+function fmtPct(n) { return (n >= 0 ? '+' : '') + n.toFixed(1) + '%'; }
+
+let currentBenchName = "Bubble O' Bill";
+
+function getPlural(name) {
+  if (name === 'Brow tint')           return 'brow tints';
+  if (name === 'Latte')               return 'lattes';
+  if (name === 'Almond croissant')    return 'croissants';
+  if (name === 'Punnet of berries')   return 'punnets of berries';
+  return 'ice creams';
+}
+
+function setBench(el, name, priceThen, priceNow) {
+  currentBenchName = name;
+  document.getElementById('bobThen').value = priceThen;
+  document.getElementById('bobNow').value  = priceNow;
+  document.getElementById('benchName').textContent = name;
+  document.getElementById('labelThen').textContent = 'Price then ($)';
+  document.getElementById('labelNow').textContent  = 'Price now ($)';
+
+  const plural = getPlural(name);
+  document.getElementById('rLabelThen').textContent   = plural + ' then';
+  document.getElementById('rLabelNow').textContent    = plural + ' now';
+  document.getElementById('rLabelChange').textContent = 'real change';
+
+  const label = name === "Bubble O' Bill" ? 'the only unit that matters' : name.toLowerCase() + 's';
+  document.getElementById('toolSubLabel').textContent = 'Measuring wealth in ' + label + '.';
+
+  // Reset results panel
+  document.getElementById('toolResults').style.display = 'none';
+
+  // Sync active state across BOTH pill groups
+  document.querySelectorAll('.bench-pill').forEach(p => {
+    p.classList.toggle('active', p.textContent.trim().includes(name.replace("Bubble O' Bill", "Bubble O'")));
+  });
+}
+
+function runIndex() {
+  const bobThen   = parseFloat(document.getElementById('bobThen').value);
+  const bobNow    = parseFloat(document.getElementById('bobNow').value);
+  const assetThen = parseFloat(document.getElementById('assetThen').value);
+  const assetNow  = parseFloat(document.getElementById('assetNow').value);
+
+  if (!bobThen || !bobNow || !assetThen || !assetNow || bobThen <= 0 || bobNow <= 0) {
+    // Shake the button gently
+    const btn = document.querySelector('.tool-btn');
+    btn.style.background = 'var(--rose)';
+    setTimeout(() => btn.style.background = '', 800);
+    return;
+  }
+
+  const plural    = getPlural(currentBenchName);
+  const audGain   = assetNow - assetThen;
+  const audPct    = (audGain / assetThen) * 100;
+  const unitsThen = assetThen / bobThen;
+  const unitsNow  = assetNow  / bobNow;
+  const unitsDiff = ((unitsNow - unitsThen) / unitsThen) * 100;
+  const unitsLost = Math.abs(Math.round(unitsNow - unitsThen));
+
+  // Populate stat cards
+  const audEl = document.getElementById('rAud');
+  audEl.textContent = (audGain >= 0 ? '+$' : '−$') + fmt(Math.abs(audGain));
+  audEl.className   = 'r-val ' + (audGain >= 0 ? 'win' : 'lose');
+  document.getElementById('rAudPct').textContent  = fmtPct(audPct) + ' in AUD';
+  document.getElementById('rIceThen').textContent = fmt(unitsThen);
+  document.getElementById('rIceNow').textContent  = fmt(unitsNow);
+  const icePctEl = document.getElementById('rIcePct');
+  icePctEl.textContent = fmtPct(unitsDiff);
+  icePctEl.className   = 'r-val ' + (unitsDiff >= 0 ? 'win' : 'lose');
+
+  // Verdict copy
+  let verdict = '', fieldNote = '';
+  if (audPct > 0 && unitsDiff < 0) {
+    verdict   = `In dollars you're up ${fmtPct(audPct)} — solid on paper. But inflation quietly ate ${fmt(unitsLost)} ${plural} worth of purchasing power. You're winning the number while the system reprices everything underneath you. Classic.`;
+    fieldNote = `The system calls this a win. And in AUD terms, it is. But the index reveals the cooked part: your real purchasing power went backwards by ${Math.abs(Number(unitsDiff.toFixed(1)))}%. You didn't lose money. You just lost ${plural}.`;
+  } else if (audPct > 0 && unitsDiff > 0) {
+    verdict   = `Up ${fmtPct(audPct)} in AUD and up ${fmtPct(unitsDiff)} in real purchasing power too. Your asset outran inflation. That's rarer than the headlines make it sound.`;
+    fieldNote = `A genuine win by any measure. Your asset grew faster than the price of the things inflation tracks. File this one away — it doesn't happen as often as people think.`;
+  } else if (audPct < 0 && unitsDiff < 0) {
+    verdict   = `Down ${fmtPct(Math.abs(audPct))} in AUD and down ${fmtPct(Math.abs(unitsDiff))} in real terms. The asset lost value while inflation made everything else cost more. The system is not being subtle about it.`;
+    fieldNote = `This is the double squeeze — asset value down, cost of living up. The good news: these cycles do turn. The less good news: the index doesn't track when.`;
+  } else {
+    verdict   = `Down in AUD but inflation softened the real hit — you're only down ${fmtPct(Math.abs(unitsDiff))} in real terms. Cold comfort. But comfort nonetheless.`;
+    fieldNote = `When your asset drops in dollar terms but inflation makes everything more expensive too, the relative loss is smaller than it looks. Not a win. But not as bad as the number suggests.`;
+  }
+
+  document.getElementById('rVerdict').textContent   = verdict;
+  document.getElementById('rFieldNote').textContent = fieldNote;
+  const results = document.getElementById('toolResults');
+  results.style.display = 'block';
+  results.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+</script>
+
+</body>
+</html>
