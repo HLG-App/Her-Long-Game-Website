@@ -41,16 +41,16 @@
   --gold: #B8923A;
   --soft-gold: #B8923A;
   --orange: #D4621A;
-  --orange-dark: #D4621A;
-  --cream: #F2EFE8;
+  --orange-dark: #B8501A;
+  --cream: #F7F5F0;
   --cream-warm: #F2EFE8;
   --stone: rgba(92,122,98,0.2);
   --rose: #C4756A;
-  --night: #5C7A62;
-  --night-mid: #7A9279;
-  --moss: #5C7A62;
-  --text-muted: rgba(92,122,98,0.72);
-  --text-light: rgba(242,239,232,0.88);
+  --night: #2C4A3E;
+  --night-mid: #2C4A3E;
+  --moss: #2C4A3E;
+  --text-muted: rgba(44,74,62,0.68);
+  --text-light: rgba(247,245,240,0.88);
 }
 
 html { scroll-behavior: smooth; font-size: 16px; scroll-padding-top: 5rem; }
@@ -143,19 +143,22 @@ nav.scrolled .nav-link:hover { color: var(--orange); }
   justify-content: center;
   padding: 9rem 2.5rem 6rem;
   background:
-    radial-gradient(circle at 72% 18%, rgba(184,146,58,0.30) 0%, rgba(184,146,58,0.12) 22%, transparent 42%),
-    radial-gradient(circle at 18% 16%, rgba(242,239,232,0.18) 0%, rgba(242,239,232,0.07) 20%, transparent 38%),
-    radial-gradient(circle at 84% 78%, rgba(196,117,106,0.16) 0%, transparent 34%),
-    linear-gradient(145deg, var(--sage-deep) 0%, var(--sage) 48%, var(--sage-deep) 100%);
+    radial-gradient(ellipse at 74% 12%, rgba(184,146,58,0.34) 0%, rgba(184,146,58,0.15) 24%, transparent 48%),
+    radial-gradient(ellipse at 18% 12%, rgba(242,239,232,0.22) 0%, rgba(242,239,232,0.08) 25%, transparent 45%),
+    radial-gradient(ellipse at 88% 82%, rgba(196,117,106,0.22) 0%, rgba(196,117,106,0.08) 28%, transparent 48%),
+    linear-gradient(142deg, var(--sage) 0%, var(--sage-deep) 46%, var(--moss) 100%);
   overflow: hidden;
 }
 .hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(90deg, rgba(92,122,98,0.76) 0%, rgba(92,122,98,0.36) 48%, rgba(92,122,98,0.18) 100%),
-    linear-gradient(180deg, rgba(92,122,98,0.10) 0%, rgba(92,122,98,0.50) 100%);
+  background-image:
+    radial-gradient(ellipse at center, transparent 0%, rgba(44,74,62,0.20) 58%, rgba(44,74,62,0.46) 100%),
+    linear-gradient(90deg, rgba(44,74,62,0.46) 0%, rgba(92,122,98,0.14) 48%, rgba(44,74,62,0.40) 100%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.78' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.16'/%3E%3C/svg%3E");
+  background-blend-mode: multiply, multiply, soft-light;
+  opacity: 0.98;
   pointer-events: none;
   z-index: 0;
 }
@@ -202,15 +205,15 @@ nav.scrolled .nav-link:hover { color: var(--orange); }
 .app-teaser-phone .phone-shell {
   position: relative;
   width: 290px;
-  background: linear-gradient(145deg, var(--sage-deep) 0%, var(--sage) 50%, var(--sage-deep) 100%);
+  background: linear-gradient(145deg, #1a1f1c 0%, #0d1410 50%, #1a1f1c 100%);
   border-radius: 46px;
   padding: 10px;
   box-shadow:
-    0 0 0 1.5px rgba(242,239,232,0.06),
-    0 0 0 3px rgba(92,122,98,0.4),
-    0 40px 90px rgba(92,122,98,0.55),
-    0 18px 36px rgba(92,122,98,0.35),
-    inset 0 0 0 1px rgba(242,239,232,0.04);
+    0 0 0 1.5px rgba(255,255,255,0.06),
+    0 0 0 3px rgba(0,0,0,0.4),
+    0 40px 90px rgba(0,0,0,0.55),
+    0 18px 36px rgba(0,0,0,0.35),
+    inset 0 0 0 1px rgba(255,255,255,0.04);
 }
 /* Side buttons — left (volume up) */
 .hero-phone-col .phone-shell::before,
@@ -221,7 +224,7 @@ nav.scrolled .nav-link:hover { color: var(--orange); }
   top: 95px;
   width: 3px;
   height: 32px;
-  background: linear-gradient(90deg, var(--sage-deep) 0%, var(--sage) 100%);
+  background: linear-gradient(90deg, #0a0e0b 0%, #1f2521 100%);
   border-radius: 2px 0 0 2px;
 }
 /* Volume down */
@@ -233,7 +236,7 @@ nav.scrolled .nav-link:hover { color: var(--orange); }
   top: 145px;
   width: 3px;
   height: 56px;
-  background: linear-gradient(90deg, var(--sage-deep) 0%, var(--sage) 100%);
+  background: linear-gradient(90deg, #0a0e0b 0%, #1f2521 100%);
   border-radius: 2px 0 0 2px;
 }
 /* Right side power button */
@@ -244,7 +247,7 @@ nav.scrolled .nav-link:hover { color: var(--orange); }
   top: 130px;
   width: 3px;
   height: 70px;
-  background: linear-gradient(270deg, var(--sage-deep) 0%, var(--sage) 100%);
+  background: linear-gradient(270deg, #0a0e0b 0%, #1f2521 100%);
   border-radius: 0 2px 2px 0;
 }
 /* Dynamic Island */
@@ -252,7 +255,7 @@ nav.scrolled .nav-link:hover { color: var(--orange); }
 .app-teaser-phone .phone-shell .phone-notch {
   width: 96px;
   height: 28px;
-  background: var(--sage-deep);
+  background: #000;
   border-radius: 18px;
   margin: 0 auto;
   position: absolute;
@@ -260,7 +263,7 @@ nav.scrolled .nav-link:hover { color: var(--orange); }
   left: 50%;
   transform: translateX(-50%);
   z-index: 5;
-  box-shadow: inset 0 0 0 0.5px rgba(242,239,232,0.08);
+  box-shadow: inset 0 0 0 0.5px rgba(255,255,255,0.08);
 }
 .hero-phone-col .phone-screen,
 .app-teaser-phone .phone-screen {
@@ -271,7 +274,7 @@ nav.scrolled .nav-link:hover { color: var(--orange); }
   flex-direction: column;
   max-height: 580px;
   position: relative;
-  box-shadow: inset 0 0 0 1px rgba(242,239,232,0.05);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05);
 }
 /* Status bar feel — push app content below the island */
 .hero-phone-col .phone-screen .app-nav-bar,
@@ -281,7 +284,7 @@ nav.scrolled .nav-link:hover { color: var(--orange); }
 .hero-phone-col .phone-caption,
 .app-teaser-phone .phone-caption {
   font-size: 0.7rem;
-  color: rgba(242,239,232,0.7);
+  color: rgba(247,245,240,0.7);
   text-align: center;
   line-height: 1.65;
   letter-spacing: 0.04em;
@@ -314,6 +317,7 @@ nav.scrolled .nav-link:hover { color: var(--orange); }
   line-height: 1.03;
   letter-spacing: -0.02em;
   color: var(--cream);
+  text-shadow: 0 3px 22px rgba(44,74,62,0.32);
   margin-bottom: 0.4em;
   text-shadow: 0 2px 24px rgba(92,122,98,0.36);
   opacity: 0;
@@ -329,7 +333,8 @@ nav.scrolled .nav-link:hover { color: var(--orange); }
   font-style: italic;
   font-size: clamp(1.05rem, 2.1vw, 1.45rem);
   font-weight: 400;
-  color: rgba(242,239,232,0.85);
+  color: rgba(242,239,232,0.88);
+  text-shadow: 0 2px 14px rgba(44,74,62,0.24);
   margin-top: -0.4rem;
   margin-bottom: 2rem;
   line-height: 1.4;
@@ -417,7 +422,7 @@ nav.scrolled .nav-link:hover { color: var(--orange); }
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0;
 }
-.hero-success-icon svg { width: 13px; height: 13px; stroke: var(--cream); fill: none; stroke-width: 2.5; }
+.hero-success-icon svg { width: 13px; height: 13px; stroke: white; fill: none; stroke-width: 2.5; }
 .hero-success p { font-size: 0.88rem; color: var(--cream); line-height: 1.5; }
 .hero-success p strong { color: rgba(242,239,232,0.98); }
 
@@ -593,27 +598,27 @@ nav.scrolled .nav-link:hover { color: var(--orange); }
 @keyframes phoneAmbientGlow {
   0%, 100% {
     box-shadow:
-      0 0 0 1.5px rgba(242,239,232,0.06),
-      0 0 0 3px rgba(92,122,98,0.4),
-      0 40px 90px rgba(92,122,98,0.55),
-      0 18px 36px rgba(92,122,98,0.35),
+      0 0 0 1.5px rgba(255,255,255,0.06),
+      0 0 0 3px rgba(0,0,0,0.4),
+      0 40px 90px rgba(0,0,0,0.55),
+      0 18px 36px rgba(0,0,0,0.35),
       0 0 0 0 rgba(184,146,58,0),
-      inset 0 0 0 1px rgba(242,239,232,0.04);
+      inset 0 0 0 1px rgba(255,255,255,0.04);
   }
   50% {
     box-shadow:
-      0 0 0 1.5px rgba(242,239,232,0.06),
-      0 0 0 3px rgba(92,122,98,0.4),
-      0 44px 100px rgba(92,122,98,0.55),
-      0 18px 36px rgba(92,122,98,0.35),
+      0 0 0 1.5px rgba(255,255,255,0.06),
+      0 0 0 3px rgba(0,0,0,0.4),
+      0 44px 100px rgba(0,0,0,0.55),
+      0 18px 36px rgba(0,0,0,0.35),
       0 0 80px -15px rgba(184,146,58,0.22),
-      inset 0 0 0 1px rgba(242,239,232,0.04);
+      inset 0 0 0 1px rgba(255,255,255,0.04);
   }
 }
 @keyframes islandWake {
-  0%   { box-shadow: inset 0 0 0 0.5px rgba(242,239,232,0.08), 0 0 0 0 rgba(184,146,58,0); }
-  60%  { box-shadow: inset 0 0 0 0.5px rgba(242,239,232,0.08), 0 0 14px 2px rgba(184,146,58,0.5); }
-  100% { box-shadow: inset 0 0 0 0.5px rgba(242,239,232,0.08), 0 0 0 0 rgba(184,146,58,0); }
+  0%   { box-shadow: inset 0 0 0 0.5px rgba(255,255,255,0.08), 0 0 0 0 rgba(184,146,58,0); }
+  60%  { box-shadow: inset 0 0 0 0.5px rgba(255,255,255,0.08), 0 0 14px 2px rgba(184,146,58,0.5); }
+  100% { box-shadow: inset 0 0 0 0.5px rgba(255,255,255,0.08), 0 0 0 0 rgba(184,146,58,0); }
 }
 .hero-phone-col .phone-shell {
   animation:
@@ -844,21 +849,36 @@ nav.scrolled .nav-link:hover { color: var(--orange); }
   margin-top: 0.15rem;
 }
 
-.why-source-note {
-  font-size: 0.68rem;
-  line-height: 1.65;
-  color: var(--text-muted);
-  margin: -1.65rem 0 2.5rem;
-  max-width: 920px;
-}
-.why-source-note a {
-  color: var(--sage-deep);
-  font-weight: 500;
+.stat-source,
+.evidence-source {
+  display: inline-block;
+  margin-top: 0.55rem;
+  font-size: 0.54rem;
+  line-height: 1.3;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   text-decoration: none;
-  border-bottom: 1px solid rgba(92,122,98,0.25);
+  font-weight: 600;
 }
-.why-source-note a:hover { color: var(--orange); border-color: var(--orange); }
-.why-source-note--history { margin: -2rem 0 2.5rem; }
+.stat-source {
+  color: rgba(44,74,62,0.52);
+}
+.stat-source[href] {
+  border-bottom: 1px solid rgba(92,122,98,0.22);
+}
+.stat-source[href]:hover {
+  color: var(--orange);
+  border-color: var(--orange);
+}
+.evidence-source {
+  color: rgba(247,245,240,0.50);
+  border-bottom: 1px solid rgba(247,245,240,0.16);
+  align-self: flex-start;
+}
+.evidence-source:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+}
 
 /* Centred Start here CTA below resolution */
 .why-cta-wrap {
@@ -1419,7 +1439,7 @@ nav.scrolled .nav-link:hover { color: var(--orange); }
 .section-tool .tool-intro-title em { color: var(--gold); }
 .section-tool .tool-intro-body { color: rgba(242,239,232,0.82); }
 .section-tool .tool-alt-bench-heading { color: var(--cream); }
-.section-tool .tool-alt-bench-sub { color: rgba(242,239,232,0.7); }
+.section-tool .tool-alt-bench-sub { color: rgba(247,245,240,0.7); }
 .section-tool .tool-alt-bench-note { color: rgba(242,239,232,0.65); }
 .section-tool .tool-alt-bench { background: rgba(242,239,232,0.06); border-color: rgba(242,239,232,0.12); }
 .section-tool .tool-alt-bench-heading { font-weight: 600; }
@@ -1538,6 +1558,12 @@ nav.scrolled .nav-link:hover { color: var(--orange); }
   flex-shrink: 0;
   padding: 10px;
   margin-top: 0.5rem;
+}
+.founder-avatar img {
+  display: block;
+  width: 78%;
+  height: 78%;
+  object-fit: contain;
 }
 .founder-content { }
 .founder-pull {
@@ -1685,7 +1711,7 @@ nav.scrolled .nav-link:hover { color: var(--orange); }
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0;
 }
-.cta-success-icon svg { width: 13px; height: 13px; stroke: var(--cream); fill: none; stroke-width: 2.5; }
+.cta-success-icon svg { width: 13px; height: 13px; stroke: white; fill: none; stroke-width: 2.5; }
 .cta-success p { font-size: 0.88rem; color: var(--cream); line-height: 1.5; }
 .cta-success p strong { color: rgba(242,239,232,0.98); }
 
@@ -2390,14 +2416,39 @@ nav.scrolled .nav-link:hover { color: var(--orange); }
 footer {
   background: var(--sage-deep);
   border-top: 1px solid rgba(242,239,232,0.1);
-  padding: 2.5rem 2.5rem;
+  padding: 2.5rem 2.5rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  z-index: 1;
+}
+.footer-top-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1.5rem;
-  position: relative;
-  z-index: 1;
+  margin-bottom: 1.5rem;
+}
+.footer-bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(242,239,232,0.08);
+}
+.footer-disclaimer {
+  width: 100%;
+  text-align: center;
+  padding-top: 1rem;
+  margin-top: 0.25rem;
+  border-top: 1px solid rgba(242,239,232,0.06);
+  font-size: 0.65rem;
+  line-height: 1.6;
+  color: rgba(242,239,232,0.38);
 }
 .footer-brand {
   display: flex;
@@ -3068,11 +3119,11 @@ nav.scrolled .nav-logo-img {
 }
 </style>
 </head>
-<body>
+<body id="top">
 
 <!-- ══ NAV ══════════════════════════════════ -->
 <nav id="nav">
-  <a href="#" class="nav-logo">
+  <a href="#top" class="nav-logo">
     <div class="nav-logo-img"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 588.09 567.28" aria-label="Her Long Game" role="img" style="display:block;height:100%;width:auto;fill:currentColor;transition:fill 0.4s;">
   <path d="m565.61,257c-9,-8.37 -17.71,-16.92 -24.69,-27.09c-8.68,-12.65 -13,-26.2 -11,-41.93c5.12,-40.3 -7.78,-74.62 -36.52,-104.06c1.7,-16.48 -8.94,-26.49 -21.6,-34.59c-47.35,-30.33 -107.8,-34.61 -158.51,-14.44a175.4 175.4,0 0,1 15.8,11.11c35.8,28.53 58.2,69.18 64.79,117.56a188.73 188.73,0 0,1 1.06,42.92c22.37,-17.51 44.62,-35.12 62.1,-58a178.23 178.23,0 0,0 25.1,-44.65a97.33 97.33,0 0,1 -7.48,33.71c-12,29.85 -32.37,53.31 -56.42,73.92c-9.39,8 -19,15.82 -28.51,23.74c-7.83,28.41 -23.34,54.4 -46.46,77.74a158.4 158.4,0 0,1 -21.56,85.44a157.94 157.94,0 0,0 14.92,40.39c27.37,51.55 69.36,86.48 124,106.52a53.35 53.35,0 0,0 5.37,1.51c0.88,0.22 1.81,0.28 4.4,0.66c-19.44,-21.23 -31.28,-44.75 -37.7,-71c-4.49,-18.36 -5.4,-36.78 0.34,-55.1c6.2,-19.74 16.11,-26.87 36.63,-25.14c11.23,0.94 22.32,3.34 33.49,5a51.44 51.44,0 0,0 20.34,-0.61c13.36,-3.34 20.61,-14.9 17.7,-28.43c-0.78,-3.68 -2.21,-7.23 -2.83,-10.92c-0.85,-5.08 -0.2,-9.81 4.41,-13.27c11.24,-8.44 11.16,-11.86 -0.5,-20.44c1.72,-0.93 3.37,-1.77 5,-2.68c9.09,-5.21 10,-10.63 3.19,-18.59s-5.45,-17.14 3.68,-22.55c2.83,-1.68 5.91,-2.92 8.77,-4.54c10.24,-5.81 11.29,-14.19 2.69,-22.19z"/>
   <path d="m281.56,429.43c15.86,-16.12 29.48,-34.93 38.16,-56.15a146.61 146.61,0 0,0 10.36,-65.51c16.15,-15.42 30.12,-33.56 39.38,-54.18a156 156,0 0,0 13.54,-66.85a208.57 208.57,0 0,0 -3.73,-34a192 192,0 0,0 -10,-32.77a159.73 159.73,0 0,0 -38.75,-56.18c-33.7,-31.36 -80.38,-47.15 -126,-45.11a178.76 178.76,0 0,0 -66.44,15.61c-2.66,1.08 -5.18,2.46 -7.74,3.75s-5.11,2.59 -7.54,4.11a108.18 108.18,0 0,0 -14.51,9.62a44.31 44.31,0 0,0 -11.92,14a32.89 32.89,0 0,0 -3.37,16.6a152.29 152.29,0 0,0 -21.23,28.42a121.66 121.66,0 0,0 -13.07,34.63a125.61 125.61,0 0,0 -1.91,36.84c0.66,6.3 1.54,11.71 1,17.42a52.59 52.59,0 0,1 -3.93,16.46c-4.36,10.58 -11.86,19.86 -19.96,28.4c-4.13,4.42 -8.33,8.06 -12.85,12.83a16.74 16.74,0 0,0 -4.32,9.52a13.09 13.09,0 0,0 3.94,10a26.29 26.29,0 0,0 8,5.5c2.57,1.37 5.53,2.65 7.79,4.1c4.55,2.89 7.06,8 5.3,12.92c-0.84,2.56 -2.27,4.45 -4.34,7c-1.85,2.53 -3.84,5.58 -3.7,9.55s3.16,6.9 5.68,8.72a45 45,0 0,0 5.45,3.21a27.16 27.16,0 0,0 -5.85,5.78a7.34 7.34,0 0,0 -1,6.55a13.79 13.79,0 0,0 3.44,4.92c2.53,2.63 5.95,4.44 7.48,6.64c1.69,2.31 2,5.41 1.52,8.57s-1.62,6.36 -2.51,9.83a30 30,0 0,0 -0.86,10.95a24.08 24.08,0 0,0 11.8,18.13c6.5,3.82 13.94,4.66 21,4.53s14,-1.8 20.77,-2.87s13.57,-2.28 20.36,-2.86s13.57,-0.34 19.37,2.42s10,8.08 12.65,14.16a79.29 79.29,0 0,1 5.61,19.36c2.14,13.38 1,27.16 -2.14,40.43a164.26 164.26,0 0,1 -14.08,38.38a150.69 150.69,0 0,1 -10.68,17.46c-2,2.78 -4,5.51 -6.17,8.17l-3.32,4a23.66 23.66,0 0,0 -3.63,5.85a15.11 15.11,0 0,0 6.46,0.22l4.46,-1.26c2.92,-0.92 5.63,-2.15 8.46,-3.2c5.57,-2.27 11.12,-4.62 16.49,-7.32a227.32 227.32,0 0,0 31.19,-18.15a217.32 217.32,0 0,0 51.5,-50.17c14,-19.48 26,-40.86 31.91,-64.36a150.5 150.5,0 0,0 0.62,-71.66a153 153,0 0,0 -32.21,-64a209.5 209.5,0 0,0 -25.49,-25.31c-9.06,-7.84 -18.37,-15.34 -27.58,-22.94c-18.53,-15 -36.25,-31.24 -50,-50.77a160 160,0 0,1 -17.23,-31.13a100.11 100.11,0 0,1 -7.5,-29.47a179.94 179.94,0 0,0 22.09,39.17c9.86,13.28 21.53,25.12 33.91,36c24.73,21.81 52.21,40.22 74.95,63.65c22.72,23.14 40.05,52.15 46.26,83.87s0.92,64.94 -11.33,94.73l-3.65,8.88l-3.27,7.93l5.91,-6.22l6.61,-6.95l0.39,-0.4l0,0zm10.74,-99.07c-6.91,-32.91 -25.2,-62.44 -48.67,-85.73c-23.46,-23.52 -51.23,-41.55 -76,-62.88c-12.42,-10.63 -24.1,-22.17 -34,-35.16a177.24 177.24,0 0,1 -24.12,-42.49l-0.23,-0.59l-1.66,-4.12l0.12,4.43a99.18 99.18,0 0,0 7.93,35.07a161.37 161.37,0 0,0 17.31,31.53c13.76,19.78 31.62,36.23 50.11,51.33c9.2,7.64 18.48,15.16 27.47,23a206.68 206.68,0 0,1 25.19,25.19a150.38 150.38,0 0,1 31.49,63a147.9 147.9,0 0,1 -0.85,70.36c-5.87,23 -17.77,44.06 -31.65,63.24a213.85 213.85,0 0,1 -50.92,49.26a224.74 224.74,0 0,1 -30.82,17.82c-5.31,2.64 -10.79,4.94 -16.3,7.16c-2.77,1 -5.52,2.25 -8.3,3.1l-3.55,1c0.06,-0.07 0.16,-0.09 0.22,-0.17l3.32,-4q3.28,-4.1 6.32,-8.35a154.89 154.89,0 0,0 10.94,-17.88a167.38 167.38,0 0,0 14.35,-39.2c3.19,-13.58 4.44,-27.86 2.21,-41.83a82.72 82.72,0 0,0 -5.84,-20.33c-2.82,-6.47 -7.55,-12.85 -14.43,-16s-14.28,-3.3 -21.26,-2.77s-13.86,1.72 -20.68,2.88s-13.61,2.6 -20.25,2.81s-13.51,-0.75 -19,-4a20.26 20.26,0 0,1 -10,-15.35a26.57 26.57,0 0,1 0.76,-9.57c0.82,-3.22 2.08,-6.54 2.61,-10.24s0.34,-7.88 -2.12,-11.29a18 18,0 0,0 -4.12,-3.93a46.3 46.3,0 0,1 -3.78,-3.22a10.29 10.29,0 0,1 -2.5,-3.44a3.43 3.43,0 0,1 0.59,-3.27c1.62,-2.36 4.41,-4.51 7.09,-6.51l0.16,-0.12l2.33,-1.75l-2.56,-1.45a74.3 74.3,0 0,1 -7.51,-4.42c-2.21,-1.64 -3.92,-3.66 -3.94,-5.77s1.27,-4.58 3,-6.75s4.11,-5 5.14,-8.19a14.74 14.74,0 0,0 -0.26,-10.36a18.14 18.14,0 0,0 -6.55,-7.76c-5.2,-3.4 -11.4,-5.34 -14.79,-9.14c-3.76,-3.71 -3,-8.71 0.74,-12.72s8.7,-8.11 12.83,-12.4c8.49,-8.66 16.58,-18.25 21.62,-29.87a59.28 59.28,0 0,0 4.68,-18.33c0.66,-6.3 -0.27,-12.85 -0.76,-18.48a118.53 118.53,0 0,1 2.34,-34.77a113.74 113.74,0 0,1 12.77,-32.26a145 145,0 0,1 21.4,-27.56l0.26,-0.27l1.35,-1.45l-0.19,-1.9a25.1 25.1,0 0,1 2.44,-14a36.12 36.12,0 0,1 9.73,-11.32c8.24,-6.52 18.18,-11.81 28,-16.42a170.82 170.82,0 0,1 63.39,-15c43.64,-2 88.26,13 120.33,42.76c32.36,29.63 49.41,73.62 50.2,117.34a148.51 148.51,0 0,1 -12.73,63.65c-8.9,20 -22.55,37.57 -38.33,52.84l-0.37,0.37l-1.29,1.28l0.13,1.64a139.62 139.62,0 0,1 -9.6,64a160.64 160.64,0 0,1 -25.9,42.25c8.08,-26.63 10.73,-55.11 4.96,-82.53l0,0z"/>
@@ -3227,23 +3278,24 @@ nav.scrolled .nav-logo-img {
     <div class="why-stat">
       <div class="why-stat-num">0</div>
       <div class="why-stat-label">lessons taught<br/><span>at school</span></div>
+      <span class="stat-source">Brand premise</span>
     </div>
     <div class="why-stat">
-      <div class="why-stat-num">79<em>&#5C7A62;</em></div>
+      <div class="why-stat-num">79<em>&cent;</em></div>
       <div class="why-stat-label">earned per dollar<br/><span>$28,356 less per year</span></div>
+      <a class="stat-source" href="https://www.wgea.gov.au/pay-and-gender/gender-pay-gap-data" target="_blank" rel="noopener">Source: WGEA</a>
     </div>
     <div class="why-stat">
       <div class="why-stat-num">48<em>%</em></div>
       <div class="why-stat-label">women with basic<br/><span>financial literacy vs 63% of men</span></div>
+      <a class="stat-source" href="https://www.unsw.edu.au/news/2026/01/addressing-gender-gaps-through-financial-literacy" target="_blank" rel="noopener">Source: UNSW</a>
     </div>
     <div class="why-stat">
       <div class="why-stat-num">&frac12;</div>
       <div class="why-stat-label">the super balance<br/><span>women retire with</span></div>
+      <a class="stat-source" href="https://www.wgea.gov.au/sites/default/files/documents/Women%27s%20economic%20security%20in%20retirement.pdf" target="_blank" rel="noopener">Source: WGEA</a>
     </div>
   </div>
-  <p class="why-source-note reveal">
-    Sources: WGEA 2024–25 gender pay gap data, <a href="https://www.wgea.gov.au/pay-and-gender/gender-pay-gap-data" target="_blank" rel="noopener">79 cents and $28,356 annual difference</a>; UNSW News, <a href="https://www.unsw.edu.au/news/2026/01/addressing-gender-gaps-through-financial-literacy" target="_blank" rel="noopener">48% of Australian women financially literate</a>; WGEA, <a href="https://www.wgea.gov.au/sites/default/files/documents/Women%27s%20economic%20security%20in%20retirement.pdf" target="_blank" rel="noopener">women's economic security in retirement</a>. School-based financial education is a brand positioning statement, not a cited national curriculum statistic.
-  </p>
 
   <div class="why-evidence-eyebrow reveal">How we got here, in Australia</div>
 
@@ -3252,26 +3304,27 @@ nav.scrolled .nav-logo-img {
       <span class="evidence-year">1966</span>
       <span class="evidence-year-sub">Marriage Bar</span>
       <p class="evidence-text">Until 1966, women in the Australian Public Service were required to <strong>resign the moment they married.</strong></p>
+      <a class="evidence-source" href="https://peo.gov.au/understand-our-parliament/history-of-parliament/history-milestones/australian-parliament-history-timeline/events/marriage-bar-abolished" target="_blank" rel="noopener">Source: PEO</a>
     </div>
     <div class="evidence-card">
       <span class="evidence-year">1969</span>
       <span class="evidence-year-sub">Equal Pay Case</span>
       <p class="evidence-text">Before the equal pay cases, women were legally paid <strong>54&cent; on the dollar.</strong> The gap narrowed only after legal challenge.</p>
+      <a class="evidence-source" href="https://www.fwc.gov.au/about-us/history/equal-pay-history-womens-wages-and-commission" target="_blank" rel="noopener">Source: FWC</a>
     </div>
     <div class="evidence-card">
       <span class="evidence-year">1984</span>
       <span class="evidence-year-sub">Sex Discrimination Act</span>
       <p class="evidence-text">Until 1984, women could still face financial discrimination, including loan access barriers <strong>without a male guarantor.</strong></p>
+      <a class="evidence-source" href="https://www.nma.gov.au/defining-moments/resources/sex-discrimination-act" target="_blank" rel="noopener">Source: NMA</a>
     </div>
     <div class="evidence-card">
       <span class="evidence-year">1992</span>
       <span class="evidence-year-sub">Compulsory Super</span>
       <p class="evidence-text">Until 1992, superannuation was built around a male, full-time career. Women were <strong>excluded by design.</strong></p>
+      <a class="evidence-source" href="https://www.apra.gov.au/superannuation-australia-a-timeline" target="_blank" rel="noopener">Source: APRA</a>
     </div>
   </div>
-  <p class="why-source-note why-source-note--history reveal">
-    Sources: Parliamentary Education Office, <a href="https://peo.gov.au/understand-our-parliament/history-of-parliament/history-milestones/australian-parliament-history-timeline/events/marriage-bar-abolished" target="_blank" rel="noopener">marriage bar abolished</a>; Fair Work Commission, <a href="https://www.fwc.gov.au/about-us/history/equal-pay-history-womens-wages-and-commission" target="_blank" rel="noopener">equal pay history</a>; National Museum of Australia, <a href="https://www.nma.gov.au/defining-moments/resources/sex-discrimination-act" target="_blank" rel="noopener">Sex Discrimination Act 1984</a>; APRA, <a href="https://www.apra.gov.au/superannuation-australia-a-timeline" target="_blank" rel="noopener">Superannuation Guarantee introduced in 1992</a>.
-  </p>
 
   <div class="why-banner reveal">
     <div class="why-banner-eyebrow">The Her Long Game principle</div>
@@ -3298,7 +3351,7 @@ nav.scrolled .nav-logo-img {
 
 
 <!-- ══ TOOL PREVIEW ══════════════════════════════ -->
-<section class="section-phases" id="wisdom">
+<section class="section-phases" id="lessons">
   <div class="phases-inner">
     <div class="reveal" style="max-width:680px;margin-bottom:3.5rem;">
       <div class="section-eyebrow">The Lessons Built For Her</div>
@@ -3411,6 +3464,36 @@ nav.scrolled .nav-logo-img {
 
       <p style="font-size:0.8rem;line-height:1.7;color:rgba(242,239,232,0.5);font-style:italic;">Not to make you feel guilty. To help you choose consciously.</p>
 
+      <!-- More tools inside the app -->
+      <div style="margin-top:2.75rem;">
+        <div style="font-size:0.62rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(242,239,232,0.55);padding:0.5rem 0 0.9rem;">More tools inside the app</div>
+
+        <div style="display:flex;flex-direction:column;gap:0.55rem;">
+          <div style="display:flex;align-items:center;gap:0.85rem;padding:0.75rem 1rem;background:rgba(242,239,232,0.06);border:1px solid rgba(242,239,232,0.12);border-radius:4px;">
+            <div style="flex:1;min-width:0;">
+              <div style="font-size:0.83rem;font-weight:500;color:var(--cream);line-height:1.3;">Bubble O&rsquo; Bill Index</div>
+              <div style="font-size:0.7rem;color:rgba(242,239,232,0.55);margin-top:0.15rem;">Purchasing power, measured honestly.</div>
+            </div>
+            <div style="font-size:0.58rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;padding:0.22rem 0.55rem;border-radius:20px;background:rgba(242,239,232,0.08);color:rgba(242,239,232,0.45);border:1px solid rgba(242,239,232,0.15);white-space:nowrap;">Coming soon</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:0.85rem;padding:0.75rem 1rem;background:rgba(242,239,232,0.06);border:1px solid rgba(242,239,232,0.12);border-radius:4px;">
+            <div style="flex:1;min-width:0;">
+              <div style="font-size:0.83rem;font-weight:500;color:var(--cream);line-height:1.3;">The Debt Clock</div>
+              <div style="font-size:0.7rem;color:rgba(242,239,232,0.55);margin-top:0.15rem;">See how much debt costs over time.</div>
+            </div>
+            <div style="font-size:0.58rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;padding:0.22rem 0.55rem;border-radius:20px;background:rgba(242,239,232,0.08);color:rgba(242,239,232,0.45);border:1px solid rgba(242,239,232,0.15);white-space:nowrap;">Coming soon</div>
+          </div>
+        </div>
+
+        <!-- Bubble O' Jill — full featured teaser card -->
+        <div class="tool-jill-teaser">
+          <div class="tool-jill-tag">Coming soon</div>
+          <h3 class="tool-jill-title">The Bubble O&rsquo; <em>Jill</em> Index</h3>
+          <p class="tool-jill-body">The superannuation version. The gap between what Jill has at retirement and what Jack has is not a mystery. It is the system, compounded over decades. Join the waitlist to get it first.</p>
+          <a href="#waitlist" class="tool-jill-cta" onclick="event.preventDefault();document.getElementById('waitlist').scrollIntoView({behavior:'smooth'})">Join the waitlist &rarr;</a>
+        </div>
+      </div>
+
     </div>
 
     <!-- RIGHT: Phone -->
@@ -3521,7 +3604,7 @@ nav.scrolled .nav-logo-img {
         <div style="display:flex;gap:0.4rem;flex-wrap:wrap;">
           <input id="emailResultsFirstName" type="text" placeholder="First name" autocomplete="given-name" style="flex:1 1 110px;background:rgba(242,239,232,0.92);border:1.5px solid rgba(92,122,98,0.3);border-radius:3px;padding:0.6rem 0.8rem;font-size:0.78rem;color:var(--moss);outline:none;min-width:0;" />
           <input id="emailResultsInput" type="email" placeholder="your@email.com" autocomplete="email" style="flex:1 1 140px;background:rgba(242,239,232,0.92);border:1.5px solid rgba(92,122,98,0.3);border-radius:3px;padding:0.6rem 0.8rem;font-size:0.78rem;color:var(--moss);outline:none;min-width:0;" />
-          <button onclick="submitEmailResults()" style="background:var(--orange);color:var(--cream);border:none;border-radius:3px;padding:0.6rem 0.9rem;font-size:0.68rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;white-space:nowrap;flex:1 1 100%;">Send</button>
+          <button onclick="submitEmailResults()" style="background:var(--orange);color:white;border:none;border-radius:3px;padding:0.6rem 0.9rem;font-size:0.68rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;white-space:nowrap;flex:1 1 100%;">Send</button>
         </div>
         <p style="font-size:0.6rem;color:rgba(242,239,232,0.62);margin-top:0.4rem;line-height:1.5;text-align:center;">Unsubscribe any time.</p>
       </div>
@@ -3535,48 +3618,16 @@ nav.scrolled .nav-logo-img {
     </div><!-- end right col -->
   </div><!-- end grid -->
 
-  <!-- More tools inside the app -->
-  <div style="margin-top:2.75rem;text-align:left;max-width:720px;margin-left:auto;margin-right:auto;">
-    <div style="font-size:0.62rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(242,239,232,0.55);padding:0.5rem 0 0.9rem;">More tools inside the app</div>
-
-        <div style="display:flex;flex-direction:column;gap:0.55rem;">
-          <div style="display:flex;align-items:center;gap:0.85rem;padding:0.75rem 1rem;background:rgba(242,239,232,0.06);border:1px solid rgba(242,239,232,0.12);border-radius:4px;">
-            <div style="flex:1;min-width:0;">
-              <div style="font-size:0.83rem;font-weight:500;color:var(--cream);line-height:1.3;">Bubble O&rsquo; Bill Index</div>
-              <div style="font-size:0.7rem;color:rgba(242,239,232,0.55);margin-top:0.15rem;">Purchasing power, measured honestly.</div>
-            </div>
-            <div style="font-size:0.58rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;padding:0.22rem 0.55rem;border-radius:20px;background:rgba(242,239,232,0.08);color:rgba(242,239,232,0.45);border:1px solid rgba(242,239,232,0.15);white-space:nowrap;">Coming soon</div>
-          </div>
-          <div style="display:flex;align-items:center;gap:0.85rem;padding:0.75rem 1rem;background:rgba(242,239,232,0.06);border:1px solid rgba(242,239,232,0.12);border-radius:4px;">
-            <div style="flex:1;min-width:0;">
-              <div style="font-size:0.83rem;font-weight:500;color:var(--cream);line-height:1.3;">The Debt Clock</div>
-              <div style="font-size:0.7rem;color:rgba(242,239,232,0.55);margin-top:0.15rem;">See how much debt costs over time.</div>
-            </div>
-            <div style="font-size:0.58rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;padding:0.22rem 0.55rem;border-radius:20px;background:rgba(242,239,232,0.08);color:rgba(242,239,232,0.45);border:1px solid rgba(242,239,232,0.15);white-space:nowrap;">Coming soon</div>
-          </div>
-        </div>
-
-        <!-- Bubble O' Jill — full featured teaser card -->
-        <div class="tool-jill-teaser">
-          <div class="tool-jill-tag">Coming soon</div>
-          <h3 class="tool-jill-title">The Bubble O&rsquo; <em>Jill</em> Index</h3>
-          <p class="tool-jill-body">The superannuation version. The gap between what Jill has at retirement and what Jack has is not a mystery. It is the system, compounded over decades. Join the waitlist to get it first.</p>
-          <a href="#waitlist" class="tool-jill-cta" onclick="event.preventDefault();document.getElementById('waitlist').scrollIntoView({behavior:'smooth'})">Join the waitlist &rarr;</a>
-        </div>
-      </div>
-
-  </div><!-- end max-width -->
-
 </section>
 
 <!-- ══ FOUNDER ════════════════════════════════ -->
 <section class="section-founder" id="wisdom">
   <div class="founder-inner reveal">
-    <div class="founder-avatar">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220">
-        <path fill="#5C7A62" d="M213.09,100.6a58.71,58.71,0,0,1-8.66-9.5,20.49,20.49,0,0,1-3.85-14.71c1.79-14.14-2.73-26.17-12.81-36.5.59-5.78-3.14-9.29-7.58-12.14-16.62-10.63-37.81-12.14-55.61-5.06a59.14,59.14,0,0,1,5.54,3.88c12.56,10,20.42,24.27,22.73,41.24a66.39,66.39,0,0,1,.37,15c7.84-6.14,15.65-12.32,21.78-20.34a62.39,62.39,92,122,98,8.81-15.66,34.47,34.47,0,0,1-2.62,11.82c-4.21,10.48-11.36,18.71-19.8,25.93-3.29,2.83-6.67,5.55-10,8.33-2.75,10-8.18,19.09-16.3,27.27a55.58,55.58,0,0,1-7.56,30,55.75,55.75,92,122,98,5.23,14.17c9.61,18.09,24.33,30.34,43.49,37.37a17.88,17.88,92,122,98,1.9.54c.31.08.64.1,1.55.23a55.44,55.44,0,0,1-13.23-24.91c-1.57-6.44-1.89-12.9.12-19.33,2.18-6.92,5.65-9.42,12.85-8.82,3.94.33,7.83,1.17,11.75,1.76a18,18,92,122,98,7.13-.21,8.09,8.09,92,122,98,6.21-10c-.27-1.29-.77-2.54-1-3.84a4.38,4.38,0,0,1,1.55-4.65c3.94-3,3.91-4.16-.18-7.17.61-.32,1.18-.62,1.74-.94,3.19-1.83,3.52-3.73,1.12-6.52s-1.91-6,1.29-7.91c1-.59,2.07-1,3.08-1.59C215.74,106.35,216.1,103.42,213.09,100.6Z"/>
-        <path fill="#5C7A62" d="M113.45,161.09a61.86,61.86,92,122,98,13.38-19.7,51.45,51.45,92,122,98,3.64-23,61.47,61.47,92,122,98,13.81-19A54.66,54.66,92,122,98,149,76,72.47,72.47,92,122,98,147.71,64a67.32,67.32,92,122,98-3.49-11.49,60.16,60.16,92,122,98-5.73-10.59,58.91,58.91,92,122,98-7.87-9.12c-11.82-11-28.19-16.54-44.2-15.82a62.65,62.65,92,122,98-23.31,5.47c-.93.38-1.82.86-2.71,1.32s-1.8.91-2.65,1.44a38,38,92,122,98-5.09,3.37,15.51,15.51,92,122,98-4.18,4.91,11.47,11.47,92,122,98-1.19,5.83,53.86,53.86,92,122,98-7.45,10,42.63,42.63,92,122,98-4.58,12.15,43.83,43.83,92,122,98-.67,12.92A31.51,31.51,0,0,1,35,80.49a18.43,18.43,0,0,1-1.38,5.78,33.34,33.34,0,0,1-7,10c-1.45,1.55-2.92,2.83-4.51,4.5a5.84,5.84,92,122,98-1.51,3.34,4.58,4.58,92,122,98,1.38,3.5,9.29,9.29,92,122,98,2.79,1.93c.9.48,1.94.93,2.73,1.44a3.87,3.87,0,0,1,1.86,4.53,7.36,7.36,0,0,1-1.52,2.45,5.31,5.31,92,122,98-1.3,3.35,4.24,4.24,92,122,98,2,3.06,15.07,15.07,92,122,98,1.91,1.12,9.44,9.44,92,122,98-2,2,2.57,2.57,92,122,98-.35,2.29,4.91,4.91,92,122,98,1.21,1.73,33.83,33.83,0,0,1,2.62,2.33,4,4,0,0,1,.54,3,33.19,33.19,0,0,1-.89,3.45,11,11,92,122,98-.3,3.84,8.46,8.46,92,122,98,4.14,6.36,13.8,13.8,92,122,98,7.38,1.59,61,61,92,122,98,7.28-1c2.39-.41,4.76-.8,7.15-1a13.46,13.46,0,0,1,6.79.85,9.4,9.4,0,0,1,4.44,5,27.77,27.77,0,0,1,1.95,6.8,36.69,36.69,0,0,1-.75,14.18,56.91,56.91,0,0,1-4.94,13.46,52.53,52.53,0,0,1-3.74,6.13c-.69,1-1.42,1.93-2.17,2.87l-1.16,1.39a8.33,8.33,92,122,98-1.27,2.06,5.32,5.32,92,122,98,2.26.07l1.56-.44c1-.32,2-.75,3-1.12,2-.8,3.9-1.62,5.79-2.57a80.18,80.18,92,122,98,10.94-6.37,75.85,75.85,92,122,98,18.06-17.6c4.91-6.83,9.12-14.33,11.2-22.57a52.78,52.78,92,122,98,.22-25.14A53.73,53.73,92,122,98,98,104.61a73,73,92,122,98-9-8.89c-3.18-2.75-6.45-5.39-9.68-8-6.5-5.27-12.71-11-17.52-17.81a56,56,0,0,1-6-10.92A35,35,0,0,1,53.16,48.6a62.63,62.63,92,122,98,7.75,13.74A82.67,82.67,92,122,98,72.8,75c8.67,7.65,18.32,14.11,26.29,22.33s14,18.29,16.23,29.42.32,22.78-4,33.23l-1.28,3.12-1.15,2.78,2.07-2.18,2.32-2.44Z"/>
-      </svg>
+    <div class="founder-avatar" aria-hidden="true">
+      <svg class="founder-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 588.09 567.28" aria-hidden="true" style="display:block;width:100%;height:100%;fill:currentColor;">
+  <path d="m565.61,257c-9,-8.37 -17.71,-16.92 -24.69,-27.09c-8.68,-12.65 -13,-26.2 -11,-41.93c5.12,-40.3 -7.78,-74.62 -36.52,-104.06c1.7,-16.48 -8.94,-26.49 -21.6,-34.59c-47.35,-30.33 -107.8,-34.61 -158.51,-14.44a175.4 175.4,0 0,1 15.8,11.11c35.8,28.53 58.2,69.18 64.79,117.56a188.73 188.73,0 0,1 1.06,42.92c22.37,-17.51 44.62,-35.12 62.1,-58a178.23 178.23,0 0,0 25.1,-44.65a97.33 97.33,0 0,1 -7.48,33.71c-12,29.85 -32.37,53.31 -56.42,73.92c-9.39,8 -19,15.82 -28.51,23.74c-7.83,28.41 -23.34,54.4 -46.46,77.74a158.4 158.4,0 0,1 -21.56,85.44a157.94 157.94,0 0,0 14.92,40.39c27.37,51.55 69.36,86.48 124,106.52a53.35 53.35,0 0,0 5.37,1.51c0.88,0.22 1.81,0.28 4.4,0.66c-19.44,-21.23 -31.28,-44.75 -37.7,-71c-4.49,-18.36 -5.4,-36.78 0.34,-55.1c6.2,-19.74 16.11,-26.87 36.63,-25.14c11.23,0.94 22.32,3.34 33.49,5a51.44 51.44,0 0,0 20.34,-0.61c13.36,-3.34 20.61,-14.9 17.7,-28.43c-0.78,-3.68 -2.21,-7.23 -2.83,-10.92c-0.85,-5.08 -0.2,-9.81 4.41,-13.27c11.24,-8.44 11.16,-11.86 -0.5,-20.44c1.72,-0.93 3.37,-1.77 5,-2.68c9.09,-5.21 10,-10.63 3.19,-18.59s-5.45,-17.14 3.68,-22.55c2.83,-1.68 5.91,-2.92 8.77,-4.54c10.24,-5.81 11.29,-14.19 2.69,-22.19z"/>
+  <path d="m281.56,429.43c15.86,-16.12 29.48,-34.93 38.16,-56.15a146.61 146.61,0 0,0 10.36,-65.51c16.15,-15.42 30.12,-33.56 39.38,-54.18a156 156,0 0,0 13.54,-66.85a208.57 208.57,0 0,0 -3.73,-34a192 192,0 0,0 -10,-32.77a159.73 159.73,0 0,0 -38.75,-56.18c-33.7,-31.36 -80.38,-47.15 -126,-45.11a178.76 178.76,0 0,0 -66.44,15.61c-2.66,1.08 -5.18,2.46 -7.74,3.75s-5.11,2.59 -7.54,4.11a108.18 108.18,0 0,0 -14.51,9.62a44.31 44.31,0 0,0 -11.92,14a32.89 32.89,0 0,0 -3.37,16.6a152.29 152.29,0 0,0 -21.23,28.42a121.66 121.66,0 0,0 -13.07,34.63a125.61 125.61,0 0,0 -1.91,36.84c0.66,6.3 1.54,11.71 1,17.42a52.59 52.59,0 0,1 -3.93,16.46c-4.36,10.58 -11.86,19.86 -19.96,28.4c-4.13,4.42 -8.33,8.06 -12.85,12.83a16.74 16.74,0 0,0 -4.32,9.52a13.09 13.09,0 0,0 3.94,10a26.29 26.29,0 0,0 8,5.5c2.57,1.37 5.53,2.65 7.79,4.1c4.55,2.89 7.06,8 5.3,12.92c-0.84,2.56 -2.27,4.45 -4.34,7c-1.85,2.53 -3.84,5.58 -3.7,9.55s3.16,6.9 5.68,8.72a45 45,0 0,0 5.45,3.21a27.16 27.16,0 0,0 -5.85,5.78a7.34 7.34,0 0,0 -1,6.55a13.79 13.79,0 0,0 3.44,4.92c2.53,2.63 5.95,4.44 7.48,6.64c1.69,2.31 2,5.41 1.52,8.57s-1.62,6.36 -2.51,9.83a30 30,0 0,0 -0.86,10.95a24.08 24.08,0 0,0 11.8,18.13c6.5,3.82 13.94,4.66 21,4.53s14,-1.8 20.77,-2.87s13.57,-2.28 20.36,-2.86s13.57,-0.34 19.37,2.42s10,8.08 12.65,14.16a79.29 79.29,0 0,1 5.61,19.36c2.14,13.38 1,27.16 -2.14,40.43a164.26 164.26,0 0,1 -14.08,38.38a150.69 150.69,0 0,1 -10.68,17.46c-2,2.78 -4,5.51 -6.17,8.17l-3.32,4a23.66 23.66,0 0,0 -3.63,5.85a15.11 15.11,0 0,0 6.46,0.22l4.46,-1.26c2.92,-0.92 5.63,-2.15 8.46,-3.2c5.57,-2.27 11.12,-4.62 16.49,-7.32a227.32 227.32,0 0,0 31.19,-18.15a217.32 217.32,0 0,0 51.5,-50.17c14,-19.48 26,-40.86 31.91,-64.36a150.5 150.5,0 0,0 0.62,-71.66a153 153,0 0,0 -32.21,-64a209.5 209.5,0 0,0 -25.49,-25.31c-9.06,-7.84 -18.37,-15.34 -27.58,-22.94c-18.53,-15 -36.25,-31.24 -50,-50.77a160 160,0 0,1 -17.23,-31.13a100.11 100.11,0 0,1 -7.5,-29.47a179.94 179.94,0 0,0 22.09,39.17c9.86,13.28 21.53,25.12 33.91,36c24.73,21.81 52.21,40.22 74.95,63.65c22.72,23.14 40.05,52.15 46.26,83.87s0.92,64.94 -11.33,94.73l-3.65,8.88l-3.27,7.93l5.91,-6.22l6.61,-6.95l0.39,-0.4l0,0zm10.74,-99.07c-6.91,-32.91 -25.2,-62.44 -48.67,-85.73c-23.46,-23.52 -51.23,-41.55 -76,-62.88c-12.42,-10.63 -24.1,-22.17 -34,-35.16a177.24 177.24,0 0,1 -24.12,-42.49l-0.23,-0.59l-1.66,-4.12l0.12,4.43a99.18 99.18,0 0,0 7.93,35.07a161.37 161.37,0 0,0 17.31,31.53c13.76,19.78 31.62,36.23 50.11,51.33c9.2,7.64 18.48,15.16 27.47,23a206.68 206.68,0 0,1 25.19,25.19a150.38 150.38,0 0,1 31.49,63a147.9 147.9,0 0,1 -0.85,70.36c-5.87,23 -17.77,44.06 -31.65,63.24a213.85 213.85,0 0,1 -50.92,49.26a224.74 224.74,0 0,1 -30.82,17.82c-5.31,2.64 -10.79,4.94 -16.3,7.16c-2.77,1 -5.52,2.25 -8.3,3.1l-3.55,1c0.06,-0.07 0.16,-0.09 0.22,-0.17l3.32,-4q3.28,-4.1 6.32,-8.35a154.89 154.89,0 0,0 10.94,-17.88a167.38 167.38,0 0,0 14.35,-39.2c3.19,-13.58 4.44,-27.86 2.21,-41.83a82.72 82.72,0 0,0 -5.84,-20.33c-2.82,-6.47 -7.55,-12.85 -14.43,-16s-14.28,-3.3 -21.26,-2.77s-13.86,1.72 -20.68,2.88s-13.61,2.6 -20.25,2.81s-13.51,-0.75 -19,-4a20.26 20.26,0 0,1 -10,-15.35a26.57 26.57,0 0,1 0.76,-9.57c0.82,-3.22 2.08,-6.54 2.61,-10.24s0.34,-7.88 -2.12,-11.29a18 18,0 0,0 -4.12,-3.93a46.3 46.3,0 0,1 -3.78,-3.22a10.29 10.29,0 0,1 -2.5,-3.44a3.43 3.43,0 0,1 0.59,-3.27c1.62,-2.36 4.41,-4.51 7.09,-6.51l0.16,-0.12l2.33,-1.75l-2.56,-1.45a74.3 74.3,0 0,1 -7.51,-4.42c-2.21,-1.64 -3.92,-3.66 -3.94,-5.77s1.27,-4.58 3,-6.75s4.11,-5 5.14,-8.19a14.74 14.74,0 0,0 -0.26,-10.36a18.14 18.14,0 0,0 -6.55,-7.76c-5.2,-3.4 -11.4,-5.34 -14.79,-9.14c-3.76,-3.71 -3,-8.71 0.74,-12.72s8.7,-8.11 12.83,-12.4c8.49,-8.66 16.58,-18.25 21.62,-29.87a59.28 59.28,0 0,0 4.68,-18.33c0.66,-6.3 -0.27,-12.85 -0.76,-18.48a118.53 118.53,0 0,1 2.34,-34.77a113.74 113.74,0 0,1 12.77,-32.26a145 145,0 0,1 21.4,-27.56l0.26,-0.27l1.35,-1.45l-0.19,-1.9a25.1 25.1,0 0,1 2.44,-14a36.12 36.12,0 0,1 9.73,-11.32c8.24,-6.52 18.18,-11.81 28,-16.42a170.82 170.82,0 0,1 63.39,-15c43.64,-2 88.26,13 120.33,42.76c32.36,29.63 49.41,73.62 50.2,117.34a148.51 148.51,0 0,1 -12.73,63.65c-8.9,20 -22.55,37.57 -38.33,52.84l-0.37,0.37l-1.29,1.28l0.13,1.64a139.62 139.62,0 0,1 -9.6,64a160.64 160.64,0 0,1 -25.9,42.25c8.08,-26.63 10.73,-55.11 4.96,-82.53l0,0z"/>
+</svg>
     </div>
     <div class="founder-content">
       <div class="section-eyebrow" style="margin-bottom:0.75rem;">From the founder</div>
@@ -3604,7 +3655,7 @@ nav.scrolled .nav-logo-img {
       <p class="blog-header-desc">Short, useful writing that makes money less mysterious. And a lot less lonely. No jargon. No need to become a part-time economist.</p>
     </div>
     <div style="display:flex;flex-direction:column;gap:0.75rem;align-items:flex-start;">
-      <a href="#" class="blog-see-all" onclick="event.preventDefault();openPost('budget');" style="border-color:var(--orange);color:var(--orange);">
+      <a href="#field-notes" class="blog-see-all" onclick="event.preventDefault();openPost('budget');" style="border-color:var(--orange);color:var(--orange);">
         Read the latest Field Note
         <svg viewBox="0 0 24 24" style="width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </a>
@@ -3684,33 +3735,40 @@ nav.scrolled .nav-logo-img {
 
 <!-- ══ FOOTER ═════════════════════════════════ -->
 <footer>
-  <div class="footer-brand">
-    <a href="#" class="footer-logo-svg" aria-label="Her Long Game">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 588.09 567.28" aria-hidden="true" style="display:block;height:100%;width:auto;fill:currentColor;">
-        <path d="m565.61,257c-9,-8.37 -17.71,-16.92 -24.69,-27.09c-8.68,-12.65 -13,-26.2 -11,-41.93c5.12,-40.3 -7.78,-74.62 -36.52,-104.06c1.7,-16.48 -8.94,-26.49 -21.6,-34.59c-47.35,-30.33 -107.8,-34.61 -158.51,-14.44a175.4 175.4,0 0,1 15.8,11.11c35.8,28.53 58.2,69.18 64.79,117.56a188.73 188.73,0 0,1 1.06,42.92c22.37,-17.51 44.62,-35.12 62.1,-58a178.23 178.23,0 0,0 25.1,-44.65a97.33 97.33,0 0,1 -7.48,33.71c-12,29.85 -32.37,53.31 -56.42,73.92c-9.39,8 -19,15.82 -28.51,23.74c-7.83,28.41 -23.34,54.4 -46.46,77.74a158.4 158.4,0 0,1 -21.56,85.44a157.94 157.94,0 0,0 14.92,40.39c27.37,51.55 69.36,86.48 124,106.52a53.35 53.35,0 0,0 5.37,1.51c0.88,0.22 1.81,0.28 4.4,0.66c-19.44,-21.23 -31.28,-44.75 -37.7,-71c-4.49,-18.36 -5.4,-36.78 0.34,-55.1c6.2,-19.74 16.11,-26.87 36.63,-25.14c11.23,0.94 22.32,3.34 33.49,5a51.44 51.44,0 0,0 20.34,-0.61c13.36,-3.34 20.61,-14.9 17.7,-28.43c-0.78,-3.68 -2.21,-7.23 -2.83,-10.92c-0.85,-5.08 -0.2,-9.81 4.41,-13.27c11.24,-8.44 11.16,-11.86 -0.5,-20.44c1.72,-0.93 3.37,-1.77 5,-2.68c9.09,-5.21 10,-10.63 3.19,-18.59s-5.45,-17.14 3.68,-22.55c2.83,-1.68 5.91,-2.92 8.77,-4.54c10.24,-5.81 11.29,-14.19 2.69,-22.19z"/>
-        <path d="m281.56,429.43c15.86,-16.12 29.48,-34.93 38.16,-56.15a146.61 146.61,0 0,0 10.36,-65.51c16.15,-15.42 30.12,-33.56 39.38,-54.18a156 156,0 0,0 13.54,-66.85a208.57 208.57,0 0,0 -3.73,-34a192 192,0 0,0 -10,-32.77a159.73 159.73,0 0,0 -38.75,-56.18c-33.7,-31.36 -80.38,-47.15 -126,-45.11a178.76 178.76,0 0,0 -66.44,15.61c-2.66,1.08 -5.18,2.46 -7.74,3.75s-5.11,2.59 -7.54,4.11a108.18 108.18,0 0,0 -14.51,9.62a44.31 44.31,0 0,0 -11.92,14a32.89 32.89,0 0,0 -3.37,16.6a152.29 152.29,0 0,0 -21.23,28.42a121.66 121.66,0 0,0 -13.07,34.63a125.61 125.61,0 0,0 -1.91,36.84c0.66,6.3 1.54,11.71 1,17.42a52.59 52.59,0 0,1 -3.93,16.46c-4.36,10.58 -11.86,19.86 -19.96,28.4c-4.13,4.42 -8.33,8.06 -12.85,12.83a16.74 16.74,0 0,0 -4.32,9.52a13.09 13.09,0 0,0 3.94,10a26.29 26.29,0 0,0 8,5.5c2.57,1.37 5.53,2.65 7.79,4.1c4.55,2.89 7.06,8 5.3,12.92c-0.84,2.56 -2.27,4.45 -4.34,7c-1.85,2.53 -3.84,5.58 -3.7,9.55s3.16,6.9 5.68,8.72a45 45,0 0,0 5.45,3.21a27.16 27.16,0 0,0 -5.85,5.78a7.34 7.34,0 0,0 -1,6.55a13.79 13.79,0 0,0 3.44,4.92c2.53,2.63 5.95,4.44 7.48,6.64c1.69,2.31 2,5.41 1.52,8.57s-1.62,6.36 -2.51,9.83a30 30,0 0,0 -0.86,10.95a24.08 24.08,0 0,0 11.8,18.13c6.5,3.82 13.94,4.66 21,4.53s14,-1.8 20.77,-2.87s13.57,-2.28 20.36,-2.86s13.57,-0.34 19.37,2.42s10,8.08 12.65,14.16a79.29 79.29,0 0,1 5.61,19.36c2.14,13.38 1,27.16 -2.14,40.43a164.26 164.26,0 0,1 -14.08,38.38a150.69 150.69,0 0,1 -10.68,17.46c-2,2.78 -4,5.51 -6.17,8.17l-3.32,4a23.66 23.66,0 0,0 -3.63,5.85a15.11 15.11,0 0,0 6.46,0.22l4.46,-1.26c2.92,-0.92 5.63,-2.15 8.46,-3.2c5.57,-2.27 11.12,-4.62 16.49,-7.32a227.32 227.32,0 0,0 31.19,-18.15a217.32 217.32,0 0,0 51.5,-50.17c14,-19.48 26,-40.86 31.91,-64.36a150.5 150.5,0 0,0 0.62,-71.66a153 153,0 0,0 -32.21,-64a209.5 209.5,0 0,0 -25.49,-25.31c-9.06,-7.84 -18.37,-15.34 -27.58,-22.94c-18.53,-15 -36.25,-31.24 -50,-50.77a160 160,0 0,1 -17.23,-31.13a100.11 100.11,0 0,1 -7.5,-29.47a179.94 179.94,0 0,0 22.09,39.17c9.86,13.28 21.53,25.12 33.91,36c24.73,21.81 52.21,40.22 74.95,63.65c22.72,23.14 40.05,52.15 46.26,83.87s0.92,64.94 -11.33,94.73l-3.65,8.88l-3.27,7.93l5.91,-6.22l6.61,-6.95l0.39,-0.4l0,0zm10.74,-99.07c-6.91,-32.91 -25.2,-62.44 -48.67,-85.73c-23.46,-23.52 -51.23,-41.55 -76,-62.88c-12.42,-10.63 -24.1,-22.17 -34,-35.16a177.24 177.24,0 0,1 -24.12,-42.49l-0.23,-0.59l-1.66,-4.12l0.12,4.43a99.18 99.18,0 0,0 7.93,35.07a161.37 161.37,0 0,0 17.31,31.53c13.76,19.78 31.62,36.23 50.11,51.33c9.2,7.64 18.48,15.16 27.47,23a206.68 206.68,0 0,1 25.19,25.19a150.38 150.38,0 0,1 31.49,63a147.9 147.9,0 0,1 -0.85,70.36c-5.87,23 -17.77,44.06 -31.65,63.24a213.85 213.85,0 0,1 -50.92,49.26a224.74 224.74,0 0,1 -30.82,17.82c-5.31,2.64 -10.79,4.94 -16.3,7.16c-2.77,1 -5.52,2.25 -8.3,3.1l-3.55,1c0.06,-0.07 0.16,-0.09 0.22,-0.17l3.32,-4q3.28,-4.1 6.32,-8.35a154.89 154.89,0 0,0 10.94,-17.88a167.38 167.38,0 0,0 14.35,-39.2c3.19,-13.58 4.44,-27.86 2.21,-41.83a82.72 82.72,0 0,0 -5.84,-20.33c-2.82,-6.47 -7.55,-12.85 -14.43,-16s-14.28,-3.3 -21.26,-2.77s-13.86,1.72 -20.68,2.88s-13.61,2.6 -20.25,2.81s-13.51,-0.75 -19,-4a20.26 20.26,0 0,1 -10,-15.35a26.57 26.57,0 0,1 0.76,-9.57c0.82,-3.22 2.08,-6.54 2.61,-10.24s0.34,-7.88 -2.12,-11.29a18 18,0 0,0 -4.12,-3.93a46.3 46.3,0 0,1 -3.78,-3.22a10.29 10.29,0 0,1 -2.5,-3.44a3.43 3.43,0 0,1 0.59,-3.27c1.62,-2.36 4.41,-4.51 7.09,-6.51l0.16,-0.12l2.33,-1.75l-2.56,-1.45a74.3 74.3,0 0,1 -7.51,-4.42c-2.21,-1.64 -3.92,-3.66 -3.94,-5.77s1.27,-4.58 3,-6.75s4.11,-5 5.14,-8.19a14.74 14.74,0 0,0 -0.26,-10.36a18.14 18.14,0 0,0 -6.55,-7.76c-5.2,-3.4 -11.4,-5.34 -14.79,-9.14c-3.76,-3.71 -3,-8.71 0.74,-12.72s8.7,-8.11 12.83,-12.4c8.49,-8.66 16.58,-18.25 21.62,-29.87a59.28 59.28,0 0,0 4.68,-18.33c0.66,-6.3 -0.27,-12.85 -0.76,-18.48a118.53 118.53,0 0,1 2.34,-34.77a113.74 113.74,0 0,1 12.77,-32.26a145 145,0 0,1 21.4,-27.56l0.26,-0.27l1.35,-1.45l-0.19,-1.9a25.1 25.1,0 0,1 2.44,-14a36.12 36.12,0 0,1 9.73,-11.32c8.24,-6.52 18.18,-11.81 28,-16.42a170.82 170.82,0 0,1 63.39,-15c43.64,-2 88.26,13 120.33,42.76c32.36,29.63 49.41,73.62 50.2,117.34a148.51 148.51,0 0,1 -12.73,63.65c-8.9,20 -22.55,37.57 -38.33,52.84l-0.37,0.37l-1.29,1.28l0.13,1.64a139.62 139.62,0 0,1 -9.6,64a160.64 160.64,0 0,1 -25.9,42.25c8.08,-26.63 10.73,-55.11 4.96,-82.53l0,0z"/>
-      </svg>
+  <div class="footer-top-row">
+    <div class="footer-brand">
+      <a href="#top" class="footer-logo-svg" aria-label="Her Long Game">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 588.09 567.28" aria-hidden="true" style="display:block;height:100%;width:auto;fill:currentColor;">
+          <path d="m565.61,257c-9,-8.37 -17.71,-16.92 -24.69,-27.09c-8.68,-12.65 -13,-26.2 -11,-41.93c5.12,-40.3 -7.78,-74.62 -36.52,-104.06c1.7,-16.48 -8.94,-26.49 -21.6,-34.59c-47.35,-30.33 -107.8,-34.61 -158.51,-14.44a175.4 175.4,0 0,1 15.8,11.11c35.8,28.53 58.2,69.18 64.79,117.56a188.73 188.73,0 0,1 1.06,42.92c22.37,-17.51 44.62,-35.12 62.1,-58a178.23 178.23,0 0,0 25.1,-44.65a97.33 97.33,0 0,1 -7.48,33.71c-12,29.85 -32.37,53.31 -56.42,73.92c-9.39,8 -19,15.82 -28.51,23.74c-7.83,28.41 -23.34,54.4 -46.46,77.74a158.4 158.4,0 0,1 -21.56,85.44a157.94 157.94,0 0,0 14.92,40.39c27.37,51.55 69.36,86.48 124,106.52a53.35 53.35,0 0,0 5.37,1.51c0.88,0.22 1.81,0.28 4.4,0.66c-19.44,-21.23 -31.28,-44.75 -37.7,-71c-4.49,-18.36 -5.4,-36.78 0.34,-55.1c6.2,-19.74 16.11,-26.87 36.63,-25.14c11.23,0.94 22.32,3.34 33.49,5a51.44 51.44,0 0,0 20.34,-0.61c13.36,-3.34 20.61,-14.9 17.7,-28.43c-0.78,-3.68 -2.21,-7.23 -2.83,-10.92c-0.85,-5.08 -0.2,-9.81 4.41,-13.27c11.24,-8.44 11.16,-11.86 -0.5,-20.44c1.72,-0.93 3.37,-1.77 5,-2.68c9.09,-5.21 10,-10.63 3.19,-18.59s-5.45,-17.14 3.68,-22.55c2.83,-1.68 5.91,-2.92 8.77,-4.54c10.24,-5.81 11.29,-14.19 2.69,-22.19z"/>
+          <path d="m281.56,429.43c15.86,-16.12 29.48,-34.93 38.16,-56.15a146.61 146.61,0 0,0 10.36,-65.51c16.15,-15.42 30.12,-33.56 39.38,-54.18a156 156,0 0,0 13.54,-66.85a208.57 208.57,0 0,0 -3.73,-34a192 192,0 0,0 -10,-32.77a159.73 159.73,0 0,0 -38.75,-56.18c-33.7,-31.36 -80.38,-47.15 -126,-45.11a178.76 178.76,0 0,0 -66.44,15.61c-2.66,1.08 -5.18,2.46 -7.74,3.75s-5.11,2.59 -7.54,4.11a108.18 108.18,0 0,0 -14.51,9.62a44.31 44.31,0 0,0 -11.92,14a32.89 32.89,0 0,0 -3.37,16.6a152.29 152.29,0 0,0 -21.23,28.42a121.66 121.66,0 0,0 -13.07,34.63a125.61 125.61,0 0,0 -1.91,36.84c0.66,6.3 1.54,11.71 1,17.42a52.59 52.59,0 0,1 -3.93,16.46c-4.36,10.58 -11.86,19.86 -19.96,28.4c-4.13,4.42 -8.33,8.06 -12.85,12.83a16.74 16.74,0 0,0 -4.32,9.52a13.09 13.09,0 0,0 3.94,10a26.29 26.29,0 0,0 8,5.5c2.57,1.37 5.53,2.65 7.79,4.1c4.55,2.89 7.06,8 5.3,12.92c-0.84,2.56 -2.27,4.45 -4.34,7c-1.85,2.53 -3.84,5.58 -3.7,9.55s3.16,6.9 5.68,8.72a45 45,0 0,0 5.45,3.21a27.16 27.16,0 0,0 -5.85,5.78a7.34 7.34,0 0,0 -1,6.55a13.79 13.79,0 0,0 3.44,4.92c2.53,2.63 5.95,4.44 7.48,6.64c1.69,2.31 2,5.41 1.52,8.57s-1.62,6.36 -2.51,9.83a30 30,0 0,0 -0.86,10.95a24.08 24.08,0 0,0 11.8,18.13c6.5,3.82 13.94,4.66 21,4.53s14,-1.8 20.77,-2.87s13.57,-2.28 20.36,-2.86s13.57,-0.34 19.37,2.42s10,8.08 12.65,14.16a79.29 79.29,0 0,1 5.61,19.36c2.14,13.38 1,27.16 -2.14,40.43a164.26 164.26,0 0,1 -14.08,38.38a150.69 150.69,0 0,1 -10.68,17.46c-2,2.78 -4,5.51 -6.17,8.17l-3.32,4a23.66 23.66,0 0,0 -3.63,5.85a15.11 15.11,0 0,0 6.46,0.22l4.46,-1.26c2.92,-0.92 5.63,-2.15 8.46,-3.2c5.57,-2.27 11.12,-4.62 16.49,-7.32a227.32 227.32,0 0,0 31.19,-18.15a217.32 217.32,0 0,0 51.5,-50.17c14,-19.48 26,-40.86 31.91,-64.36a150.5 150.5,0 0,0 0.62,-71.66a153 153,0 0,0 -32.21,-64a209.5 209.5,0 0,0 -25.49,-25.31c-9.06,-7.84 -18.37,-15.34 -27.58,-22.94c-18.53,-15 -36.25,-31.24 -50,-50.77a160 160,0 0,1 -17.23,-31.13a100.11 100.11,0 0,1 -7.5,-29.47a179.94 179.94,0 0,0 22.09,39.17c9.86,13.28 21.53,25.12 33.91,36c24.73,21.81 52.21,40.22 74.95,63.65c22.72,23.14 40.05,52.15 46.26,83.87s0.92,64.94 -11.33,94.73l-3.65,8.88l-3.27,7.93l5.91,-6.22l6.61,-6.95l0.39,-0.4l0,0zm10.74,-99.07c-6.91,-32.91 -25.2,-62.44 -48.67,-85.73c-23.46,-23.52 -51.23,-41.55 -76,-62.88c-12.42,-10.63 -24.1,-22.17 -34,-35.16a177.24 177.24,0 0,1 -24.12,-42.49l-0.23,-0.59l-1.66,-4.12l0.12,4.43a99.18 99.18,0 0,0 7.93,35.07a161.37 161.37,0 0,0 17.31,31.53c13.76,19.78 31.62,36.23 50.11,51.33c9.2,7.64 18.48,15.16 27.47,23a206.68 206.68,0 0,1 25.19,25.19a150.38 150.38,0 0,1 31.49,63a147.9 147.9,0 0,1 -0.85,70.36c-5.87,23 -17.77,44.06 -31.65,63.24a213.85 213.85,0 0,1 -50.92,49.26a224.74 224.74,0 0,1 -30.82,17.82c-5.31,2.64 -10.79,4.94 -16.3,7.16c-2.77,1 -5.52,2.25 -8.3,3.1l-3.55,1c0.06,-0.07 0.16,-0.09 0.22,-0.17l3.32,-4q3.28,-4.1 6.32,-8.35a154.89 154.89,0 0,0 10.94,-17.88a167.38 167.38,0 0,0 14.35,-39.2c3.19,-13.58 4.44,-27.86 2.21,-41.83a82.72 82.72,0 0,0 -5.84,-20.33c-2.82,-6.47 -7.55,-12.85 -14.43,-16s-14.28,-3.3 -21.26,-2.77s-13.86,1.72 -20.68,2.88s-13.61,2.6 -20.25,2.81s-13.51,-0.75 -19,-4a20.26 20.26,0 0,1 -10,-15.35a26.57 26.57,0 0,1 0.76,-9.57c0.82,-3.22 2.08,-6.54 2.61,-10.24s0.34,-7.88 -2.12,-11.29a18 18,0 0,0 -4.12,-3.93a46.3 46.3,0 0,1 -3.78,-3.22a10.29 10.29,0 0,1 -2.5,-3.44a3.43 3.43,0 0,1 0.59,-3.27c1.62,-2.36 4.41,-4.51 7.09,-6.51l0.16,-0.12l2.33,-1.75l-2.56,-1.45a74.3 74.3,0 0,1 -7.51,-4.42c-2.21,-1.64 -3.92,-3.66 -3.94,-5.77s1.27,-4.58 3,-6.75s4.11,-5 5.14,-8.19a14.74 14.74,0 0,0 -0.26,-10.36a18.14 18.14,0 0,0 -6.55,-7.76c-5.2,-3.4 -11.4,-5.34 -14.79,-9.14c-3.76,-3.71 -3,-8.71 0.74,-12.72s8.7,-8.11 12.83,-12.4c8.49,-8.66 16.58,-18.25 21.62,-29.87a59.28 59.28,0 0,0 4.68,-18.33c0.66,-6.3 -0.27,-12.85 -0.76,-18.48a118.53 118.53,0 0,1 2.34,-34.77a113.74 113.74,0 0,1 12.77,-32.26a145 145,0 0,1 21.4,-27.56l0.26,-0.27l1.35,-1.45l-0.19,-1.9a25.1 25.1,0 0,1 2.44,-14a36.12 36.12,0 0,1 9.73,-11.32c8.24,-6.52 18.18,-11.81 28,-16.42a170.82 170.82,0 0,1 63.39,-15c43.64,-2 88.26,13 120.33,42.76c32.36,29.63 49.41,73.62 50.2,117.34a148.51 148.51,0 0,1 -12.73,63.65c-8.9,20 -22.55,37.57 -38.33,52.84l-0.37,0.37l-1.29,1.28l0.13,1.64a139.62 139.62,0 0,1 -9.6,64a160.64 160.64,0 0,1 -25.9,42.25c8.08,-26.63 10.73,-55.11 4.96,-82.53l0,0z"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#waitlist">Waitlist</a>
+      <a href="#tool">Tools</a>
+      <a href="#field-notes">Field Notes</a>
+      <a href="#jargon-decoder" onclick="event.preventDefault();openDecoder()">Jargon Decoder</a>
+      <a href="mailto:hello@herlonggame.com.au">hello@herlonggame.com.au</a>
+    </div>
+
+    <a href="https://instagram.com/_herlonggame" class="footer-ig" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.5;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      @_herlonggame
     </a>
   </div>
 
-  <div class="footer-links">
-    <a href="#about">About</a>
-    <a href="#waitlist">Waitlist</a>
-    <a href="#tool">Tools</a>
-    <a href="#field-notes">Field Notes</a>
-    <a href="#" onclick="event.preventDefault();openDecoder()">Jargon Decoder</a>
-    <a href="mailto:hello@herlonggame.com.au">hello@herlonggame.com.au</a>
-  </div>
-  <p style="margin:0.75rem auto 0;max-width:520px;font-size:0.68rem;line-height:1.6;color:rgba(242,239,232,0.52);">General financial education only. Not personal financial advice.</p>
-  <div class="footer-links" style="margin-top:0.5rem;opacity:0.55;font-size:0.68rem;">
-    <a href="/privacy.html">Privacy Policy</a>
-    <a href="/terms.html">Terms of Use</a>
+  <div class="footer-bottom-row">
+    <div class="footer-links" style="opacity:0.6;font-size:0.68rem;">
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Use</a>
+    </div>
+    <span style="font-size:0.68rem;color:rgba(242,239,232,0.4);">&copy; 2026 Her Long Game &middot; ABN 79 343 059 820</span>
   </div>
 
-  <a href="https://instagram.com/_herlonggame" class="footer-ig" target="_blank" rel="noopener">
-    <svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.5;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-    @_herlonggame
-  </a>
+  <p class="footer-disclaimer">General financial education only. Not personal financial advice. Individual circumstances vary — consider seeking professional advice before making financial decisions.</p>
 </footer>
 
 <!-- ══ POST OVERLAYS ══════════════════════════ -->
@@ -3790,7 +3848,7 @@ nav.scrolled .nav-logo-img {
 
     <div style="margin-top:3rem;padding:2rem;background:var(--cream-warm);border-radius:4px;border:1px solid var(--stone);text-align:center;">
       <p style="font-family:'Playfair Display';font-style:italic;font-size:1.1rem;margin-bottom:1rem;color:var(--night);">More field notes where this came from.</p>
-      <a href="#waitlist" onclick="closePost();setTimeout(()=>document.getElementById('waitlist').scrollIntoView({behavior:'smooth'}),100);return false;" style="display:inline-block;background:var(--orange);color:var(--cream);font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:0.75rem 1.75rem;border-radius:2px;text-decoration:none;">Join the waitlist →</a>
+      <a href="#waitlist" onclick="event.preventDefault();closePost();setTimeout(()=>document.getElementById('waitlist').scrollIntoView({behavior:'smooth'}),100);" style="display:inline-block;background:var(--orange);color:white;font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:0.75rem 1.75rem;border-radius:2px;text-decoration:none;">Join the waitlist →</a>
     </div>
   </div>
 </div>
@@ -3838,7 +3896,7 @@ nav.scrolled .nav-logo-img {
 
     <div style="margin-top:3rem;padding:2rem;background:var(--cream-warm);border-radius:4px;border:1px solid var(--stone);text-align:center;">
       <p style="font-family:'Playfair Display';font-style:italic;font-size:1.1rem;margin-bottom:1rem;color:var(--night);">The app goes much deeper. Join the waitlist for early access.</p>
-      <a href="#waitlist" onclick="closePost();setTimeout(()=>document.getElementById('waitlist').scrollIntoView({behavior:'smooth'}),100);return false;" style="display:inline-block;background:var(--orange);color:var(--cream);font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:0.75rem 1.75rem;border-radius:2px;text-decoration:none;">Join the waitlist →</a>
+      <a href="#waitlist" onclick="event.preventDefault();closePost();setTimeout(()=>document.getElementById('waitlist').scrollIntoView({behavior:'smooth'}),100);" style="display:inline-block;background:var(--orange);color:white;font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:0.75rem 1.75rem;border-radius:2px;text-decoration:none;">Join the waitlist →</a>
     </div>
   </div>
 </div>
