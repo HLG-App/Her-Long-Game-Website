@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy — Her Long Game</title>
+  <meta name="description" content="Privacy Policy for Her Long Game — financial education for Australian women."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
+  <link rel="canonical" href="https://herlonggame.com.au/privacy.html" />
+  <style>
+    :root {
+      --sage-deep:  #5C7A62;
+      --sage:       #7A9279;
+      --sage-mid:   #8A9E8D;
+      --gold:       #B8923A;
+      --orange:     #D4621A;
+      --rose:       #C4756A;
+      --cream:      #F2EFE8;
+      --cream-warm: #F2EFE8;
+      --stone:      rgba(92,122,98,0.18);
+      --text:       #5C7A62;
+      --text-muted: rgba(92,122,98,0.68);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { font-size: 16px; scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans';
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--sage-deep);
+      padding: 0 2.5rem;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      text-decoration: none;
+      color: var(--cream);
+    }
+    .nav-logo-mark {
+      height: 40px;
+      width: 40px;
+      display: block;
+      flex-shrink: 0;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .nav-wordmark {
+      font-family: 'Playfair Display';
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      color: rgba(242,239,232,0.95);
+    }
+    .nav-back {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(242,239,232,0.7);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: color 0.2s;
+    }
+    .nav-back:hover { color: var(--cream); }
+    .nav-back svg { transform: rotate(180deg); }
+
+    /* ── Page layout ── */
+    .page-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 5rem 2.5rem 7rem;
+    }
+
+    /* ── Header ── */
+    .doc-eyebrow {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--orange);
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      margin-bottom: 1.25rem;
+    }
+    .doc-eyebrow::before {
+      content: '';
+      display: block;
+      width: 22px;
+      height: 1px;
+      background: currentColor;
+    }
+    .doc-title {
+      font-family: 'Playfair Display';
+      font-weight: 700;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+      color: var(--sage-deep);
+      letter-spacing: -0.01em;
+      margin-bottom: 0.75rem;
+    }
+    .doc-meta {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+    .doc-intro {
+      font-size: 1rem;
+      line-height: 1.85;
+      color: var(--text-muted);
+      margin-bottom: 0.35rem;
+    }
+    .doc-operator {
+      font-size: 0.9rem;
+      line-height: 1.75;
+      color: var(--sage-deep);
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+    .doc-contact-line {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 3rem;
+    }
+    .doc-contact-line a {
+      color: var(--orange);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .doc-contact-line a:hover { text-decoration: underline; }
+
+    .doc-divider {
+      border: none;
+      border-top: 1px solid var(--stone);
+      margin: 3rem 0;
+    }
+
+    /* ── Financial note block ── */
+    .doc-note {
+      background: var(--cream);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 3px 3px 0;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 3rem;
+    }
+    .doc-note p {
+      font-size: 0.9rem;
+      line-height: 1.8;
+      color: var(--text-muted);
+      margin-bottom: 0.6rem;
+    }
+    .doc-note p:last-child { margin-bottom: 0; }
+    .doc-note p strong {
+      color: var(--sage-deep);
+      font-weight: 600;
+    }
+
+    /* ── Sections ── */
+    .doc-section {
+      margin-bottom: 2.75rem;
+    }
+    .doc-section h2 {
+      font-family: 'Playfair Display';
+      font-weight: 700;
+      font-size: 1.35rem;
+      color: var(--sage-deep);
+      line-height: 1.25;
+      margin-bottom: 1rem;
+      padding-top: 0.25rem;
+    }
+    .doc-section p {
+      font-size: 0.95rem;
+      line-height: 1.85;
+      color: var(--text);
+      margin-bottom: 0.85rem;
+    }
+    .doc-section p:last-child { margin-bottom: 0; }
+    .doc-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0.75rem 0 0.85rem;
+    }
+    .doc-section ul li {
+      font-size: 0.92rem;
+      line-height: 1.75;
+      color: var(--text);
+      padding: 0.2rem 0 0.2rem 1.35rem;
+      position: relative;
+    }
+    .doc-section ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.72em;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--sage-deep);
+    }
+    .doc-section a {
+      color: var(--orange);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .doc-section a:hover { text-decoration: underline; }
+    .doc-section strong {
+      font-weight: 600;
+      color: var(--sage-deep);
+    }
+
+    /* ── Contact block at end ── */
+    .doc-contact-block {
+      background: var(--cream-warm);
+      border: 1.5px solid var(--stone);
+      border-radius: 4px;
+      padding: 2rem 2.25rem;
+      margin-top: 3.5rem;
+    }
+    .doc-contact-block h2 {
+      font-family: 'Playfair Display';
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--sage-deep);
+      margin-bottom: 0.85rem;
+    }
+    .doc-contact-block p {
+      font-size: 0.9rem;
+      line-height: 1.8;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+    .doc-contact-block p:last-child { margin-bottom: 0; }
+    .doc-contact-block a {
+      color: var(--orange);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .doc-contact-block a:hover { text-decoration: underline; }
+    .doc-contact-block strong { color: var(--sage-deep); font-weight: 600; }
+
+    /* ── Closer ── */
+    .doc-closer {
+      margin-top: 3rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid var(--stone);
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+      font-style: italic;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--sage-deep);
+      padding: 2rem 2.5rem;
+      text-align: center;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .footer-links a {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(242,239,232,0.62);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--cream); }
+    .footer-copy {
+      font-size: 0.68rem;
+      color: rgba(242,239,232,0.4);
+      letter-spacing: 0.05em;
+    }
+
+    @media (max-width: 640px) {
+      nav { padding: 0 1.5rem; }
+      .page-wrap { padding: 3rem 1.5rem 5rem; }
+      footer { padding: 2rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Nav ── -->
+<nav>
+  <a href="/" class="nav-logo">
+    <img class="nav-logo-mark" src="/assets/images/her-long-game-logo.svg" alt="Her Long Game" />
+    <span class="nav-wordmark">Her Long Game</span>
+  </a>
+  <a href="/" class="nav-back">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    Back to site
+  </a>
+</nav>
+
+<!-- ── Content ── -->
+<main class="page-wrap">
+
+  <div class="doc-eyebrow">Legal &middot; Her Long Game</div>
+  <h1 class="doc-title">Privacy Policy</h1>
+  <p class="doc-meta">Last updated: 30 May 2026</p>
+  <p class="doc-intro">Hi there. We want you to know what happens to your information when you interact with Her Long Game.</p>
+  <p class="doc-operator">Her Long Game is operated by <strong>Tamara Bonamy, ABN 79 343 059 820</strong>.</p>
+  <p class="doc-intro">This Privacy Policy explains how we collect, use, store and share personal information when you use our website, join our waitlist, sign up to our emails, download resources, purchase products or interact with Her Long Game in any other way.</p>
+  <p class="doc-contact-line">Questions? <a href="mailto:hello@herlonggame.com.au">hello@herlonggame.com.au</a></p>
+
+  <hr class="doc-divider"/>
+
+  <!-- Financial note -->
+  <div class="doc-note">
+    <p><strong>A note on financial content</strong></p>
+    <p>Her Long Game provides financial education. The information we share is general in nature. It is designed to help you build knowledge, confidence and understanding around money, financial systems and long-term decision-making.</p>
+    <p>Her Long Game does not provide personal financial advice. Nothing on our website, in our emails, products, resources, tools or content takes into account your personal objectives, financial situation or individual needs.</p>
+    <p>Before making financial decisions, you should consider your own circumstances and seek advice from a qualified professional where appropriate.</p>
+  </div>
+
+  <!-- Sections -->
+  <div class="doc-section">
+    <h2>What personal information we collect</h2>
+    <p>The personal information we collect depends on how you interact with Her Long Game. We may collect:</p>
+    <ul>
+      <li>your name</li>
+      <li>your email address</li>
+      <li>your phone number, if you choose to provide it</li>
+      <li>information you provide when joining our waitlist or signing up to updates</li>
+      <li>information you provide when downloading a resource or purchasing a product</li>
+      <li>survey responses, feedback or messages you choose to send us</li>
+      <li>website usage information, such as pages visited, links clicked and general analytics data</li>
+      <li>technical information, such as browser type, device information, IP address and general location data</li>
+    </ul>
+    <p>We only collect information that is reasonably necessary for our business activities.</p>
+  </div>
+
+  <hr class="doc-divider"/>
+
+  <div class="doc-section">
+    <h2>How we collect your information</h2>
+    <p>We collect personal information when you:</p>
+    <ul>
+      <li>visit our website</li>
+      <li>join our waitlist</li>
+      <li>subscribe to our emails</li>
+      <li>download a free resource</li>
+      <li>purchase a product or service</li>
+      <li>complete a form or survey</li>
+      <li>contact us by email, website, social media or another channel</li>
+      <li>interact with our content, emails or digital tools</li>
+    </ul>
+    <p>We may also collect limited information automatically through cookies, analytics tools and similar technologies.</p>
+  </div>
+
+  <hr class="doc-divider"/>
+
+  <div class="doc-section">
+    <h2>Why we collect and use your information</h2>
+    <p>We collect and use your personal information to:</p>
+    <ul>
+      <li>provide Her Long Game products, resources and services</li>
+      <li>send you emails, updates, education and marketing where you have signed up or consented</li>
+      <li>respond to your questions, feedback or support requests</li>
+      <li>manage waitlists, sign-ups, purchases and customer records</li>
+      <li>improve our website, content, products and user experience</li>
+      <li>understand how people use our website and emails</li>
+      <li>manage business operations, legal records, accounting and tax obligations</li>
+      <li>protect the security and integrity of our website, systems and business</li>
+      <li>comply with legal obligations</li>
+    </ul>
+    <p>We do not sell your personal information.</p>
+  </div>
+
+  <hr class="doc-divider"/>
+
+  <div class="doc-section">
+    <h2>Email marketing</h2>
+    <p>If you join our waitlist, download a resource, purchase from us or sign up to receive updates, we may send you emails about Her Long Game, including education, product updates, offers and launch information.</p>
+    <p>You can unsubscribe at any time by using the unsubscribe link in our emails or contacting us at <a href="mailto:hello@herlonggame.com.au">hello@herlonggame.com.au</a>.</p>
+  </div>
+
+  <hr class="doc-divider"/>
+
+  <div class="doc-section">
+    <h2>Cookies and analytics</h2>
+    <p>We may use cookies and similar technologies to help our website work properly, understand how people use our website and improve Her Long Game.</p>
+    <p>Cookies may collect information such as your browser type, device information, IP address, pages visited, links clicked and time spent on the website. You can usually disable cookies through your browser settings. Some parts of the website may not work properly if cookies are disabled.</p>
+    <p>Where this information identifies you, or could reasonably identify you, we treat it as personal information.</p>
+  </div>
+
+  <hr class="doc-divider"/>
+
+  <div class="doc-section">
+    <h2>Payment information</h2>
+    <p>If you purchase a product or service from Her Long Game, payment information may be collected and processed by a third-party payment provider. We do not store your full payment card details. Payment providers handle payment information in accordance with their own privacy and security practices.</p>
+  </div>
+
+  <hr class="doc-divider"/>
+
+  <div class="doc-section">
+    <h2>Who we share your information with</h2>
+    <p>We may share personal information with trusted third parties who help us operate Her Long Game, including:</p>
+    <ul>
+      <li>website hosting providers</li>
+      <li>email marketing platforms</li>
+      <li>analytics providers</li>
+      <li>payment processors</li>
+      <li>customer support or business administration tools</li>
+      <li>contractors or service providers who help us run the business</li>
+      <li>professional advisers, such as lawyers, accountants or insurers</li>
+      <li>regulators, government agencies or law enforcement where required by law</li>
+    </ul>
+    <p>We only share information where reasonably necessary for our business, where you have consented, or where the law allows or requires us to do so.</p>
+  </div>
+
+  <hr class="doc-divider"/>
+
+  <div class="doc-section">
+    <h2>Overseas disclosure</h2>
+    <p>Some of the tools and service providers we use may store or process information outside Australia. Where we disclose personal information overseas, we take reasonable steps to ensure that the information is handled appropriately and consistently with applicable Australian privacy laws.</p>
+  </div>
+
+  <hr class="doc-divider"/>
+
+  <div class="doc-section">
+    <h2>How we protect your information</h2>
+    <p>We take reasonable steps to protect your personal information from misuse, interference, loss, unauthorised access, modification or disclosure. These steps may include:</p>
+    <ul>
+      <li>secure website hosting</li>
+      <li>password protections</li>
+      <li>limited access to business systems</li>
+      <li>use of trusted service providers</li>
+      <li>security settings and access controls</li>
+      <li>deleting or de-identifying information when we no longer need it</li>
+    </ul>
+    <p>No method of electronic transmission or storage is completely secure, so we cannot guarantee absolute security. However, we take privacy and security seriously.</p>
+  </div>
+
+  <hr class="doc-divider"/>
+
+  <div class="doc-section">
+    <h2>How long we keep your information</h2>
+    <p>We keep personal information for as long as we need it for the purposes outlined in this policy, unless a longer retention period is required or permitted by law. When we no longer need personal information, we will take reasonable steps to delete it or de-identify it.</p>
+  </div>
+
+  <hr class="doc-divider"/>
+
+  <div class="doc-section">
+    <h2>Accessing, correcting or deleting your information</h2>
+    <p>You can contact us to request access to the personal information we hold about you. You can also ask us to correct information that is inaccurate, out of date, incomplete or misleading.</p>
+    <p>You may request that we delete your personal information. Where we can, we will delete or de-identify it. In some cases, we may need to retain certain information for legal, accounting, tax, dispute resolution or legitimate business purposes.</p>
+    <p>To make a request, contact us at <a href="mailto:hello@herlonggame.com.au">hello@herlonggame.com.au</a>. We may need to verify your identity before responding.</p>
+  </div>
+
+  <hr class="doc-divider"/>
+
+  <div class="doc-section">
+    <h2>Third-party links</h2>
+    <p>Our website, emails, products or content may include links to third-party websites, platforms, products or services. We are not responsible for the privacy practices, content or security of third-party websites or services. You should read the privacy policy of any third-party website or service before providing personal information.</p>
+  </div>
+
+  <hr class="doc-divider"/>
+
+  <div class="doc-section">
+    <h2>Privacy complaints</h2>
+    <p>If you have a question or concern about how we handle your personal information, please contact us first at <a href="mailto:hello@herlonggame.com.au">hello@herlonggame.com.au</a>. We will aim to respond within a reasonable time.</p>
+    <p>If you are not satisfied with our response, you may contact the Office of the Australian Information Commissioner.</p>
+    <ul>
+      <li><strong>Office of the Australian Information Commissioner</strong></li>
+      <li>Website: <a href="https://www.oaic.gov.au" target="_blank" rel="noopener">www.oaic.gov.au</a></li>
+      <li>Phone: 1300 363 992</li>
+      <li>Post: GPO Box 5218, Sydney NSW 2001</li>
+    </ul>
+  </div>
+
+  <hr class="doc-divider"/>
+
+  <div class="doc-section">
+    <h2>Changes to this Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time as Her Long Game grows, our services change or legal requirements change. When we update this policy, we will change the date at the top of the page.</p>
+  </div>
+
+  <!-- Contact block -->
+  <div class="doc-contact-block">
+    <h2>Contact us</h2>
+    <p>For privacy questions, access or correction requests, deletion requests or complaints:</p>
+    <p><strong>Her Long Game</strong><br/>
+    Email: <a href="mailto:hello@herlonggame.com.au">hello@herlonggame.com.au</a><br/>
+    Website: <a href="https://www.herlonggame.com.au">www.herlonggame.com.au</a></p>
+  </div>
+
+  <p class="doc-closer">Thank you for trusting us with your information. We will use it responsibly, protect it carefully and keep earning that trust.</p>
+
+</main>
+
+<!-- ── Footer ── -->
+<footer>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="/#about">About</a>
+    <a href="/#waitlist">Waitlist</a>
+    <a href="mailto:hello@herlonggame.com.au">Contact</a>
+    <a href="/privacy.html" style="color:rgba(242,239,232,0.9);">Privacy Policy</a>
+    <a href="/terms.html">Terms of Use</a>
+  </div>
+  <p class="footer-copy">&copy; 2026 Her Long Game &middot; ABN 79 343 059 820 &middot; General education only, not personal financial advice.</p>
+</footer>
+
+</body>
+</html>
