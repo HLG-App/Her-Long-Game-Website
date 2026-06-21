@@ -22,7 +22,7 @@
 <meta property="og:url" content="https://herlonggame.com.au" />
 <meta property="og:title" content="Her Long Game, The money lessons women were never taught." />
 <meta property="og:description" content="Financial education for women who are already doing the work, but don't have time to moonlight as a financial expert. No jargon. No judgement." />
-<meta property="og:image" content="https://herlonggame.com.au/assets/images/og-image.png" />
+<meta property="og:image" content="https://herlonggame.com.au/bubble-o-bill-index/her-long-game-logo.png" />
 <meta property="og:locale" content="en_AU" />
 <meta property="og:site_name" content="Her Long Game" />
 
@@ -30,11 +30,10 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Her Long Game, The money lessons women were never taught." />
 <meta name="twitter:description" content="Foundational financial education for women. Understand money, build wealth, make better decisions. Join the waitlist." />
-<meta name="twitter:image" content="https://herlonggame.com.au/assets/images/og-image.png" />
+<meta name="twitter:image" content="https://herlonggame.com.au/bubble-o-bill-index/her-long-game-logo.png" />
 
 <!-- Favicon (add your files to /assets/images/) -->
-<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
-<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
+<link rel="icon" type="image/svg+xml" href="/assets/images/her-long-game-logo.svg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
@@ -80,7 +79,7 @@
   --fs-punch: 1.2rem;
 }
 
-html { scroll-behavior: smooth; font-size: 16px; scroll-padding-top: 5rem; }
+html { scroll-behavior: smooth; font-size: 16px; scroll-padding-top: 5rem; overflow-x: hidden; }
 
 body {
   background: var(--cream);
@@ -3952,15 +3951,22 @@ nav#nav.scrolled .nav-hamburger span{background:var(--sage-deep)}
 .hero-form,
 .cta-form,
 .founder-inner { border-radius: 16px; }
-.why-banner { border-radius: 20px; overflow: hidden; }
-.section-principle { background: var(--cream); padding: 0 2rem 7rem; }
-.section-principle .why-banner { max-width: 1280px; margin: 0 auto; }
+.why-banner { border-radius: 0; overflow: hidden; padding: clamp(5rem, 7vw, 6.5rem) 2rem; }
+.section-principle { background: var(--sage-deep); padding: 0; border-top: 1px solid rgba(184,146,58,0.35); border-bottom: 1px solid rgba(184,146,58,0.22); }
+.section-principle .why-banner { max-width: none; margin: 0; }
+.section-principle .why-banner-inner { max-width: 1120px; gap: clamp(3rem, 7vw, 6rem); }
+.section-principle .why-banner-divider { margin-top: 0; }
+.footer-brand > a { width:220px; height:58px; background:url('/bubble-o-bill-index/her-long-game-logo.png') left center/contain no-repeat; }
+.footer-brand > a svg { display:none!important; }
 .nav-cta,
 .why-cta,
 .blog-see-all { border-radius: 999px; }
 @media(max-width:640px){
-  .section-principle{padding:0 1rem 4.5rem}
-  .why-banner{border-radius:16px}
+  .section-principle{padding:0}
+  .why-banner{border-radius:0;padding:4rem 1.5rem}
+  .section-principle .why-banner-inner{gap:2.5rem}
+  .section-principle .why-banner-divider{margin:0 0 1.5rem}
+  .footer-brand > a{width:190px;height:50px}
 }
 </style>
 </head>
@@ -4338,7 +4344,7 @@ nav#nav.scrolled .nav-hamburger span{background:var(--sage-deep)}
         </a>
         <a href="/contact.html" class="footer-connect-item">
           <svg viewBox="0 0 24 24" style="width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.5;flex-shrink:0;"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
-          hello@herlonggame.com.au
+          Contact
         </a>
       </div>
     </div>

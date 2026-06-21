@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico"/>
+  <link rel="icon" type="image/svg+xml" href="/assets/images/her-long-game-logo.svg"/>
   <style>
     :root{--sage-deep:#5C7A62;--gold:#B8923A;--orange:#D4621A;--orange-dark:#B8501A;--cream:#F7F5F0;--cream-warm:#F2EFE8;--stone:rgba(92,122,98,.2);--text:#2C4A3E;--muted:rgba(44,74,62,.68)}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -32,7 +32,7 @@
     button{border:0;border-radius:999px;background:var(--orange);color:white;padding:1rem 1.8rem;font:600 .75rem 'DM Sans';letter-spacing:.12em;text-transform:uppercase;cursor:pointer}button:hover{background:var(--orange-dark)}button:disabled{opacity:.6;cursor:wait}
     .status{display:none;grid-column:1/-1;border-radius:12px;padding:1rem 1.1rem;font-size:.88rem}.status.show{display:block}.status.success{background:rgba(92,122,98,.12);color:var(--sage-deep);border:1px solid rgba(92,122,98,.25)}.status.error{background:rgba(196,117,106,.12);color:#7f4037;border:1px solid rgba(196,117,106,.3)}
     .privacy-note{font-size:.72rem;color:var(--muted)}.privacy-note a{color:var(--orange)}
-    footer{background:var(--cream);border-top:1px solid var(--stone);padding:2.5rem 2rem 1.5rem}.footer-top-row{max-width:1280px;margin:0 auto 1.5rem;display:grid;grid-template-columns:1fr auto auto auto;gap:3rem}.footer-brand-link{display:flex;align-items:center;gap:.8rem;text-decoration:none;color:var(--sage-deep);font-family:'Playfair Display';font-weight:700}.footer-brand-link img{width:44px;height:44px;border-radius:12px}.footer-label{font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.75rem}.footer-links{display:flex;flex-direction:column;gap:.5rem}.footer-links a{font-size:.85rem;color:var(--muted);text-decoration:none}.footer-links a:hover{color:var(--orange)}.footer-bottom{max-width:1280px;margin:0 auto;padding-top:1rem;border-top:1px solid var(--stone);font-size:.72rem;color:var(--muted)}.disclaimer{max-width:1280px;margin:.75rem auto 0;padding-top:.75rem;border-top:1px solid rgba(92,122,98,.08);text-align:center;font-size:.625rem;color:var(--muted)}
+    footer{background:var(--cream);border-top:1px solid var(--stone);padding:2.5rem 2rem 1.5rem}.footer-top-row{max-width:1280px;margin:0 auto 1.5rem;display:grid;grid-template-columns:1fr auto auto auto;gap:3rem}.footer-brand-link{display:flex;align-items:center;text-decoration:none}.footer-brand-link img{width:220px;height:auto;max-width:100%;display:block}.footer-label{font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.75rem}.footer-links{display:flex;flex-direction:column;gap:.5rem}.footer-links a{font-size:.85rem;color:var(--muted);text-decoration:none}.footer-links a:hover{color:var(--orange)}.footer-bottom{max-width:1280px;margin:0 auto;padding-top:1rem;border-top:1px solid var(--stone);font-size:.72rem;color:var(--muted)}.disclaimer{max-width:1280px;margin:.75rem auto 0;padding-top:.75rem;border-top:1px solid rgba(92,122,98,.08);text-align:center;font-size:.625rem;color:var(--muted)}
     .hp{position:absolute!important;left:-9999px!important}
     @media(max-width:760px){nav{padding:0 1.25rem}.nav-links{gap:.8rem}.nav-links a:nth-child(2),.nav-links a:nth-child(3){display:none}main{padding:2rem 1rem 4rem}.contact-shell{grid-template-columns:1fr;border-radius:16px}.contact-intro,.form-panel{padding:2.5rem 1.5rem}.form-grid{grid-template-columns:1fr}.field.full,.form-actions,.status{grid-column:1}.footer-top-row{grid-template-columns:1fr 1fr;gap:2rem}.footer-brand{grid-column:1/-1}}
   </style>
@@ -40,7 +40,7 @@
 <body>
   <nav aria-label="Primary navigation">
     <a href="/" class="nav-logo" aria-label="Her Long Game home"><img src="/assets/images/her-long-game-logo.svg" alt=""/></a>
-    <div class="nav-links"><a href="/">Home</a><a href="/#about">Why</a><a href="/#lessons">Learn</a><a href="/tools.html">Tools</a></div>
+    <div class="nav-links"><a href="/">Home</a><a href="/#about">Why</a><a href="/#lessons">Learn</a><a href="/tools.html">Tools</a><a href="/field-notes.html">Blog</a></div>
   </nav>
   <main>
     <div class="contact-shell">
@@ -67,7 +67,7 @@
   </main>
   <footer>
     <div class="footer-top-row">
-      <div class="footer-brand"><a href="/" class="footer-brand-link"><img src="/assets/images/her-long-game-logo.svg" alt=""/><span>Her Long Game</span></a></div>
+      <div class="footer-brand"><a href="/" class="footer-brand-link" aria-label="Her Long Game home"><img src="/bubble-o-bill-index/her-long-game-logo.png" alt="Her Long Game"/></a></div>
       <div><div class="footer-label">Navigate</div><div class="footer-links"><a href="/">Home</a><a href="/#about">Why</a><a href="/#lessons">Learn</a><a href="/tools.html">Tools</a><a href="/field-notes.html">Blog</a></div></div>
       <div><div class="footer-label">Connect</div><div class="footer-links"><a href="https://instagram.com/_herlonggame" target="_blank" rel="noopener">@_herlonggame</a><a href="/contact.html">Contact</a></div></div>
       <div><div class="footer-label">Legal</div><div class="footer-links"><a href="/privacy.html">Privacy Policy</a><a href="/terms.html">Terms of Use</a></div></div>

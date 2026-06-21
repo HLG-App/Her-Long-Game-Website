@@ -22,7 +22,7 @@
 <meta property="og:url" content="https://herlonggame.com.au" />
 <meta property="og:title" content="Her Long Game, The money lessons women were never taught." />
 <meta property="og:description" content="Financial education for women who are already doing the work, but don't have time to moonlight as a financial expert. No jargon. No judgement." />
-<meta property="og:image" content="https://herlonggame.com.au/assets/images/og-image.png" />
+<meta property="og:image" content="https://herlonggame.com.au/bubble-o-bill-index/her-long-game-logo.png" />
 <meta property="og:locale" content="en_AU" />
 <meta property="og:site_name" content="Her Long Game" />
 
@@ -30,11 +30,10 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Her Long Game, The money lessons women were never taught." />
 <meta name="twitter:description" content="Foundational financial education for women. Understand money, build wealth, make better decisions. Join the waitlist." />
-<meta name="twitter:image" content="https://herlonggame.com.au/assets/images/og-image.png" />
+<meta name="twitter:image" content="https://herlonggame.com.au/bubble-o-bill-index/her-long-game-logo.png" />
 
 <!-- Favicon (add your files to /assets/images/) -->
-<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
-<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
+<link rel="icon" type="image/svg+xml" href="/assets/images/her-long-game-logo.svg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
@@ -3809,6 +3808,18 @@ nav.scrolled .nav-logo-img {
     .modal-success p { font-size:1rem; color:var(--cream); line-height:1.6; }
     .modal-success p strong { color:var(--gold); }
     @media (max-width:480px) { .modal-card { padding:2.25rem 1.5rem 2rem; } }
+    .tool-card,.app-teaser-card,.modal-card,.blog-card,.dec-panel{border-radius:16px!important}
+    .nav-cta,.modal-submit{border-radius:999px!important}
+    .footer-brand > a{width:220px;height:58px;background:url('/bubble-o-bill-index/her-long-game-logo.png') left center/contain no-repeat}
+    .footer-brand > a svg{display:none!important}
+    @media(max-width:760px){
+      nav#nav{padding-left:1.25rem;padding-right:1.25rem}
+      .nav-actions{gap:0.85rem}
+      .nav-actions .nav-link:nth-child(2),
+      .nav-actions .nav-link:nth-child(3),
+      .nav-actions .nav-link:nth-child(5),
+      .nav-actions .nav-cta{display:none}
+    }
 </style>
 </head>
 <body id="top">
@@ -3820,7 +3831,9 @@ nav.scrolled .nav-logo-img {
 </svg></div>
   </a>
   <div class="nav-actions">
-    <a href="#about" class="nav-link">About</a>
+    <a href="/" class="nav-link">Home</a>
+    <a href="/#about" class="nav-link">Why</a>
+    <a href="/#lessons" class="nav-link">Learn</a>
     <a href="/tools.html" class="nav-link" style="color:var(--orange);">Tools</a>
     <a href="/field-notes.html" class="nav-link">Field Notes</a>
     <!-- Jargon Decoder hidden until launch -->
@@ -4065,7 +4078,9 @@ nav.scrolled .nav-logo-img {
     <div class="footer-nav" aria-label="Footer navigation">
       <div class="footer-nav-label">Navigate</div>
       <div class="footer-nav-links">
-        <a href="#about">About</a>
+        <a href="/">Home</a>
+        <a href="/#about">Why</a>
+        <a href="/#lessons">Learn</a>
         <a href="#" onclick="event.preventDefault();openWaitlistModal();">Waitlist</a>
         <a href="/tools.html">Tools</a>
         <a href="/field-notes.html">Field Notes</a>
@@ -4080,9 +4095,9 @@ nav.scrolled .nav-logo-img {
           <svg viewBox="0 0 24 24" style="width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.5;flex-shrink:0;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
           @_herlonggame
         </a>
-        <a href="mailto:hello@herlonggame.com.au" class="footer-connect-item">
+        <a href="/contact.html" class="footer-connect-item">
           <svg viewBox="0 0 24 24" style="width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.5;flex-shrink:0;"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
-          hello@herlonggame.com.au
+          Contact
         </a>
       </div>
     </div>
