@@ -3819,17 +3819,8 @@ nav#nav.scrolled .nav-hamburger span{background:var(--sage-deep)}
 .nav-drawer-cta{display:block;text-align:center;margin-top:1.75rem;font-size:0.9rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--cream);background:var(--sage-deep);padding:0.85rem 1.75rem;border-radius:0.5rem;text-decoration:none}
 @media(max-width:640px){.nav-actions{display:none!important}.nav-hamburger{display:flex!important}}
 /* ── DARK FOOTER OVERRIDES ── */
-footer{background:var(--sage-deep)!important;border-top-color:rgba(247,245,240,0.15)!important}
-footer .footer-nav-label{color:var(--gold)!important}
-footer .footer-nav-links a{color:var(--gold)!important;font-family:'Playfair Display',serif;font-style:italic}
-footer .footer-nav-links a:hover{color:var(--cream)!important}
-footer .footer-connect-links a{color:var(--gold)!important;font-family:'Playfair Display',serif;font-style:italic}
-footer .footer-connect-links a:hover{color:var(--cream)!important}
-footer .footer-copyright,.footer-bottom-row{color:rgba(247,245,240,0.4)!important}
-footer .footer-bottom-row{border-top-color:rgba(247,245,240,0.15)!important}
-footer .footer-disclaimer{color:rgba(247,245,240,0.3)!important;border-top-color:rgba(247,245,240,0.08)!important}
-.footer-brand svg *{fill:var(--cream)!important;stroke:none!important}
-.footer-brand img{filter:brightness(0) invert(1) opacity(0.85)}
+.blog-card,.post-card,.dec-panel,.dec-card,.modal-card{border-radius:16px!important}
+.nav-cta,.blog-see-all,.modal-submit{border-radius:999px!important}
 </style>
 </head>
 <body id="top">
@@ -3841,7 +3832,9 @@ footer .footer-disclaimer{color:rgba(247,245,240,0.3)!important;border-top-color
 </svg></div>
   </a>
   <div class="nav-actions">
-    <a href="#about" class="nav-link">About</a>
+    <a href="/" class="nav-link">Home</a>
+    <a href="/#about" class="nav-link">Why</a>
+    <a href="/#lessons" class="nav-link">Learn</a>
     <a href="/tools.html" class="nav-link" style="color:var(--orange);">Tools</a>
     <a href="/field-notes.html" class="nav-link">Blog</a>
     <!-- Jargon Decoder hidden until launch -->
@@ -3851,7 +3844,9 @@ footer .footer-disclaimer{color:rgba(247,245,240,0.3)!important;border-top-color
 </nav>
 <div class="nav-drawer" id="navDrawer" role="dialog" aria-modal="true" aria-label="Navigation menu">
   <button class="nav-drawer-close" id="drawerClose" aria-label="Close menu">&#x2715;</button>
-  <a class="nav-drawer-link" href="/#about">About</a>
+  <a class="nav-drawer-link" href="/">Home</a>
+  <a class="nav-drawer-link" href="/#about">Why</a>
+  <a class="nav-drawer-link" href="/#lessons">Learn</a>
   <a class="nav-drawer-link" href="/tools.html">Tools</a>
   <a class="nav-drawer-link" href="/field-notes.html">Blog</a>
   <a class="nav-cta nav-drawer-cta" href="#">Get Early Access</a>
@@ -3936,7 +3931,9 @@ footer .footer-disclaimer{color:rgba(247,245,240,0.3)!important;border-top-color
     <div class="footer-nav" aria-label="Footer navigation">
       <div class="footer-nav-label">Navigate</div>
       <div class="footer-nav-links">
-        <a href="#about">About</a>
+        <a href="/">Home</a>
+        <a href="/#about">Why</a>
+        <a href="/#lessons">Learn</a>
         <a href="#" onclick="event.preventDefault();openWaitlistModal();">Waitlist</a>
         <a href="/tools.html">Tools</a>
         <a href="/field-notes.html">Blog</a>
@@ -3951,7 +3948,7 @@ footer .footer-disclaimer{color:rgba(247,245,240,0.3)!important;border-top-color
           <svg viewBox="0 0 24 24" style="width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.5;flex-shrink:0;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
           @_herlonggame
         </a>
-        <a href="mailto:hello@herlonggame.com.au" class="footer-connect-item">
+        <a href="/contact.html" class="footer-connect-item">
           <svg viewBox="0 0 24 24" style="width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.5;flex-shrink:0;"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
           hello@herlonggame.com.au
         </a>

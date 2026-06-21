@@ -165,7 +165,7 @@ nav#nav.scrolled .nav-hamburger span{background:var(--sage-deep)}
   text-decoration:none;display:block;
   background:var(--cream);
   border:1px solid var(--sage-tint);
-  border-radius:0.75rem;
+  border-radius:1rem;
   box-shadow:0 2px 12px rgba(92,122,98,0.06);
   overflow:hidden;
   transition:transform 0.2s ease-out,box-shadow 0.2s ease-out;
@@ -285,7 +285,7 @@ footer{
 /* ══ WAITLIST MODAL ══ */
 .modal-overlay{display:none;position:fixed;inset:0;background:rgba(22,30,23,0.72);z-index:9000;align-items:center;justify-content:center;padding:1.5rem;backdrop-filter:blur(3px)}
 .modal-overlay.open{display:flex}
-.modal-card{background:var(--sage-deep);border-radius:6px;max-width:520px;width:100%;padding:3rem 2.75rem 2.5rem;position:relative;box-shadow:0 24px 60px rgba(22,30,23,0.4)}
+.modal-card{background:var(--sage-deep);border-radius:16px;max-width:520px;width:100%;padding:3rem 2.75rem 2.5rem;position:relative;box-shadow:0 24px 60px rgba(22,30,23,0.4)}
 .modal-close{position:absolute;top:1.25rem;right:1.25rem;background:none;border:none;cursor:pointer;color:rgba(247,245,240,0.5);line-height:1;padding:0.25rem;transition:color 0.2s}
 .modal-close:hover{color:var(--cream)}
 .modal-eyebrow{font-size:0.68rem;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
@@ -294,11 +294,11 @@ footer{
 .modal-sub{font-size:0.9rem;color:rgba(247,245,240,0.72);line-height:1.7;margin-bottom:1.75rem}
 .modal-form-label{font-size:0.72rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:rgba(247,245,240,0.55);margin-bottom:0.85rem}
 .modal-fields{display:flex;flex-direction:column;gap:0.65rem;margin-bottom:1rem}
-.modal-field{background:rgba(247,245,240,0.06);border:1px solid rgba(247,245,240,0.16);border-radius:3px;padding:0.9rem 1.1rem;transition:border-color 0.2s}
+.modal-field{background:rgba(247,245,240,0.06);border:1px solid rgba(247,245,240,0.16);border-radius:12px;padding:0.9rem 1.1rem;transition:border-color 0.2s}
 .modal-field:focus-within{border-color:rgba(247,245,240,0.4)}
 .modal-field input{background:none;border:none;outline:none;width:100%;font-family:'DM Sans';font-size:0.92rem;color:var(--cream)}
 .modal-field input::placeholder{color:rgba(247,245,240,0.38)}
-.modal-submit{width:100%;background:var(--orange);color:white;border:none;border-radius:3px;padding:1rem 1.5rem;font-family:'DM Sans';font-size:0.78rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;cursor:pointer;transition:background 0.2s;margin-bottom:0.75rem}
+.modal-submit{width:100%;background:var(--orange);color:white;border:none;border-radius:999px;padding:1rem 1.5rem;font-family:'DM Sans';font-size:0.78rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;cursor:pointer;transition:background 0.2s;margin-bottom:0.75rem}
 .modal-submit:hover{background:#B8501A}
 .modal-note{font-size:0.72rem;color:rgba(247,245,240,0.4);text-align:center}
 .modal-trust{margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid rgba(247,245,240,0.1);display:flex;flex-direction:column;gap:0.5rem}
@@ -345,7 +345,9 @@ footer{
 </svg></div>
   </a>
   <div class="nav-actions">
-    <a href="/#about" class="nav-link">About</a>
+    <a href="/" class="nav-link">Home</a>
+    <a href="/#about" class="nav-link">Why</a>
+    <a href="/#lessons" class="nav-link">Learn</a>
     <a href="/tools.html" class="nav-link">Tools</a>
     <a href="/field-notes.html" class="nav-link">Blog</a>
     <a href="#" class="nav-cta" onclick="event.preventDefault();openWaitlistModal();">Get Early Access</a>
@@ -357,7 +359,9 @@ footer{
 
 <div class="nav-drawer" id="navDrawer" role="dialog" aria-modal="true" aria-label="Navigation menu">
   <button class="nav-drawer-close" id="drawerClose" aria-label="Close menu">&#x2715;</button>
-  <a class="nav-drawer-link" href="/#about">About</a>
+  <a class="nav-drawer-link" href="/">Home</a>
+  <a class="nav-drawer-link" href="/#about">Why</a>
+  <a class="nav-drawer-link" href="/#lessons">Learn</a>
   <a class="nav-drawer-link" href="/tools.html">Tools</a>
   <a class="nav-drawer-link" href="/field-notes.html">Blog</a>
   <a class="nav-cta nav-drawer-cta" href="#" onclick="event.preventDefault();document.getElementById('navDrawer').classList.remove('open');document.getElementById('hamburger').setAttribute('aria-expanded','false');openWaitlistModal();">Get Early Access</a>
@@ -414,7 +418,9 @@ footer{
     <div class="footer-nav" aria-label="Footer navigation">
       <div class="footer-nav-label">Navigate</div>
       <div class="footer-nav-links">
-        <a href="/#about">About</a>
+        <a href="/">Home</a>
+        <a href="/#about">Why</a>
+        <a href="/#lessons">Learn</a>
         <a href="#" onclick="event.preventDefault();openWaitlistModal();">Waitlist</a>
         <a href="/tools.html">Tools</a>
         <a href="/field-notes.html">Blog</a>
@@ -429,7 +435,7 @@ footer{
           <svg viewBox="0 0 24 24" style="width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.5;flex-shrink:0;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
           @_herlonggame
         </a>
-        <a href="mailto:hello@herlonggame.com.au" class="footer-connect-item">
+        <a href="/contact.html" class="footer-connect-item">
           <svg viewBox="0 0 24 24" style="width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.5;flex-shrink:0;"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
           hello@herlonggame.com.au
         </a>

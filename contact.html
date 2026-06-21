@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Her Long Game</title>
+  <meta name="description" content="Contact Her Long Game."/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ETWL1NZW44"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-ETWL1NZW44');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico"/>
+  <style>
+    :root{--sage-deep:#5C7A62;--gold:#B8923A;--orange:#D4621A;--orange-dark:#B8501A;--cream:#F7F5F0;--cream-warm:#F2EFE8;--stone:rgba(92,122,98,.2);--text:#2C4A3E;--muted:rgba(44,74,62,.68)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);line-height:1.7}
+    nav{height:72px;padding:0 2rem;background:var(--sage-deep);display:flex;align-items:center;justify-content:space-between}
+    .nav-logo{display:flex;align-items:center;color:var(--cream);text-decoration:none}.nav-logo img{width:44px;height:44px;border-radius:12px}
+    .nav-links{display:flex;gap:1.4rem}.nav-links a{font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(247,245,240,.84);text-decoration:none}.nav-links a:hover{color:var(--cream)}
+    main{padding:5rem 2rem 7rem}
+    .contact-shell{max-width:1040px;margin:0 auto;display:grid;grid-template-columns:.85fr 1.15fr;overflow:hidden;border:1px solid var(--stone);border-radius:20px;background:var(--cream-warm);box-shadow:0 18px 50px rgba(44,74,62,.07)}
+    .contact-intro{padding:4rem 3rem;background:var(--sage-deep);color:var(--cream)}
+    .eyebrow{font-size:.68rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.25rem}
+    h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,5vw,3.8rem);line-height:1.04;margin-bottom:1.4rem}h1 em{color:var(--gold);font-weight:400}
+    .contact-intro p{color:rgba(247,245,240,.75);font-size:.95rem}.contact-note{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid rgba(247,245,240,.15);font-size:.78rem!important}
+    .form-panel{padding:4rem 3rem}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}.field{display:flex;flex-direction:column;gap:.45rem}.field.full{grid-column:1/-1}
+    label{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--sage-deep)}
+    input,select,textarea{width:100%;font:inherit;font-size:.95rem;color:var(--text);background:var(--cream);border:1px solid var(--stone);border-radius:12px;padding:.9rem 1rem;outline:none;transition:border-color .2s,box-shadow .2s}textarea{min-height:150px;resize:vertical}
+    input:focus,select:focus,textarea:focus{border-color:var(--sage-deep);box-shadow:0 0 0 3px rgba(92,122,98,.12)}
+    .form-actions{grid-column:1/-1;display:flex;align-items:center;gap:1rem;margin-top:.4rem;flex-wrap:wrap}
+    button{border:0;border-radius:999px;background:var(--orange);color:white;padding:1rem 1.8rem;font:600 .75rem 'DM Sans';letter-spacing:.12em;text-transform:uppercase;cursor:pointer}button:hover{background:var(--orange-dark)}button:disabled{opacity:.6;cursor:wait}
+    .status{display:none;grid-column:1/-1;border-radius:12px;padding:1rem 1.1rem;font-size:.88rem}.status.show{display:block}.status.success{background:rgba(92,122,98,.12);color:var(--sage-deep);border:1px solid rgba(92,122,98,.25)}.status.error{background:rgba(196,117,106,.12);color:#7f4037;border:1px solid rgba(196,117,106,.3)}
+    .privacy-note{font-size:.72rem;color:var(--muted)}.privacy-note a{color:var(--orange)}
+    footer{background:var(--cream);border-top:1px solid var(--stone);padding:2.5rem 2rem 1.5rem}.footer-top-row{max-width:1280px;margin:0 auto 1.5rem;display:grid;grid-template-columns:1fr auto auto auto;gap:3rem}.footer-brand-link{display:flex;align-items:center;gap:.8rem;text-decoration:none;color:var(--sage-deep);font-family:'Playfair Display';font-weight:700}.footer-brand-link img{width:44px;height:44px;border-radius:12px}.footer-label{font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.75rem}.footer-links{display:flex;flex-direction:column;gap:.5rem}.footer-links a{font-size:.85rem;color:var(--muted);text-decoration:none}.footer-links a:hover{color:var(--orange)}.footer-bottom{max-width:1280px;margin:0 auto;padding-top:1rem;border-top:1px solid var(--stone);font-size:.72rem;color:var(--muted)}.disclaimer{max-width:1280px;margin:.75rem auto 0;padding-top:.75rem;border-top:1px solid rgba(92,122,98,.08);text-align:center;font-size:.625rem;color:var(--muted)}
+    .hp{position:absolute!important;left:-9999px!important}
+    @media(max-width:760px){nav{padding:0 1.25rem}.nav-links{gap:.8rem}.nav-links a:nth-child(2),.nav-links a:nth-child(3){display:none}main{padding:2rem 1rem 4rem}.contact-shell{grid-template-columns:1fr;border-radius:16px}.contact-intro,.form-panel{padding:2.5rem 1.5rem}.form-grid{grid-template-columns:1fr}.field.full,.form-actions,.status{grid-column:1}.footer-top-row{grid-template-columns:1fr 1fr;gap:2rem}.footer-brand{grid-column:1/-1}}
+  </style>
+</head>
+<body>
+  <nav aria-label="Primary navigation">
+    <a href="/" class="nav-logo" aria-label="Her Long Game home"><img src="/assets/images/her-long-game-logo.svg" alt=""/></a>
+    <div class="nav-links"><a href="/">Home</a><a href="/#about">Why</a><a href="/#lessons">Learn</a><a href="/tools.html">Tools</a></div>
+  </nav>
+  <main>
+    <div class="contact-shell">
+      <section class="contact-intro">
+        <div class="eyebrow">Get in touch</div>
+        <h1>We’d love to<br/><em>hear from you.</em></h1>
+        <p>Questions, feedback, partnerships or press — send us a note and we’ll make sure it reaches the right place.</p>
+        <p class="contact-note">Please don’t include account passwords or sensitive financial information in your message.</p>
+      </section>
+      <section class="form-panel" aria-label="Contact form">
+        <form id="contactForm" class="form-grid" action="https://formsubmit.co/ajax/hello@herlonggame.com.au" method="POST">
+          <input type="hidden" name="_subject" value="New Her Long Game website enquiry"/>
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true"/>
+          <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required/></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required/></div>
+          <div class="field full"><label for="reason">Reason for contact</label><select id="reason" name="reason" required><option value="">Choose one</option><option>General question</option><option>Feedback</option><option>Partnership</option><option>Press or media</option><option>Privacy request</option><option>Technical issue</option><option>Other</option></select></div>
+          <div class="field full"><label for="message">Message</label><textarea id="message" name="message" required></textarea></div>
+          <div id="formSuccess" class="status success" role="status" tabindex="-1">Thanks — your message has been sent. We’ll be in touch.</div>
+          <div id="formError" class="status error" role="alert">Something went wrong. Please try again in a moment.</div>
+          <div class="form-actions"><button id="submitButton" type="submit">Send message</button><span class="privacy-note">Your details are handled under our <a href="/privacy.html">Privacy Policy</a>.</span></div>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-top-row">
+      <div class="footer-brand"><a href="/" class="footer-brand-link"><img src="/assets/images/her-long-game-logo.svg" alt=""/><span>Her Long Game</span></a></div>
+      <div><div class="footer-label">Navigate</div><div class="footer-links"><a href="/">Home</a><a href="/#about">Why</a><a href="/#lessons">Learn</a><a href="/tools.html">Tools</a><a href="/field-notes.html">Blog</a></div></div>
+      <div><div class="footer-label">Connect</div><div class="footer-links"><a href="https://instagram.com/_herlonggame" target="_blank" rel="noopener">@_herlonggame</a><a href="/contact.html">Contact</a></div></div>
+      <div><div class="footer-label">Legal</div><div class="footer-links"><a href="/privacy.html">Privacy Policy</a><a href="/terms.html">Terms of Use</a></div></div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Her Long Game &middot; B&amp;CO GROUP PTY LTD</div>
+    <p class="disclaimer">General financial education only. Not personal financial advice. Individual circumstances vary. Consider seeking professional advice before making financial decisions.</p>
+  </footer>
+  <script>
+    const form=document.getElementById('contactForm');
+    const submitButton=document.getElementById('submitButton');
+    const success=document.getElementById('formSuccess');
+    const error=document.getElementById('formError');
+    form.addEventListener('submit',async(event)=>{
+      event.preventDefault(); success.classList.remove('show'); error.classList.remove('show'); submitButton.disabled=true; submitButton.textContent='Sending…';
+      try{
+        const reason=form.elements.reason.value;
+        const response=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});
+        if(!response.ok)throw new Error('Submission failed');
+        form.reset(); success.classList.add('show'); success.focus();
+        if(typeof gtag==='function')gtag('event','contact_form_submit',{contact_reason:reason});
+      }catch(e){error.classList.add('show'); if(typeof gtag==='function')gtag('event','contact_form_error');}
+      finally{submitButton.disabled=false;submitButton.textContent='Send message'}
+    });
+  </script>
+</body>
+</html>
