@@ -3940,6 +3940,28 @@ nav#nav.scrolled .nav-hamburger span{background:var(--sage-deep)}
 .nav-drawer-link:hover{color:var(--gold)}
 .nav-drawer-cta{display:block;text-align:center;margin-top:1.75rem;font-size:0.9rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--cream);background:var(--sage-deep);padding:0.85rem 1.75rem;border-radius:0.5rem;text-decoration:none}
 @media(max-width:640px){.nav-actions{display:none!important}.nav-hamburger{display:flex!important}}
+
+/* Shared soft-edged module language */
+.problem-quote-block,
+.evidence-card,
+.why-stat,
+.phase-card-new,
+.blog-card,
+.tool-card,
+.modal-card,
+.hero-form,
+.cta-form,
+.founder-inner { border-radius: 16px; }
+.why-banner { border-radius: 20px; overflow: hidden; }
+.section-principle { background: var(--cream); padding: 0 2rem 7rem; }
+.section-principle .why-banner { max-width: 1280px; margin: 0 auto; }
+.nav-cta,
+.why-cta,
+.blog-see-all { border-radius: 999px; }
+@media(max-width:640px){
+  .section-principle{padding:0 1rem 4.5rem}
+  .why-banner{border-radius:16px}
+}
 </style>
 </head>
 <body id="top">
@@ -3953,7 +3975,8 @@ nav#nav.scrolled .nav-hamburger span{background:var(--sage-deep)}
 </svg></div>
   </a>
   <div class="nav-actions">
-    <a href="/#about" class="nav-link">About</a>
+    <a href="/#about" class="nav-link">Why</a>
+    <a href="/#lessons" class="nav-link">Learn</a>
     <a href="/tools.html" class="nav-link">Tools</a>
     <a href="/field-notes.html" class="nav-link">Blog</a>
     <!-- Jargon Decoder hidden until launch -->
@@ -3963,7 +3986,8 @@ nav#nav.scrolled .nav-hamburger span{background:var(--sage-deep)}
 </nav>
 <div class="nav-drawer" id="navDrawer" role="dialog" aria-modal="true" aria-label="Navigation menu">
   <button class="nav-drawer-close" id="drawerClose" aria-label="Close menu">&#x2715;</button>
-  <a class="nav-drawer-link" href="/#about">About</a>
+  <a class="nav-drawer-link" href="/#about">Why</a>
+  <a class="nav-drawer-link" href="/#lessons">Learn</a>
   <a class="nav-drawer-link" href="/tools.html">Tools</a>
   <a class="nav-drawer-link" href="/field-notes.html">Blog</a>
   <a class="nav-cta nav-drawer-cta" href="#" onclick="event.preventDefault();document.getElementById('navDrawer').classList.remove('open');document.getElementById('hamburger').setAttribute('aria-expanded','false');openWaitlistModal();">Get Early Access</a>
@@ -4174,36 +4198,6 @@ nav#nav.scrolled .nav-hamburger span{background:var(--sage-deep)}
   </div><!-- /.why-evidence -->
   </div><!-- /.section-problem-inner -->
 
-  <div class="why-banner reveal">
-    <div class="why-banner-inner">
-
-      <!-- LEFT: Headline -->
-      <div class="why-banner-left">
-        <div class="why-banner-eyebrow">The Her Long Game principle</div>
-        <h3 class="why-banner-h">
-          None of it was<br/>your fault.<br/>
-          <em>All of it</em> is your<br/>starting point.
-        </h3>
-      </div>
-
-      <!-- RIGHT: Body + CTA -->
-      <div class="why-banner-right">
-        <div class="why-banner-divider"></div>
-        <div class="why-banner-body">
-          <p>The history is real. The gap is real. And none of it changes by waiting for the system to fix itself.</p>
-          <p>What changes is what you know, and what you do with it next.</p>
-          <p class="why-banner-body-accent">Her Long Game is financial education built for women, so they can decide what to do next.</p>
-        </div>
-        <div class="why-banner-cta-wrap">
-          <a href="#" class="why-cta" onclick="event.preventDefault();openWaitlistModal();">
-            Start here <span style="font-size:1rem;line-height:1;">&rarr;</span>
-          </a>
-          <span class="why-banner-cta-note">No advice &middot; Education first</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
 </section>
 
 
@@ -4263,6 +4257,35 @@ nav#nav.scrolled .nav-hamburger span{background:var(--sage-deep)}
 </section>
 
 <!-- ══ FOUNDER ════════════════════════════════ -->
+<!-- The principle follows the lessons so the learning promise flows into its core idea. -->
+<section class="section-principle" aria-labelledby="principle-title">
+  <div class="why-banner reveal">
+    <div class="why-banner-inner">
+      <div class="why-banner-left">
+        <div class="why-banner-eyebrow">The Her Long Game principle</div>
+        <h3 class="why-banner-h" id="principle-title">
+          None of it was<br/>your fault.<br/>
+          <em>All of it</em> is your<br/>starting point.
+        </h3>
+      </div>
+      <div class="why-banner-right">
+        <div class="why-banner-divider"></div>
+        <div class="why-banner-body">
+          <p>The history is real. The gap is real. And none of it changes by waiting for the system to fix itself.</p>
+          <p>What changes is what you know, and what you do with it next.</p>
+          <p class="why-banner-body-accent">Her Long Game is financial education built for women, so they can decide what to do next.</p>
+        </div>
+        <div class="why-banner-cta-wrap">
+          <a href="#" class="why-cta" onclick="event.preventDefault();openWaitlistModal();">
+            Start here <span style="font-size:1rem;line-height:1;">&rarr;</span>
+          </a>
+          <span class="why-banner-cta-note">No advice &middot; Education first</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section-founder" id="wisdom">
   <div class="founder-inner reveal">
     <span class="founder-quote-mark" aria-hidden="true">“</span>
@@ -4297,7 +4320,8 @@ nav#nav.scrolled .nav-hamburger span{background:var(--sage-deep)}
     <div class="footer-nav" aria-label="Footer navigation">
       <div class="footer-nav-label">Navigate</div>
       <div class="footer-nav-links">
-        <a href="/#about">About</a>
+        <a href="/#about">Why</a>
+        <a href="/#lessons">Learn</a>
         <a href="#" onclick="event.preventDefault();openWaitlistModal();">Waitlist</a>
         <a href="/tools.html">Tools</a>
         <a href="/field-notes.html">Blog</a>
@@ -4312,7 +4336,7 @@ nav#nav.scrolled .nav-hamburger span{background:var(--sage-deep)}
           <svg viewBox="0 0 24 24" style="width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.5;flex-shrink:0;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
           @_herlonggame
         </a>
-        <a href="mailto:hello@herlonggame.com.au" class="footer-connect-item">
+        <a href="/contact.html" class="footer-connect-item">
           <svg viewBox="0 0 24 24" style="width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.5;flex-shrink:0;"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
           hello@herlonggame.com.au
         </a>
