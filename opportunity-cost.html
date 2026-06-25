@@ -495,58 +495,63 @@
       padding: 24px;
     }
     .gate-card {
-      background: var(--cream); border-radius: 14px;
+      background: var(--cream); border-radius: 12px;
       padding: 44px 40px 36px; max-width: 480px; width: 100%;
       text-align: center;
-      box-shadow: 0 24px 80px rgba(92,122,98,0.32);
+      box-shadow: 0 24px 80px rgba(92,122,98,0.3);
       position: relative; overflow: hidden;
     }
     .gate-card::before {
       content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
       background: linear-gradient(90deg, var(--gold), var(--sage-deep), var(--orange));
     }
-    .gate-brand-logo { height: 36px; margin-bottom: 20px; }
+    .gate-brand-logo { width: min(260px, 80%); height: auto; margin: 0 auto 24px; display: block; }
     .gate-tag {
-      display: inline-block; font-size: 11px; font-weight: 600;
-      letter-spacing: 2px; text-transform: uppercase;
-      color: var(--gold); border: 1px solid var(--gold);
-      padding: 4px 12px; border-radius: 20px; margin-bottom: 16px;
+      font-size: 9px; letter-spacing: 0.3em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 10px;
     }
     .gate-heading {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(24px, 5vw, 32px);
+      font-size: 24px;
       font-weight: 700; color: var(--sage-deep);
-      line-height: 1.2; margin-bottom: 14px;
+      line-height: 1.25; margin-bottom: 12px;
     }
+    .gate-heading em { font-style: italic; color: var(--sage-deep); }
     .gate-body {
-      font-size: 15px; color: #6b7f6e;
-      line-height: 1.6; margin-bottom: 28px;
+      font-size: 13.5px; color: var(--sage-mid);
+      line-height: 1.75; margin-bottom: 24px;
     }
-    .gate-form { display: flex; flex-direction: column; gap: 12px; }
+    .gate-form { display: flex; flex-direction: column; gap: 11px; }
     .gate-form input[type="text"],
     .gate-form input[type="email"] {
-      width: 100%; padding: 13px 16px; border: 1.5px solid #d0dbd2;
+      width: 100%; padding: 13px 16px; border: 1.5px solid rgba(92,122,98,0.35);
       border-radius: 8px; font-size: 15px; font-family: 'DM Sans', sans-serif;
-      color: var(--sage-deep); background: #fff; outline: none;
-      transition: border-color 0.2s;
+      color: var(--sage-deep); background: var(--cream-warm); outline: none;
+      transition: border-color 0.2s ease-out;
     }
+    .gate-form input[type="text"]::placeholder,
+    .gate-form input[type="email"]::placeholder { color: var(--sage-mid); }
     .gate-form input:focus { border-color: var(--sage-deep); }
     .gate-submit {
-      width: 100%; padding: 14px; background: var(--sage-deep);
+      width: 100%; padding: 14px 28px; background: var(--sage-deep);
       color: var(--cream); border: none; border-radius: 8px;
-      font-size: 16px; font-weight: 600; font-family: 'DM Sans', sans-serif;
-      cursor: pointer; transition: background 0.2s; margin-top: 4px;
+      font-size: 13px; font-weight: 500; letter-spacing: 0.04em;
+      font-family: 'DM Sans', sans-serif;
+      cursor: pointer;
+      transition: background 0.2s ease-out, box-shadow 0.2s ease-out, transform 0.2s ease-out;
+      margin-top: 4px;
     }
-    .gate-submit:hover { background: #4a6450; }
-    .gate-submit:disabled { opacity: 0.6; cursor: default; }
+    .gate-submit:hover { background: #506B56; box-shadow: 0 6px 20px rgba(92,122,98,0.25); transform: translateY(-1px); }
+    .gate-submit:disabled { opacity: 0.6; cursor: not-allowed; }
     .gate-error {
-      display: none; color: #c0392b; font-size: 13px;
-      background: #fdf0ee; border-radius: 6px; padding: 8px 12px;
+      display: none; color: var(--rose); font-size: 12px; text-align: left;
+      background: var(--cream); border-radius: 6px; padding: 8px 12px;
+      border-left: 3px solid var(--rose);
     }
     .gate-legal {
-      font-size: 12px; color: #8fa08f; line-height: 1.5; margin-top: 16px;
+      font-size: 11px; color: var(--sage-mid); line-height: 1.6; margin-top: 14px;
     }
-    .gate-legal a { color: var(--sage-deep); }
+    .gate-legal a { color: var(--sage-deep); text-decoration: underline; }
     #gate-success { display: none; }
     #gate-success h3 {
       font-family: 'Playfair Display', serif; font-size: 26px;
