@@ -138,9 +138,25 @@ nav#nav.scrolled .nav-hamburger span{background:var(--sage-deep)}
 .tools-hero{
   padding:clamp(5rem,10vw,7rem) 2rem 3.5rem;
   background:var(--cream);
+  position:relative;
+  overflow:hidden;
 }
 .tools-hero-inner{
   max-width:1280px;margin:0 auto;
+  position:relative;z-index:1;
+}
+.tools-hero-bg-title{
+  position:absolute;
+  top:50%;left:-0.05em;
+  transform:translateY(-50%);
+  font-family:'Playfair Display',serif;
+  font-style:italic;font-weight:700;
+  font-size:clamp(7rem,22vw,18rem);
+  color:rgba(22,30,23,0.04);
+  white-space:nowrap;
+  pointer-events:none;user-select:none;
+  line-height:1;z-index:0;
+  letter-spacing:-0.02em;
 }
 .tools-eyebrow{
   font-size:var(--fs-label);font-weight:600;letter-spacing:0.2em;text-transform:uppercase;
@@ -358,7 +374,7 @@ footer{
     <a href="/#lessons" class="nav-link">Learn</a>
     <a href="/tools.html" class="nav-link">Tools</a>
     <a href="/field-notes.html" class="nav-link">Blog</a>
-    <a href="#" class="nav-cta" onclick="event.preventDefault();openWaitlistModal();">Get Early Access</a>
+    <a href="/founding-member.html" class="nav-cta">Founding Member</a>
   </div>
   <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -372,10 +388,11 @@ footer{
   <a class="nav-drawer-link" href="/#lessons">Learn</a>
   <a class="nav-drawer-link" href="/tools.html">Tools</a>
   <a class="nav-drawer-link" href="/field-notes.html">Blog</a>
-  <a class="nav-cta nav-drawer-cta" href="#" onclick="event.preventDefault();document.getElementById('navDrawer').classList.remove('open');document.getElementById('hamburger').setAttribute('aria-expanded','false');openWaitlistModal();">Get Early Access</a>
+  <a class="nav-cta nav-drawer-cta" href="/founding-member.html">Founding Member</a>
 </div>
 
 <section class="tools-hero">
+  <div class="tools-hero-bg-title">Her Tools</div>
   <div class="tools-hero-inner">
     <div class="tools-eyebrow">Her Long Game</div>
     <h1>Her <em>Tools</em></h1>
@@ -429,7 +446,7 @@ footer{
         <a href="/">Home</a>
         <a href="/#about">Why</a>
         <a href="/#lessons">Learn</a>
-        <a href="#" onclick="event.preventDefault();openWaitlistModal();">Waitlist</a>
+        <a href="/founding-member.html">Founding Member</a>
         <a href="/tools.html">Tools</a>
         <a href="/field-notes.html">Blog</a>
       </div>
@@ -462,7 +479,7 @@ footer{
   </div>
 
   <div class="footer-bottom-row">
-    <span style="font-size:var(--fs-label);color:var(--text-muted);">&copy; 2026 Her Long Game</span>
+    <span style="font-size:var(--fs-label);color:var(--text-muted);">&copy; 2026 Her Long Game &nbsp;&middot;&nbsp; B&amp;CO GROUP PTY LTD</span>
   </div>
 
   <p class="footer-disclaimer">General financial education only. Not personal financial advice. Individual circumstances vary. Consider seeking professional advice before making financial decisions.</p>
