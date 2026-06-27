@@ -16,7 +16,9 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/css/hlg.css" />
+<script src="/assets/js/hlg.js" defer></script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -138,25 +140,9 @@ nav#nav.scrolled .nav-hamburger span{background:var(--sage-deep)}
 .tools-hero{
   padding:clamp(5rem,10vw,7rem) 2rem 3.5rem;
   background:var(--cream);
-  position:relative;
-  overflow:hidden;
 }
 .tools-hero-inner{
   max-width:1280px;margin:0 auto;
-  position:relative;z-index:1;
-}
-.tools-hero-bg-title{
-  position:absolute;
-  top:50%;left:-0.05em;
-  transform:translateY(-50%);
-  font-family:'Playfair Display',serif;
-  font-style:italic;font-weight:700;
-  font-size:clamp(7rem,22vw,18rem);
-  color:rgba(22,30,23,0.04);
-  white-space:nowrap;
-  pointer-events:none;user-select:none;
-  line-height:1;z-index:0;
-  letter-spacing:-0.02em;
 }
 .tools-eyebrow{
   font-size:var(--fs-label);font-weight:600;letter-spacing:0.2em;text-transform:uppercase;
@@ -374,7 +360,7 @@ footer{
     <a href="/#lessons" class="nav-link">Learn</a>
     <a href="/tools.html" class="nav-link">Tools</a>
     <a href="/field-notes.html" class="nav-link">Blog</a>
-    <a href="/founding-member.html" class="nav-cta">Founding Member</a>
+    <a href="#" class="nav-cta" onclick="event.preventDefault();openWaitlistModal();">Get Early Access</a>
   </div>
   <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -388,11 +374,10 @@ footer{
   <a class="nav-drawer-link" href="/#lessons">Learn</a>
   <a class="nav-drawer-link" href="/tools.html">Tools</a>
   <a class="nav-drawer-link" href="/field-notes.html">Blog</a>
-  <a class="nav-cta nav-drawer-cta" href="/founding-member.html">Founding Member</a>
+  <a class="nav-cta nav-drawer-cta" href="#" onclick="event.preventDefault();document.getElementById('navDrawer').classList.remove('open');document.getElementById('hamburger').setAttribute('aria-expanded','false');openWaitlistModal();">Get Early Access</a>
 </div>
 
-<section class="tools-hero">
-  <div class="tools-hero-bg-title">Her Tools</div>
+<section class="tools-hero" data-watermark="Tools">
   <div class="tools-hero-inner">
     <div class="tools-eyebrow">Her Long Game</div>
     <h1>Her <em>Tools</em></h1>
@@ -400,7 +385,7 @@ footer{
   </div>
 </section>
 
-<section class="tools-grid-section">
+<section class="tools-grid-section" data-watermark="Free tools">
   <div class="tools-grid-inner">
     <div class="tools-grid">
       <a href="/opportunity-cost.html" class="tool-card">
@@ -446,7 +431,7 @@ footer{
         <a href="/">Home</a>
         <a href="/#about">Why</a>
         <a href="/#lessons">Learn</a>
-        <a href="/founding-member.html">Founding Member</a>
+        <a href="#" onclick="event.preventDefault();openWaitlistModal();">Waitlist</a>
         <a href="/tools.html">Tools</a>
         <a href="/field-notes.html">Blog</a>
       </div>
@@ -479,7 +464,7 @@ footer{
   </div>
 
   <div class="footer-bottom-row">
-    <span style="font-size:var(--fs-label);color:var(--text-muted);">&copy; 2026 Her Long Game &nbsp;&middot;&nbsp; B&amp;CO GROUP PTY LTD</span>
+    <span style="font-size:var(--fs-label);color:var(--text-muted);">&copy; 2026 Her Long Game &middot; HER LONG GAME EDUCATION PTY LTD (ACN 699 496 985 &middot; ABN 17 699 496 985)</span>
   </div>
 
   <p class="footer-disclaimer">General financial education only. Not personal financial advice. Individual circumstances vary. Consider seeking professional advice before making financial decisions.</p>
