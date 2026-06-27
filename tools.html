@@ -343,6 +343,12 @@ footer{
   .nav-logo-img{height:32px}
   footer{padding:2rem 1.25rem 1.25rem}
 }
+
+/* Background watermark titles (inline, mirrors the landing page; independent of hlg.css) */
+[data-watermark]{position:relative;overflow:hidden}
+[data-watermark]::before{content:attr(data-watermark);font-family:'Playfair Display',Georgia,serif;font-style:italic;font-weight:700;font-size:clamp(5rem,13vw,12rem);line-height:1;color:rgba(92,122,98,0.06);position:absolute;top:.5rem;right:-1rem;white-space:nowrap;pointer-events:none;user-select:none;z-index:0}
+[data-watermark]>*{position:relative;z-index:1}
+@media(max-width:600px){[data-watermark]::before{font-size:clamp(3.5rem,22vw,6rem);right:-.5rem}}
 </style>
 </head>
 <body>
@@ -385,7 +391,7 @@ footer{
   </div>
 </section>
 
-<section class="tools-grid-section" data-watermark="Free tools">
+<section class="tools-grid-section">
   <div class="tools-grid-inner">
     <div class="tools-grid">
       <a href="/opportunity-cost.html" class="tool-card">
