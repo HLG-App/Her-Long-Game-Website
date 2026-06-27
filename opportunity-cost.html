@@ -437,36 +437,7 @@
       line-height: 1.7;
     }
 
-    /* ── Footer ── */
-    footer { background: var(--sage-deep); padding: 60px 40px 40px; }
-    .footer-inner {
-      max-width: 920px; margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr auto auto auto;
-      gap: 48px;
-      align-items: start;
-    }
-    .footer-logo-img { height: 36px; display: block; }
-    .footer-col-label {
-      font-size: 11px; font-weight: 600; letter-spacing: 2px;
-      text-transform: uppercase; color: rgba(247,245,240,0.4);
-      margin-bottom: 14px;
-    }
-    .footer-col a {
-      display: block; color: rgba(247,245,240,0.65);
-      text-decoration: none; font-size: 14px; margin-bottom: 8px;
-    }
-    .footer-col a:hover { color: var(--cream); }
-    .footer-bottom {
-      max-width: 920px; margin: 40px auto 0;
-      padding-top: 24px;
-      border-top: 1px solid rgba(247,245,240,0.1);
-    }
-    .footer-copy { font-size: 12px; color: rgba(247,245,240,0.4); margin-bottom: 8px; }
-    .footer-disclaimer {
-      font-size: 12px; color: rgba(247,245,240,0.35);
-      font-style: italic; line-height: 1.7; max-width: 640px;
-    }
+    /* Footer styled by shared hlg.css (canonical cream footer) */
 
     /* ── Responsive ── */
     @media (max-width: 680px) {
@@ -480,9 +451,6 @@
       .ways-section { padding: 60px 20px; }
       .ways-grid { grid-template-columns: 1fr; }
       .way-card:last-child:nth-child(odd) { grid-column: auto; max-width: 100%; }
-      footer { padding: 48px 20px 32px; }
-      .footer-inner { grid-template-columns: 1fr 1fr; gap: 32px; }
-      .footer-logo-col { grid-column: 1 / -1; }
     }
   </style>
 
@@ -880,35 +848,39 @@
 
   <!-- Footer -->
   <footer>
-    <div class="footer-inner">
-      <div class="footer-logo-col">
-        <a href="https://www.herlonggame.com.au/">
-          <img class="footer-logo-img" src="/assets/images/her-long-game-logo.svg" alt="Her Long Game" />
-        </a>
+    <div class="footer-top-row">
+      <div class="footer-brand">
+        <a href="/" aria-label="Her Long Game Home"><img src="/assets/images/her-long-game-logo.svg" alt="Her Long Game" style="height:40px;width:auto;display:block"></a>
       </div>
-      <div class="footer-col">
-        <div class="footer-col-label">Navigate</div>
-        <a href="https://www.herlonggame.com.au/">Home</a>
-        <a href="https://www.herlonggame.com.au/#about">Why</a>
-        <a href="https://www.herlonggame.com.au/#lessons">Learn</a>
-        <a href="https://www.herlonggame.com.au/tools.html">Tools</a>
-        <a href="https://www.herlonggame.com.au/field-notes.html">Blog</a>
+      <div class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-label">Navigate</div>
+        <div class="footer-nav-links">
+          <a href="/">Home</a>
+          <a href="/#about">Why</a>
+          <a href="/#lessons">Learn</a>
+          <a href="/tools.html">Tools</a>
+          <a href="/field-notes.html">Blog</a>
+        </div>
       </div>
-      <div class="footer-col">
-        <div class="footer-col-label">Connect</div>
-        <a href="https://instagram.com/_herlonggame" target="_blank" rel="noopener">@_herlonggame</a>
-        <a href="https://www.herlonggame.com.au/contact.html">Contact</a>
+      <div class="footer-connect">
+        <div class="footer-nav-label">Connect</div>
+        <div class="footer-connect-links">
+          <a href="https://instagram.com/_herlonggame" class="footer-connect-item" target="_blank" rel="noopener">@_herlonggame</a>
+          <a href="/contact.html" class="footer-connect-item">Contact</a>
+        </div>
       </div>
-      <div class="footer-col">
-        <div class="footer-col-label">Legal</div>
-        <a href="https://www.herlonggame.com.au/privacy.html">Privacy Policy</a>
-        <a href="https://www.herlonggame.com.au/terms.html">Terms of Use</a>
+      <div class="footer-legal">
+        <div class="footer-nav-label">Legal</div>
+        <div class="footer-nav-links">
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Use</a>
+        </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p class="footer-copy">© 2026 Her Long Game · HER LONG GAME EDUCATION PTY LTD (ACN 699 496 985 · ABN 17 699 496 985)</p>
-      <p class="footer-disclaimer">General financial education only. Not personal financial advice. Individual circumstances vary. Consider seeking professional advice before making financial decisions. The 7% growth figure is a general long-term historical reference only and is not a guarantee of future returns.</p>
+    <div class="footer-bottom-row">
+      <span style="font-size:var(--fs-label);color:var(--text-muted);">&copy; 2026 Her Long Game &middot; HER LONG GAME EDUCATION PTY LTD (ACN 699 496 985 &middot; ABN 17 699 496 985)</span>
     </div>
+    <p class="footer-disclaimer">General financial education only. Not personal financial advice. Individual circumstances vary. Consider seeking professional advice before making financial decisions. The 7% growth figure is a general long-term historical reference only and is not a guarantee of future returns.</p>
   </footer>
 
   <!-- ════════════════════════════════════════
