@@ -13,16 +13,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Her Long Game, The money lessons women were never taught.</title>
 <meta name="description" content="The money conversation we were never taught, but are expected to use every day. Clear, practical financial education for women. Join the founding cohort." />
-<meta name="keywords" content="financial literacy women, women and money, financial education, purchasing power, Her Long Game" />
 <meta name="author" content="Her Long Game" />
-<link rel="canonical" href="https://herlonggame.com.au" />
+<link rel="canonical" href="https://www.herlonggame.com.au/" />
 
 <!-- Open Graph / Social sharing -->
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://herlonggame.com.au" />
+<meta property="og:url" content="https://www.herlonggame.com.au/" />
 <meta property="og:title" content="Her Long Game, The money lessons women were never taught." />
 <meta property="og:description" content="Financial education for women who are already doing the work, but don't have time to moonlight as a financial expert. No jargon. No judgement." />
-<meta property="og:image" content="https://herlonggame.com.au/bubble-o-bill-index/her-long-game-logo.png" />
+<meta property="og:image" content="https://www.herlonggame.com.au/bubble-o-bill-index/her-long-game-logo.png" />
 <meta property="og:locale" content="en_AU" />
 <meta property="og:site_name" content="Her Long Game" />
 
@@ -30,13 +29,15 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Her Long Game, The money lessons women were never taught." />
 <meta name="twitter:description" content="Foundational financial education for women. Understand money, build wealth, make better decisions. Join the waitlist." />
-<meta name="twitter:image" content="https://herlonggame.com.au/bubble-o-bill-index/her-long-game-logo.png" />
+<meta name="twitter:image" content="https://www.herlonggame.com.au/bubble-o-bill-index/her-long-game-logo.png" />
 
 <!-- Favicon (add your files to /assets/images/) -->
 <link rel="icon" type="image/svg+xml" href="/assets/images/her-long-game-logo.svg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+<!-- Shared design system — single source of truth (DESIGN.md v6.0). Loaded first; page styles below layer on top. -->
+<link rel="stylesheet" href="/assets/css/hlg.css" />
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -139,20 +140,8 @@ nav#nav.scrolled {
 nav#nav.scrolled .nav-link { color: var(--text-muted); }
 .nav-link:hover { color: var(--orange); }
 nav#nav.scrolled .nav-link:hover { color: var(--orange); }
-.nav-cta {
-  font-family: 'DM Sans', sans-serif;
-  font-size: var(--fs-label);
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--cream);
-  background: var(--orange);
-  padding: 0.5rem 1.25rem;
-  border-radius: 2px;
-  text-decoration: none;
-  transition: background 0.2s, transform 0.2s;
-}
-.nav-cta:hover { background: var(--sage-deep); transform: translateY(-1px); }
+/* .nav-cta is governed by hlg.css (canonical waitlist CTA — Horizon Orange pill,
+   per founder decision). Removed the duplicate local rule so all pages match. */
 
 /* ────────────────────────────────────────────
    HERO
@@ -610,7 +599,7 @@ nav#nav.scrolled .nav-link:hover { color: var(--orange); }
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--orange);
+  color: var(--gold); /* Crown Gold eyebrows per DESIGN.md. Note: gold on cream ~2.8:1 is decorative-only, below AA for readable text. */
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
@@ -1105,7 +1094,7 @@ nav#nav.scrolled .nav-link:hover { color: var(--orange); }
   letter-spacing: 0.12em;
   text-transform: uppercase;
   padding: 1rem 2.25rem;
-  border-radius: 2px;
+  border-radius: 999px;
   text-decoration: none;
   transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
   box-shadow: 0 4px 14px rgba(212,98,26,0.25);
@@ -2022,7 +2011,7 @@ nav#nav.scrolled .nav-link:hover { color: var(--orange); }
   letter-spacing: 0.14em;
   text-transform: uppercase;
   border: none;
-  border-radius: 3px;
+  border-radius: 999px;
   cursor: pointer;
   transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
   box-shadow: 0 4px 18px rgba(212,98,26,0.35);
@@ -3857,9 +3846,9 @@ nav.scrolled .nav-logo-img {
     .modal-submit {
       width: 100%;
       background: var(--orange);
-      color: white;
+      color: #fff;
       border: none;
-      border-radius: 3px;
+      border-radius: 999px;
       padding: 1rem 1.5rem;
       font-family: 'DM Sans';
       font-size: 0.78rem;
@@ -3963,8 +3952,15 @@ nav#nav.scrolled .nav-hamburger span{background:var(--sage-deep)}
   .footer-brand > a{width:190px;height:50px}
 }
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Her Long Game","legalName":"HER LONG GAME EDUCATION PTY LTD","url":"https://www.herlonggame.com.au/","logo":"https://www.herlonggame.com.au/assets/images/her-long-game-logo.svg","description":"Financial education for women. General education only, not financial advice.","sameAs":["https://instagram.com/_herlonggame"],"address":{"@type":"PostalAddress","streetAddress":"2/290 Boundary Street","addressLocality":"Spring Hill","addressRegion":"QLD","postalCode":"4000","addressCountry":"AU"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Her Long Game","url":"https://www.herlonggame.com.au/"}
+</script>
 </head>
 <body id="top">
+<a href="#main" class="skip-link">Skip to content</a>
 
 <!-- ══ NAV ══════════════════════════════════ -->
 <nav id="nav">
@@ -3995,7 +3991,7 @@ nav#nav.scrolled .nav-hamburger span{background:var(--sage-deep)}
 
 
 <!-- ══ HERO ══════════════════════════════════ -->
-<section class="hero">
+<section class="hero" id="main">
   <div class="hero-top-accent"></div>
   <div class="hero-inner">
     <div class="hero-content">
@@ -4007,7 +4003,7 @@ nav#nav.scrolled .nav-hamburger span{background:var(--sage-deep)}
     <p class="hero-sub">But most of us were never taught how the system works.</p>
     <p class="hero-body">Her Long Game is financial education for women who want to understand money, build confidence, and stop feeling behind.</p>
 
-    <div class="hero-form-wrap">
+    <div class="hero-form-wrap" id="join">
       <form
         class="hero-form"
         id="heroFormWrap"
@@ -4348,7 +4344,7 @@ nav#nav.scrolled .nav-hamburger span{background:var(--sage-deep)}
   </div>
 
   <div class="footer-bottom-row">
-    <span style="font-size:var(--fs-label);color:var(--text-muted);">&copy; 2026 Her Long Game</span>
+    <span style="font-size:var(--fs-label);color:var(--text-muted);">&copy; 2026 Her Long Game &middot; HER LONG GAME EDUCATION PTY LTD (ACN 699 496 985 &middot; ABN 17 699 496 985)</span>
   </div>
 
   <p class="footer-disclaimer">General financial education only. Not personal financial advice. Individual circumstances vary. Consider seeking professional advice before making financial decisions.</p>
@@ -5386,6 +5382,4 @@ function calcSimple() { calcSimpleCore(''); }
 </div>
 
 <iframe name="hlgMailchimpFrame" title="Mailchimp submission" style="display:none;width:0;height:0;border:0;" aria-hidden="true"></iframe>
-<script>(function(){var h=document.getElementById("hamburger"),d=document.getElementById("navDrawer"),c=document.getElementById("drawerClose");if(!h||!d)return;function op(){d.classList.add("open");h.setAttribute("aria-expanded","true");c.focus();}function cl(){d.classList.remove("open");h.setAttribute("aria-expanded","false");h.focus();}h.addEventListener("click",function(){d.classList.contains("open")?cl():op();});c.addEventListener("click",cl);document.addEventListener("keydown",function(e){if(e.key==="Escape"&&d.classList.contains("open"))cl();});d.querySelectorAll(".nav-drawer-link").forEach(function(link){link.addEventListener("click",cl);});})();</script>
-</body>
-</html>
+<script>(function(){var h=document.getElementById("hamburger"),d=document.getElementById("navDrawer"),c=document.getElementById("drawerClose");if(!h||!d)return;function op(){d.classList.add("open");h.setAttribute("aria-expanded","true");c.focus();}function cl(){d.classList.remove("open");h.setAttribute("aria-expanded","false");h.focus();}h.addEventListener("click",function(){d.classList.contains("open")?cl():op();});c.addEventListener("click",cl);document.addEventListener("keydown",function(e){if(e.key==="Escape"&&d.classList.contains("open"))cl();});d.querySelecto
