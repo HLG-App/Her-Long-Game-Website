@@ -4547,8 +4547,8 @@ function markFieldError(field) {
 }
 
 function validateLeadFields(firstNameField, emailField) {
-  const firstName = firstNameField?.value.trim();
-  const email = emailField?.value.trim();
+  const firstName = firstNameField ? firstNameField.value.trim() : '';
+  const email = emailField ? emailField.value.trim() : '';
   if (!firstName) {
     markFieldError(firstNameField);
     return false;
@@ -4596,13 +4596,13 @@ function handleMailchimpSubmit(event, which) {
   setTimeout(() => {
     if (which === 'hero') {
       form.style.display = 'none';
-      document.getElementById('heroSuccess')?.classList.add('show');
+      var _hs=document.getElementById('heroSuccess');if(_hs)_hs.classList.add('show');
     } else if (which === 'cta') {
       form.style.display = 'none';
-      document.getElementById('ctaSuccess')?.classList.add('show');
+      var _cs=document.getElementById('ctaSuccess');if(_cs)_cs.classList.add('show');
     } else if (which === 'modal') {
       form.style.display = 'none';
-      document.getElementById('modalSuccess')?.classList.add('show');
+      var _ms=document.getElementById('modalSuccess');if(_ms)_ms.classList.add('show');
     } else {
       const _btn = document.getElementById('emailResultsBtn');
       const _suc = document.getElementById('emailResultsSuccess');
@@ -4629,10 +4629,10 @@ document.addEventListener('keydown', function(e) {
 });
 
 function submitForm(which) {
-  document.getElementById(which === 'hero' ? 'heroFormWrap' : 'ctaFormWrap')?.requestSubmit();
+  var _f=document.getElementById(which==='hero'?'heroFormWrap':'ctaFormWrap');if(_f){if(_f.requestSubmit)_f.requestSubmit();else _f.submit();}
 }
 
-['heroFirstName', 'heroEmail'].forEach(id => document.getElementById(id)?.addEventListener('keydown', e => { if (e.key === 'Enter') submitForm('hero'); }));
+['heroFirstName','heroEmail'].forEach(function(id){var el=document.getElementById(id);if(el)el.addEventListener('keydown',function(e){if(e.key==='Enter')submitForm('hero');});});
 // CTA form fields are on sub-pages only; listeners skipped on index if elements absent
 ['ctaFirstName', 'ctaEmail'].forEach(id => { const el = document.getElementById(id); if (el) el.addEventListener('keydown', e => { if (e.key === 'Enter') submitForm('cta'); }); });
 
@@ -4826,7 +4826,7 @@ function showEmailForm() {
   document.getElementById('emailResultsFirstName').focus();
 }
 function submitEmailResults() {
-  document.getElementById('emailResultsForm')?.requestSubmit();
+  var _ef=document.getElementById('emailResultsForm');if(_ef){if(_ef.requestSubmit)_ef.requestSubmit();else _ef.submit();}
 }
 
 </script>
@@ -5131,7 +5131,7 @@ function decFmt(n){
   if(a>=1e6)return s+'$'+(a/1e6).toFixed(2)+'M';
   return s+'$'+Math.round(a).toLocaleString('en-AU');
 }
-function decG(id){return parseFloat(document.getElementById(id)?.value)||0;}
+function decG(id){var _el=document.getElementById(id);return parseFloat(_el?_el.value:0)||0;}
 
 // ── STATE ──
 let decActiveCat='all';
@@ -5234,7 +5234,7 @@ function decRenderPanel(t){
 function decShowTerm(id){
   document.getElementById('decWelcome').style.display='none';
   document.querySelectorAll('.dec-panel').forEach(p=>p.classList.remove('active'));
-  document.getElementById('decpanel-'+id)?.classList.add('active');
+  var _dp=document.getElementById('decpanel-'+id);if(_dp)_dp.classList.add('active');
   decActiveTerm=id;
   decBuildSidebar();
   decBuildMobileTerms();
@@ -5252,9 +5252,9 @@ function decSetCat(cat,btn){
 
 function decRecalc(id){
   const t=DEC_TERMS.find(x=>x.id===id);
-  if(!t?.calc)return;
+  if(!t||!t.calc)return;
   try{
-    const dg=fid=>parseFloat(document.getElementById('d_'+fid)?.value)||0;
+    const dg=function(fid){var _v=document.getElementById('d_'+fid);return parseFloat(_v?_v.value:0)||0;};
     const{val,sub}=t.calc.compute(dg);
     const ve=document.getElementById('dval-'+id);
     const se=document.getElementById('dsub-'+id);
@@ -5382,4 +5382,6 @@ function calcSimple() { calcSimpleCore(''); }
 </div>
 
 <iframe name="hlgMailchimpFrame" title="Mailchimp submission" style="display:none;width:0;height:0;border:0;" aria-hidden="true"></iframe>
-<script>(function(){var h=document.getElementById("hamburger"),d=document.getElementById("navDrawer"),c=document.getElementById("drawerClose");if(!h||!d)return;function op(){d.classList.add("open");h.setAttribute("aria-expanded","true");c.focus();}function cl(){d.classList.remove("open");h.setAttribute("aria-expanded","false");h.focus();}h.addEventListener("click",function(){d.classList.contains("open")?cl():op();});c.addEventListener("click",cl);document.addEventListener("keydown",function(e){if(e.key==="Escape"&&d.classList.contains("open"))cl();});d.querySelecto
+<script>(function(){var h=document.getElementById("hamburger"),d=document.getElementById("navDrawer"),c=document.getElementById("drawerClose");if(!h||!d)return;function op(){d.classList.add("open");h.setAttribute("aria-expanded","true");c.focus();}function cl(){d.classList.remove("open");h.setAttribute("aria-expanded","false");h.focus();}h.addEventListener("click",function(){d.classList.contains("open")?cl():op();});c.addEventListener("click",cl);document.addEventListener("keydown",function(e){if(e.key==="Escape"&&d.classList.contains("open"))cl();});d.querySelector('[tabindex="-1"],[href],button,input,select,textarea').forEach(function(el){el.addEventListener("click",function(){if(el.closest(".nav-drawer"))cl();});});}})();</script>
+</body>
+</html>
